@@ -2,7 +2,13 @@ import os
 import xml.etree.ElementTree as ET
 import glob
 
+
 class testPriority(object):
+    alpha = 0.7 
+    beta = 0.3
+    theta = 0.0
+    name = None
+
     # name: "Edit assignment",
     # prevPriority: 0.5,
     # priority: 0.03
@@ -46,15 +52,10 @@ class testResult(object):
     #dictionary of testCase object, with testCase.name 
     test_case = {}
   
-    def _init_(self, resultdirectory):
+    def _init_(self, resultdirectory, testPriorityFile):
         #check if resultdirectory is valid
-        #create database connection
+        #check if testPriorityFile exist and has permission to write
         pass
-
-    # def _init_(self, resultdirectory, testPriorityFile):
-    #     #check if resultdirectory is valid
-    #     #check if testPriorityFile exist and has permission to write
-    #     pass
 
     #populated testResult object. 
     #test_case contains all test cases
@@ -69,11 +70,26 @@ class testResult(object):
             outfile = self.testPriorityFile
 
 
-def calculatePriority(testCase):
-    pass
+def calculatePriority(testCase, testPriority):
+    #check if testCase and testPriority are valid
+    testPriority.totalExecutions = testPriority.totalExecutions + testCase.tests
+    testPriority.totalFailures = testPriority.totalFailures + testCase.failures
+    if testCase.failures > 0:
+        recentFail = 5000
+    else:
+        recentFail = 0
+    #need to take error into account
+    tcPasses = testCase.tests - testCase.failures
+    testPriority.totalPasses = testPriority.totalPasses + tcPasses
+    prevPrioritytemp = testPriority.prevPriority
+    testPriority.prevPriority = testCase.priority
+    # calculation
+    failRatio = testPriority.totalFailures / testPriority.totalPasses
+    testPriority.priority = alpha * failRatio + beta * prevPrioritytemp + recentFail
+    # add to testPriorityFile
 
 def temp(resultdirectory):
-    #how to check if resultdirectory is valid
+    # check if resultdirectory is valid
     if (os.path.isdir(resultdirectory)):
         print(os.path.isdir(resultdirectory))
         print("I'm here!")
@@ -91,11 +107,9 @@ def temp(resultdirectory):
     for x in listFiles:
         try:
             tree = ET.parse(x)
-            root = tree.getroot()
-            # tree = ET.parse(resultdirectory + "/test1.xml")
-    
+            root = tree.getroot()    
             #parse line into variables 
-            name = root.attrib.get("name")
+            name = "_".join((root.attrib.get("name")).split())
             time = root.attrib.get("time")
             timestamp = root.attrib.get("timestamp")
             tests = root.attrib.get("tests")
@@ -103,7 +117,7 @@ def temp(resultdirectory):
             errors = root.attrib.get("errors")
             failures = root.attrib.get("failures")
             tc = testCase(name,time,timestamp,tests,skipped,errors,failures)
-            #store tc in an array
+            #store tc in a dictionary
             testResultHash[tc.name] = tc
         except Exception as e:
             print ("ops! can not process a file {}".format(x))
@@ -117,8 +131,8 @@ def temp(resultdirectory):
     # f = open(file1, "r")
     # print(f.read())
     # f.close()
-    # for n, o in testResultHash.items():
-    #     print ("test {} => {}".format(n, o))
+    for n, o in testResultHash.items():
+        print ("test {} => {}".format(n, o))
     print ("total test cases {}".format(len(testResultHash)))
         
         
@@ -129,7 +143,7 @@ if __name__ == "__main__":
     #temp("C:/Users/jxiang/Downloads/test-result-28june-build/test-results/test")
     # temp("./test1")
     # temp("\\?\C:\Users\jxiang\Downloads\build\build\test-results\test2")
-    #temp("/Users/jxiang/Downloads/build/build/test-results/test2")
+    temp("/Users/jxiang/Downloads/build/build/test-results/test2")
     # t1 = testResult("testfile", "outfile")
     # t1.get_data_from_file()
     # t1.write_data_to_priority()
