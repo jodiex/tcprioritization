@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import glob
 import json
 
-
+# need to consider how to take care of a modified test case
 class testPriority(object):
     # This is a class representing the priority data of a test case result
     a = 0.7 
@@ -95,7 +95,7 @@ def calculatePriority(testCase, testPriority):
         return priority_value
     else:
         print("not valid")
-        return 10000
+        return 10000.
 
 def isDirectoryValid(resultdirectory):
     # check if resultdirectory is valid
@@ -194,16 +194,21 @@ if __name__ == "__main__":
         # read each XML file in the directory and get data from line <testsuite...>
         for x in listXMLFiles:
             tc = read_XML_data(resultdirectory)
+            timestamp = 0
+            hostname = "Invalid"
             if tc is not None:
+                timestamp = tc.timestamp
+                hostname = tc.hostname
+
                 # add each testCase into dictionary testResultHash
                 testResultHash[tc.name] = tc
 
                 # proceed to get JSON data
                 tpriority = get_JSON_data(tc)
                 update_priority(tpriority)
-        
+
         # store all in testResult
-        tresult = testResult(resultdirectory, tc.timestamp, tc.hostname, testResultHash)
+        tresult = testResult(resultdirectory, timestamp, hostname, testResultHash)
         # export tResult in some way... to database?
 
 
