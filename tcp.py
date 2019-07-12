@@ -136,21 +136,44 @@ def read_XML_data(resultdirectory):
         print(len(x))
         return None
 
-def get_JSON_data(tc):
+def get_JSON_data(tc, priority_file_directory, dataFilePath):
     # find matching JSON file and get JSON data
-    priority_file_directory = '/Users/jxiang/Documents/TCP/JSON/' # directory of JSON files
     priority_file_name = priority_file_directory + tc.filename + '.json'
             
     if os.path.exists(priority_file_name): # check for an existing JSON file
         jsonFile = open(priority_file_name, "r") # Open the JSON file for reading
         priority_dict = json.load(jsonFile) # Read the JSON into the buffer
         jsonFile.close()
+        
 
         # store JSON data in a testPriority and update previous priority
         tpriority = testPriority(priority_dict)
         tpriority.prevPriority = tpriority.priority
         # calculate new priority value
         tpriority.priority = calculatePriority(tc, tpriority)
+
+        if os.path.exists(dataFilePath):
+            # open and load JSON compiled data file
+            data = open(dataFilePath, "r") # Open the data JSON file for reading
+            dataFile = json.load(data) # Read the JSON into the buffer
+            data.close()
+
+            # append new values to end of arrays
+            dataFile[tc.filename]['timestamp'].append(tc.timestamp)
+            dataFile[tc.filename]['priorityval'].append(tpriority.priority)
+            if tpriority.totalPasses is not 0:
+                failRatio = tpriority.totalFailures / tpriority.totalPasses
+            else:
+                failRatio = 0
+            dataFile[tc.filename]['passfail'].append(failRatio)
+            
+            # write data to JSON compiled data file
+            data = open(dataFilePath, "w+")
+            data.write(json.dumps(dataFile))
+            data.close()
+        else:
+            print("Invalid.") # maybe create a JSON compiled data file for user?
+
     else: # if new test case has no JSON file, create new testPriority with default numbers
         tpriority = testPriority()
         tpriority.name = tc.name
@@ -182,7 +205,7 @@ def update_priority(tpriority):
 if __name__ == "__main__":
     #temp("C:/Users/jxiang/Downloads/test-result-28june-build/test-results/test")
     #temp("/Users/jxiang/Documents/TCP/temp")
-    resultdirectory = input("Enter directory of XML test results: ") #"/Users/jxiang/Documents/TCP/test1"
+    resultdirectory = input("Enter directory of XML test results (do not end in /): ") #"/Users/jxiang/Documents/TCP/test1"
     isValid = isDirectoryValid(resultdirectory)
     if isValid:
         # get list of all XML files in directory
@@ -190,6 +213,16 @@ if __name__ == "__main__":
 
         # initialize dictionary of testCases
         testResultHash = dict()
+
+        priority_file_directory = input("Enter directory of JSON files (must end in /): ") #'/Users/jxiang/Documents/TCP/JSON/'
+        while not os.path.exists(priority_file_directory):
+            print("Invalid.")
+            priority_file_directory = input("Enter directory of JSON files (must end in /): ")
+                
+        dataFilePath = input("Enter path to JSON compiled data file (must not end in /): ") #'/Users/jxiang/Documents/TCP/data.json'
+        while not os.path.exists(dataFilePath):
+            print("Invalid.") # maybe create a JSON compiled data file for user?
+            dataFilePath = input("Enter path to JSON compiled data file (must not end in /): ")
 
         # read each XML file in the directory and get data from line <testsuite...>
         for x in listXMLFiles:
@@ -204,7 +237,7 @@ if __name__ == "__main__":
                 testResultHash[tc.name] = tc
 
                 # proceed to get JSON data
-                tpriority = get_JSON_data(tc)
+                tpriority = get_JSON_data(tc, priority_file_directory, dataFilePath)
                 update_priority(tpriority)
 
         # store all in testResult
