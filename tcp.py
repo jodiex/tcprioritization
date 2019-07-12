@@ -9,6 +9,7 @@ class testPriority(object):
     b = 0.3
     c = 0.0
     name = None
+    filename = None
     prevPriority = 10000
     priority = 10000
     totalExecutions = 0
@@ -18,6 +19,7 @@ class testPriority(object):
     def __init__(self, priorityDict=None):
         if priorityDict:
             self.name = priorityDict['name']
+            self.filename = None
             self.prevPriority = priorityDict['prevPriority']
             self.priority = priorityDict['priority']
             self.totalExecutions = priorityDict['totalExecutions']
@@ -29,9 +31,10 @@ class testPriority(object):
 
 class testCase(object):
 
-        def __init__(self,filename, name,time,timestamp,tests,skipped,errors,failures):
+        def __init__(self,filename,name,hostname,time,timestamp,tests,skipped,errors,failures):
             self.filename=filename
             self.name=name
+            self.hostname=hostname
             self.time=time
             self.timestamp=timestamp
             self.tests=tests
@@ -109,29 +112,27 @@ def calculatePriority(testCase, testPriority):
         print("not valid")
         return 10000
 
-def temp(resultdirectory):
+def isDirectoryValid(resultdirectory):
     # check if resultdirectory is valid
     if (os.path.isdir(resultdirectory)):
-        print("I'm here!")
         if not os.listdir(resultdirectory):
-             print ("empty")
+            print ("Empty directory.")
+            return False
         else:
-             print ("not empty")
+            return True
     else:
-        print(os.path.isdir(resultdirectory))
+        print ("Directory is invalid.")
+        return False
 
-    # read each XML file in the directory and get line <testsuite...>
-    listXMLFiles = glob.glob(resultdirectory + "/*.xml")
-
-    # dictionary of test Cases
-    testResultHash = dict()
-    for x in listXMLFiles:
+def read_XML_data(resultdirectory):
         try:
+            # get filename of each XML file
             base = os.path.basename(x)
             filename = os.path.splitext(base)[0]
+            
+            # parse XML data into variables
             tree = ET.parse(x)
-            root = tree.getroot()    
-            #parse line into variables 
+            root = tree.getroot()     
             name = root.attrib.get("name")
             #name = "_".join((root.attrib.get("name")).split())
             time = float(root.attrib.get("time"))
@@ -141,26 +142,41 @@ def temp(resultdirectory):
             skipped = int(root.attrib.get("skipped"))
             errors = int(root.attrib.get("errors"))
             failures = int(root.attrib.get("failures"))
-            #store results in a testCase
-            tc = testCase(filename,name,time,timestamp,tests,skipped,errors,failures)
-            # add testCase in a dictionary testResultHash
-            testResultHash[tc.name] = tc
-            # get JSON data
+            # store results in a testCase
+            tc = testCase(filename,name,hostname,time,timestamp,tests,skipped,errors,failures)
+            return tc
+        except Exception as e:
+            print ("ops! can not process a file {}".format(x))
+            print (e)
+            print(len(x))
+            return None
+            # f = open(x, "r")
+            # print(f.read())
+            # f.close()
+
+def get_JSON_data(tc):
+            # find matching JSON file and get JSON data
             priority_file_directory = '/Users/jxiang/Documents/TCP/JSON/' # directory of JSON files
             priority_file_name = priority_file_directory + tc.filename + '.json'
-            if os.path.exists(priority_file_name):
+            
+            if os.path.exists(priority_file_name): # check for an existing JSON file
                 jsonFile = open(priority_file_name, "r") # Open the JSON file for reading
                 priority_dict = json.load(jsonFile) # Read the JSON into the buffer
                 jsonFile.close()
 
-                # store in a testPriority
+                # store JSON data in a testPriority and update previous priority
                 tpriority = testPriority(priority_dict)
                 tpriority.prevPriority = tpriority.priority
+                # calculate new priority value
                 tpriority.priority = calculatePriority(tc, tpriority)
-            else: # if new test case has no JSON file
+            else: # if new test case has no JSON file, create new testPriority with default numbers
                 tpriority = testPriority()
                 tpriority.name = tc.name
+            
+            tpriority.filename = priority_file_name
+            return tpriority
 
+def update_priority(tpriority):
             priorityJSON = {
                 "a": tpriority.a,
                 "b": tpriority.b,
@@ -174,30 +190,43 @@ def temp(resultdirectory):
             }
 
             # update <testcase>.json file
-            jsonFile = open(priority_file_name, "w+")
+            jsonFile = open(tpriority.filename, "w+")
             jsonFile.write(json.dumps(priorityJSON))
             jsonFile.close()
-        except Exception as e:
-            print ("ops! can not process a file {}".format(x))
-            print (e)
-            print(len(x))
-            # f = open(x, "r")
-            # print(f.read())
-            # f.close()
-    tresult = testResult(resultdirectory, tc.timestamp, hostname, testResultHash)
-    # export testResult in some way... to database?
-
-    #for n, o in testResultHash.items():
-        #print ("test {} => {}".format(n, o))
-    #print ("total test cases {}".format(len(testResultHash)))
         
         
-
+        
 
 if __name__ == "__main__":
     #temp("C:/Users/jxiang/Downloads/test-result-28june-build/test-results/test")
     #temp("/Users/jxiang/Documents/TCP/temp")
-    temp("/Users/jxiang/Documents/TCP/test1") # directory of XML test results
+    resultdirectory = input("Enter directory of XML test results: ") #"/Users/jxiang/Documents/TCP/test1"
+    isValid = isDirectoryValid(resultdirectory)
+    if isValid:
+        # get list of all XML files in directory
+        listXMLFiles = glob.glob(resultdirectory + "/*.xml")
+
+        # initialize dictionary of testCases
+        testResultHash = dict()
+
+        # read each XML file in the directory and get data from line <testsuite...>
+        for x in listXMLFiles:
+            tc = read_XML_data(resultdirectory)
+            if tc is not None:
+                # add each testCase into dictionary testResultHash
+                testResultHash[tc.name] = tc
+
+                # proceed to get JSON data
+                tpriority = get_JSON_data(tc)
+                update_priority(tpriority)
+        
+        # store all in testResult
+        tresult = testResult(resultdirectory, tc.timestamp, tc.hostname, testResultHash)
+        # export tResult in some way... to database?
+
+        #for n, o in testResultHash.items():
+            #print ("test {} => {}".format(n, o))
+            #print ("total test cases {}".format(len(testResultHash)))
 
     # for x in testResultHash.values():
     #    calculatePriority(x, test1.Tests[i])
