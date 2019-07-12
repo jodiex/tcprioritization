@@ -77,7 +77,7 @@ class testResult(object):
 
 
 def calculatePriority(testCase, testPriority):
-    #check if testCase and testPriority are valid !!!
+    # check if testCase and testPriority are valid
     if testCase and testPriority:
         testPriority.totalExecutions = testPriority.totalExecutions + testCase.tests
         testPriority.totalFailures = testPriority.totalFailures + testCase.failures
@@ -86,20 +86,25 @@ def calculatePriority(testCase, testPriority):
             recentFail = 5000
         else:
             recentFail = 0
-        #need to take error into account !!!!
+        
+        # take error into account
         tcPasses = testCase.tests - testCase.failures
+        if tcPasses < 0:
+            tcPasses = 0
         testPriority.totalPasses = testPriority.totalPasses + tcPasses
         prevPrioritytemp = testPriority.prevPriority
         testPriority.prevPriority = testPriority.priority
-        # if test fails on first run
+        # if test fails on first run, prevent division by zero
         if testPriority.totalPasses == 0:
             recentFail = 5000
             failRatio = 0
         else:
             failRatio = testPriority.totalFailures / testPriority.totalPasses
 
-        # priority_value = (testPriority.a * failRatio) + (testPriority.b * prevPrioritytemp) + recentFail
-        return ((testPriority.a * failRatio) + (testPriority.b * prevPrioritytemp) + recentFail)
+        priority_value = (testPriority.a * failRatio) + (testPriority.b * prevPrioritytemp) + recentFail
+        if priority_value < 0.00001: # prevent priority values from getting infinitely small
+            priority_value = 0
+        return priority_value
     else:
         print("not valid")
         return 10000
@@ -115,9 +120,10 @@ def temp(resultdirectory):
     else:
         print(os.path.isdir(resultdirectory))
 
-    #read each XML file in the directory and get line <testsuite...>
+    # read each XML file in the directory and get line <testsuite...>
     listXMLFiles = glob.glob(resultdirectory + "/*.xml")
-    #listJSONFiles = glob.glob(resultdirectory + "/JSON/*.json")
+
+    # dictionary of test Cases
     testResultHash = dict()
     for x in listXMLFiles:
         try:
@@ -140,7 +146,7 @@ def temp(resultdirectory):
             # add testCase in a dictionary testResultHash
             testResultHash[tc.name] = tc
             # get JSON data
-            priority_file_directory = '/Users/jxiang/Documents/TCP/JSON/'
+            priority_file_directory = '/Users/jxiang/Documents/TCP/JSON/' # directory of JSON files
             priority_file_name = priority_file_directory + tc.filename + '.json'
             if os.path.exists(priority_file_name):
                 jsonFile = open(priority_file_name, "r") # Open the JSON file for reading
@@ -149,8 +155,8 @@ def temp(resultdirectory):
 
                 # store in a testPriority
                 tpriority = testPriority(priority_dict)
+                tpriority.prevPriority = tpriority.priority
                 tpriority.priority = calculatePriority(tc, tpriority)
-                print(tpriority.priority)
             else: # if new test case has no JSON file
                 tpriority = testPriority()
                 tpriority.name = tc.name
@@ -179,7 +185,7 @@ def temp(resultdirectory):
             # print(f.read())
             # f.close()
     tresult = testResult(resultdirectory, tc.timestamp, hostname, testResultHash)
-    # export testResult in some way
+    # export testResult in some way... to database?
 
     #for n, o in testResultHash.items():
         #print ("test {} => {}".format(n, o))
@@ -191,8 +197,8 @@ def temp(resultdirectory):
 if __name__ == "__main__":
     #temp("C:/Users/jxiang/Downloads/test-result-28june-build/test-results/test")
     #temp("/Users/jxiang/Documents/TCP/temp")
-    temp("/Users/jxiang/Documents/TCP/temp2")
-    #print(calculatePriority(tc, test1.Tests[0]))
+    temp("/Users/jxiang/Documents/TCP/test1") # directory of XML test results
+
     # for x in testResultHash.values():
     #    calculatePriority(x, test1.Tests[i])
     # temp("/Users/jxiang/Downloads/build/build/test-results/test2")
