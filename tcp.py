@@ -5,6 +5,7 @@ import json
 
 
 class testPriority(object):
+    # This is a class representing the priority data of a test case result
     a = 0.7 
     b = 0.3
     c = 0.0
@@ -26,57 +27,41 @@ class testPriority(object):
             self.totalFailures = priorityDict['totalFailures']
             self.totalPasses = priorityDict['totalPasses']
 
-    #def set_name(self, name):
-    #    self.name = name
-
 class testCase(object):
-
-        def __init__(self,filename,name,hostname,time,timestamp,tests,skipped,errors,failures):
-            self.filename=filename
-            self.name=name
-            self.hostname=hostname
-            self.time=time
-            self.timestamp=timestamp
-            self.tests=tests
-            self.skipped=skipped
-            self.errors=errors
-            self.failures=failures
+    # This is a class representing a test case result
+    def __init__(self,filename,name,hostname,time,timestamp,tests,skipped,errors,failures):
+        self.filename=filename
+        self.name=name
+        self.hostname=hostname
+        self.time=time
+        self.timestamp=timestamp
+        self.tests=tests
+        self.skipped=skipped
+        self.errors=errors
+        self.failures=failures
         
-        def __str__(self):
-            s = "time {}".format(self.time)
-            s = s + " timestamp {}".format(self.timestamp)
-            s = s + " tests {}".format(self.tests)
-            s = s + " skipped {}".format(self.skipped)
-            s = s + " errors {}".format(self.errors)
-            s = s + " failures {}".format(self.failures)
-            return (s)
+    def __str__(self):
+        s = "time {}".format(self.time)
+        s = s + " timestamp {}".format(self.timestamp)
+        s = s + " tests {}".format(self.tests)
+        s = s + " skipped {}".format(self.skipped)
+        s = s + " errors {}".format(self.errors)
+        s = s + " failures {}".format(self.failures)
+        return (s)
 
 class testResult(object):
-    #This is a class representing a test result
+    # This is a class representing all test case results from one test
     resultdirectory = None
     timestamp = None
     hostname = None
-    #dictionary of testCase object, with testCase.name 
+    # dictionary of testCase object, with testCase.name 
     testResultHash = {}
-   # testPriorityFile = None
   
     def __init__(self, resultdirectory, timestamp, hostname, testResultHash):
         self.resultdirectory = resultdirectory
         self.timestamp = timestamp
         self.hostname = hostname
         self.testResultHash = testResultHash
-
-    #populated testResult object. 
-    #test_case contains all test cases
-    def get_test_result_data(self):
-        #add code here
-        pass
-    
-   # def write_data_to_priority(self, testPriorityFile=None):
-   #     if testPriorityFile is not None:
-   #         outfile = testPriorityFile
-   #     else:
-   #         outfile = self.testPriorityFile
 
 
 def calculatePriority(testCase, testPriority):
@@ -125,74 +110,71 @@ def isDirectoryValid(resultdirectory):
         return False
 
 def read_XML_data(resultdirectory):
-        try:
-            # get filename of each XML file
-            base = os.path.basename(x)
-            filename = os.path.splitext(base)[0]
+    try:
+        # get filename of each XML file
+        base = os.path.basename(x)
+        filename = os.path.splitext(base)[0]
             
-            # parse XML data into variables
-            tree = ET.parse(x)
-            root = tree.getroot()     
-            name = root.attrib.get("name")
-            #name = "_".join((root.attrib.get("name")).split())
-            time = float(root.attrib.get("time"))
-            timestamp = root.attrib.get("timestamp")
-            hostname = root.attrib.get("hostname")
-            tests = int(root.attrib.get("tests"))
-            skipped = int(root.attrib.get("skipped"))
-            errors = int(root.attrib.get("errors"))
-            failures = int(root.attrib.get("failures"))
-            # store results in a testCase
-            tc = testCase(filename,name,hostname,time,timestamp,tests,skipped,errors,failures)
-            return tc
-        except Exception as e:
-            print ("ops! can not process a file {}".format(x))
-            print (e)
-            print(len(x))
-            return None
-            # f = open(x, "r")
-            # print(f.read())
-            # f.close()
+        # parse XML data into variables
+        tree = ET.parse(x)
+        root = tree.getroot()     
+        name = root.attrib.get("name")
+        #name = "_".join((root.attrib.get("name")).split())
+        time = float(root.attrib.get("time"))
+        timestamp = root.attrib.get("timestamp")
+        hostname = root.attrib.get("hostname")
+        tests = int(root.attrib.get("tests"))
+        skipped = int(root.attrib.get("skipped"))
+        errors = int(root.attrib.get("errors"))
+        failures = int(root.attrib.get("failures"))
+        # store results in a testCase
+        tc = testCase(filename,name,hostname,time,timestamp,tests,skipped,errors,failures)
+        return tc
+    except Exception as e:
+        print ("ops! can not process a file {}".format(x))
+        print (e)
+        print(len(x))
+        return None
 
 def get_JSON_data(tc):
-            # find matching JSON file and get JSON data
-            priority_file_directory = '/Users/jxiang/Documents/TCP/JSON/' # directory of JSON files
-            priority_file_name = priority_file_directory + tc.filename + '.json'
+    # find matching JSON file and get JSON data
+    priority_file_directory = '/Users/jxiang/Documents/TCP/JSON/' # directory of JSON files
+    priority_file_name = priority_file_directory + tc.filename + '.json'
             
-            if os.path.exists(priority_file_name): # check for an existing JSON file
-                jsonFile = open(priority_file_name, "r") # Open the JSON file for reading
-                priority_dict = json.load(jsonFile) # Read the JSON into the buffer
-                jsonFile.close()
+    if os.path.exists(priority_file_name): # check for an existing JSON file
+        jsonFile = open(priority_file_name, "r") # Open the JSON file for reading
+        priority_dict = json.load(jsonFile) # Read the JSON into the buffer
+        jsonFile.close()
 
-                # store JSON data in a testPriority and update previous priority
-                tpriority = testPriority(priority_dict)
-                tpriority.prevPriority = tpriority.priority
-                # calculate new priority value
-                tpriority.priority = calculatePriority(tc, tpriority)
-            else: # if new test case has no JSON file, create new testPriority with default numbers
-                tpriority = testPriority()
-                tpriority.name = tc.name
+        # store JSON data in a testPriority and update previous priority
+        tpriority = testPriority(priority_dict)
+        tpriority.prevPriority = tpriority.priority
+        # calculate new priority value
+        tpriority.priority = calculatePriority(tc, tpriority)
+    else: # if new test case has no JSON file, create new testPriority with default numbers
+        tpriority = testPriority()
+        tpriority.name = tc.name
             
-            tpriority.filename = priority_file_name
-            return tpriority
+    tpriority.filename = priority_file_name
+    return tpriority
 
 def update_priority(tpriority):
-            priorityJSON = {
-                "a": tpriority.a,
-                "b": tpriority.b,
-                "c": tpriority.c,
-                "name": tpriority.name,
-                "prevPriority": tpriority.prevPriority,
-                "priority": tpriority.priority,
-                "totalExecutions": tpriority.totalExecutions,
-                "totalFailures": tpriority.totalFailures,
-                "totalPasses": tpriority.totalPasses
-            }
+    priorityJSON = {
+        "a": tpriority.a,
+        "b": tpriority.b,
+        "c": tpriority.c,
+        "name": tpriority.name,
+        "prevPriority": tpriority.prevPriority,
+        "priority": tpriority.priority,
+        "totalExecutions": tpriority.totalExecutions,
+        "totalFailures": tpriority.totalFailures,
+        "totalPasses": tpriority.totalPasses
+    }
 
-            # update <testcase>.json file
-            jsonFile = open(tpriority.filename, "w+")
-            jsonFile.write(json.dumps(priorityJSON))
-            jsonFile.close()
+    # update <testcase>.json file
+    jsonFile = open(tpriority.filename, "w+")
+    jsonFile.write(json.dumps(priorityJSON))
+    jsonFile.close()
         
         
         
@@ -224,13 +206,4 @@ if __name__ == "__main__":
         tresult = testResult(resultdirectory, tc.timestamp, tc.hostname, testResultHash)
         # export tResult in some way... to database?
 
-        #for n, o in testResultHash.items():
-            #print ("test {} => {}".format(n, o))
-            #print ("total test cases {}".format(len(testResultHash)))
-
-    # for x in testResultHash.values():
-    #    calculatePriority(x, test1.Tests[i])
-    # temp("/Users/jxiang/Downloads/build/build/test-results/test2")
-    # t1 = testResult("testfile", "outfile")
-    # t1.write_data_to_priority()
 
