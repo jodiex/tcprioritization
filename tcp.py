@@ -173,6 +173,7 @@ def get_JSON_data(tc, priority_file_directory, dataFilePath):
             data.close()
         else:
             print("Invalid.") # maybe create a JSON compiled data file for user?
+            #create_new_agg_data(tpriority)
 
     else: # if new test case has no JSON file, create new testPriority with default numbers
         tpriority = testPriority()
@@ -180,6 +181,29 @@ def get_JSON_data(tc, priority_file_directory, dataFilePath):
             
     tpriority.filename = priority_file_name
     return tpriority
+
+def create_new_agg_file(dataFilePath, listXMLFiles):
+    for x in listXMLFiles:
+        create_new_agg_tc(dataFilePath, filename)
+
+
+def create_new_agg_tc(dataFilePath, name):
+    aggJSON = {
+        name:
+        {
+            "timestamp": [], "passfail": [], "priorityval": []
+        }
+    }
+
+    data = open(dataFilePath, "r")
+    dataFile = json.load(data)
+    data.close()
+
+    dataFile.update(aggJSON)
+
+    data = open(dataFilePath, "w+")
+    data.write(json.dumps(dataFile))
+    data.close()
 
 def update_priority(tpriority):
     priorityJSON = {
@@ -205,6 +229,7 @@ def update_priority(tpriority):
 if __name__ == "__main__":
     #temp("C:/Users/jxiang/Downloads/test-result-28june-build/test-results/test")
     #temp("/Users/jxiang/Documents/TCP/temp")
+    create_new_agg_tc("/Users/jxiang/Documents/TCP/data.json","TEST-#7c#20#2212#221e#20#7c#200#20#7c#200#20#7c")
     resultdirectory = input("Enter directory of XML test results (do not end in /): ") #"/Users/jxiang/Documents/TCP/test1"
     isValid = isDirectoryValid(resultdirectory)
     if isValid:
@@ -220,9 +245,9 @@ if __name__ == "__main__":
             priority_file_directory = input("Enter directory of JSON files (must end in /): ")
                 
         dataFilePath = input("Enter path to JSON compiled data file (must not end in /): ") #'/Users/jxiang/Documents/TCP/data.json'
-        while not os.path.exists(dataFilePath):
+        if not os.path.exists(dataFilePath):
             print("Invalid.") # maybe create a JSON compiled data file for user?
-            dataFilePath = input("Enter path to JSON compiled data file (must not end in /): ")
+            create_new_agg_file(dataFilePath, listXMLFiles)
 
         # read each XML file in the directory and get data from line <testsuite...>
         for x in listXMLFiles:
@@ -243,5 +268,3 @@ if __name__ == "__main__":
         # store all in testResult
         tresult = testResult(resultdirectory, timestamp, hostname, testResultHash)
         # export tResult in some way... to database?
-
-
