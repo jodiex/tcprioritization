@@ -136,6 +136,16 @@ def read_XML_data(resultdirectory):
         print(len(x))
         return None
 
+def load_json_data(file_name, mode="r"):
+    try:
+        data = open(dataFilePath, mode) # Open the data JSON file for reading
+        dataFile = json.load(data) # Read the JSON into the buffer
+        data.close()
+    except Exception as e:
+        print ("loading json: {}".format(str(e)))
+        return None        
+    return dataFile    
+
 def get_JSON_data(tc, priority_file_directory, dataFilePath):
     # find matching JSON file and get JSON data
     priority_file_name = priority_file_directory + tc.filename + '.json'
@@ -152,12 +162,30 @@ def get_JSON_data(tc, priority_file_directory, dataFilePath):
         # calculate new priority value
         tpriority.priority = calculatePriority(tc, tpriority)
 
-        if os.path.exists(dataFilePath):
-            # open and load JSON compiled data file
-            data = open(dataFilePath, "r") # Open the data JSON file for reading
-            dataFile = json.load(data) # Read the JSON into the buffer
-            data.close()
+        dataFile = load_json_data(dataFilePath)
+        if dataFile is None:
+            # print("\n\n\ndataFile is None\n\n\n")
+            dataFile = dict()
+            # create_new_agg_tc(dataFilePath, tc.filename)
+            # dataFile = load_json_data(dataFilePath)
 
+        # try: # if aggregate data file is not empty
+        #     # open and load JSON compiled data file
+        #     # data = open(dataFilePath, "r") # Open the data JSON file for reading
+        #     # dataFile = json.load(data) # Read the JSON into the buffer
+        #     # data.close()
+        #     dataFile = load_json_data(dataFilePath)
+        # except: # if aggregate data file exists but is empty
+        #     create_new_agg_tc(dataFilePath, tc.filename)
+        #     dataFile = load_json_data(dataFilePath)
+
+        if tc.filename not in dataFile:
+            # print("can not find in file {}".format(tc.filename))
+            new_agg_data = create_empty_agg_data(tc.filename)
+            dataFile.update(new_agg_data)
+            # print("Datafile: {}".format(dataFile))
+
+        try: # if test case exists in aggregate data file
             # append new values to end of arrays
             dataFile[tc.filename]['timestamp'].append(tc.timestamp)
             dataFile[tc.filename]['priorityval'].append(tpriority.priority)
@@ -166,14 +194,15 @@ def get_JSON_data(tc, priority_file_directory, dataFilePath):
             else:
                 failRatio = 0
             dataFile[tc.filename]['passfail'].append(failRatio)
-            
+                
             # write data to JSON compiled data file
             data = open(dataFilePath, "w+")
             data.write(json.dumps(dataFile))
             data.close()
-        else:
-            print("Invalid.") # maybe create a JSON compiled data file for user?
-            #create_new_agg_data(tpriority)
+        except: # if test case does not exist in aggregate data file
+            print("test case does not exist in aggregate data file")
+            create_new_agg_tc(dataFilePath, tc.filename)
+            #todo add to data file and update - do we need this?
 
     else: # if new test case has no JSON file, create new testPriority with default numbers
         tpriority = testPriority()
@@ -182,28 +211,6 @@ def get_JSON_data(tc, priority_file_directory, dataFilePath):
     tpriority.filename = priority_file_name
     return tpriority
 
-def create_new_agg_file(dataFilePath, listXMLFiles):
-    for x in listXMLFiles:
-        create_new_agg_tc(dataFilePath, filename)
-
-
-def create_new_agg_tc(dataFilePath, name):
-    aggJSON = {
-        name:
-        {
-            "timestamp": [], "passfail": [], "priorityval": []
-        }
-    }
-
-    data = open(dataFilePath, "r")
-    dataFile = json.load(data)
-    data.close()
-
-    dataFile.update(aggJSON)
-
-    data = open(dataFilePath, "w+")
-    data.write(json.dumps(dataFile))
-    data.close()
 
 def update_priority(tpriority):
     priorityJSON = {
@@ -223,14 +230,55 @@ def update_priority(tpriority):
     jsonFile.write(json.dumps(priorityJSON))
     jsonFile.close()
         
+def create_new_agg_file(dataFilePath, listXMLFiles):
+    for x in listXMLFiles:
+        # get filename 
+        base = os.path.basename(x)
+        filename = os.path.splitext(base)[0]
+        create_new_agg_tc(dataFilePath, filename)
+
+
+def create_empty_agg_data(name):
+    aggJSON = {
+        name:
+        {
+            "timestamp": [], "passfail": [], "priorityval": []
+        }
+    }
+    return aggJSON
+
+def create_new_agg_tc(dataFilePath, name):
+    aggJSON = create_empty_agg_data(name)
+
+    try: # if file is not empty
+        print("creating agg for {}".format(name))
+        data = open(dataFilePath, "r")
+        dataFile = json.load(data)
+        data.close()
         
+        dataFile.update(aggJSON)
+
+        data = open(dataFilePath, "w+")
+        data.write(json.dumps(dataFile))
+        data.close()   
+    except Exception as e: # if file is empty
+        # print('create_new_agg_tc: '+str(e))
+        data = open(dataFilePath, "w+")
+        data.write(json.dumps(aggJSON))
+        data.close()
+       
+
+         
         
 
 if __name__ == "__main__":
     #temp("C:/Users/jxiang/Downloads/test-result-28june-build/test-results/test")
     #temp("/Users/jxiang/Documents/TCP/temp")
-    create_new_agg_tc("/Users/jxiang/Documents/TCP/data.json","TEST-#7c#20#2212#221e#20#7c#200#20#7c#200#20#7c")
-    resultdirectory = input("Enter directory of XML test results (do not end in /): ") #"/Users/jxiang/Documents/TCP/test1"
+    # resultdirectory = input("Enter directory of XML test results (do not end in /): ") #"/Users/jxiang/Documents/TCP/test1"
+    resultdirectory = "/Users/jxiang/Documents/TCP/test1"
+    priority_file_directory = "/Users/jxiang/Documents/TCP/JSON/"
+    dataFilePath = "/Users/jxiang/Documents/TCP/data.json"
+
     isValid = isDirectoryValid(resultdirectory)
     if isValid:
         # get list of all XML files in directory
@@ -239,14 +287,13 @@ if __name__ == "__main__":
         # initialize dictionary of testCases
         testResultHash = dict()
 
-        priority_file_directory = input("Enter directory of JSON files (must end in /): ") #'/Users/jxiang/Documents/TCP/JSON/'
+        # priority_file_directory = input("Enter directory of JSON files (must end in /): ") #'/Users/jxiang/Documents/TCP/JSON/'
         while not os.path.exists(priority_file_directory):
             print("Invalid.")
             priority_file_directory = input("Enter directory of JSON files (must end in /): ")
                 
-        dataFilePath = input("Enter path to JSON compiled data file (must not end in /): ") #'/Users/jxiang/Documents/TCP/data.json'
+        # dataFilePath = input("Enter path to JSON compiled data file (must not end in /): ") #'/Users/jxiang/Documents/TCP/data.json'
         if not os.path.exists(dataFilePath):
-            print("Invalid.") # maybe create a JSON compiled data file for user?
             create_new_agg_file(dataFilePath, listXMLFiles)
 
         # read each XML file in the directory and get data from line <testsuite...>
