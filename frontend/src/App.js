@@ -2,23 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import TestComponent from './components/test-component/test-component';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="App-body">
+      </div>
+      <div className="App-footer">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Made by <a className="App-link" href="www.adamwong.me">Adam Wong</a> and <a className="App-link" href="www.google.com">Alex Bakker</a> in Waterloo, Ontario
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
