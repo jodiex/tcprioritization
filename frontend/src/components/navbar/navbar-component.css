@@ -1,0 +1,7 @@
+.Navbar {
+  background-color: #282c34 !important;
+}
+
+.Navbar-elements {
+  justify-content: flex-end;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import TestComponent from './components/test-component/test-component';
+import NavbarComponent from './components/navbar/navbar-component';
 
 function App() {
   return (
     <div className="App">
+      <NavbarComponent/>
       <div className="App-body">
       </div>
       <div className="App-footer">
