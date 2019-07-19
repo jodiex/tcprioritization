@@ -2,12 +2,14 @@ import React from 'react';
 import './App.css';
 
 import NavbarComponent from './components/navbar/navbar-component';
+import LineGraphComponent from './components/linegraph/linegraph-component';
 
 function App() {
   return (
     <div className="App">
       <NavbarComponent/>
       <div className="App-body">
+        <LineGraphComponent/>
       </div>
       <div className="App-footer">
         <p>
