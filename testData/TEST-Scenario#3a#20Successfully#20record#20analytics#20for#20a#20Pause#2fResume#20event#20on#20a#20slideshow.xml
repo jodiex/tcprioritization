@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" tests="25" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:14:57" hostname="mo-acceptance-test-driver-182622c" time="14.15">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I enter valid information for the lesson &quot;Lesson Test&quot;" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I click the new slideshow button on the lesson design page" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I enter valid information for the question name as &quot;Lesson Test Slideshow&quot;" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I see the ckeditor" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I set the duration to &quot;20&quot; seconds" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I save &amp; close the slideshow on the design page" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I save &amp; close the lesson on the design page" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I see summary of the lesson" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I save and close the lesson summary details" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I navigate to the System Homepage" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I click on the &quot;Lesson Test&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="Then the module &quot;Lesson Test&quot; is opened without launch page" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="And I clear the console logs" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="When I begin playback of the Slideshow" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="Then I see no errors in the console" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="When I pause playback of the Slideshow" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="Then I see no errors in the console" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="When I resume playback of the Slideshow" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.0"/>
+  <testcase name="Then I see no errors in the console" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: Successfully record analytics for a Pause/Resume event on a slideshow" time="15.137"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

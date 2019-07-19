@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" tests="15" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:29:47" hostname="mo-acceptance-test-driver-182622c" time="6.499">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="When I click on the Properties tab" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="Then I see that the show launch page checkbox is set to false" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="When I click the Advanced Policies button" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="Then I am on the Advanced Policies Editor page" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="When I click the Design button" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="Then I see the Remove Criterion button" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="When I click the Back button" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="Then I am on the Policy Editor" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="And I see that the show launch page checkbox is set to true" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="And I see that the show launch page checkbox is disabled" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies" time="7.54"/>
+  <system-out><![CDATA[
+  Scenario: Test that the nav menu is collapsible                                   ?[90m# ManageLesson.feature:68?[0m
+    ?[32mWhen ?[0m?[32menter Lesson name "?[0m?[32m?[1mNavbar Lesson?[0m?[32m"?[0m                                          ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button on the lesson design page?[0m                   ?[90m# LessonEditorSteps.clickNewQuestionButton()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mFormula Question?[0m?[32m" with label "?[0m?[32m?[1mFormula Question Label?[0m?[32m"?[0m    ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI create a Mathematical Formula response area in the lesson question editor?[0m ?[90m# AssignmentEditorQuestionSteps.createFormulaQuestionInQuestionEditor()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                    ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mWhen ?[0m?[32mI save & close the lesson on the design page?[0m                               ?[90m# LessonEditorSteps.saveAndCloseLesson()?[0m
+    ?[32mAnd ?[0m?[32mI save and close the lesson summary details?[0m                                 ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mThen ?[0m?[32mthe new lesson "?[0m?[32m?[1mNavbar Lesson?[0m?[32m" is visible in its own expanded column?[0m       ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                          ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on the "?[0m?[32m?[1mNavbar Lesson?[0m?[32m" module in the "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m       ?[90m# ClassHomepageSteps.clickOnModuleLink(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe module "?[0m?[32m?[1mNavbar Lesson?[0m?[32m" is opened without launch page?[0m                   ?[90m# ClassHomepageSteps.switchToModulePage(String)?[0m
+    ?[32mWhen ?[0m?[32mI resize the lesson width to "?[0m?[32m?[1m600?[0m?[32m" px?[0m                                      ?[90m# LessonSteps.resizeLessonWidth(int)?[0m
+    ?[32mThen ?[0m?[32mI see the lesson hamburger button?[0m                                          ?[90m# LessonSteps.assertNavBarWithButtonVisible()?[0m
+    ?[32mWhen ?[0m?[32mI click the lesson hamburger button?[0m                                        ?[90m# LessonSteps.clickHamburgerButton()?[0m
+    ?[32mThen ?[0m?[32mI see the lesson navigation menu?[0m                                           ?[90m# LessonSteps.assertNavigationMenuVisible()?[0m
+    ?[32mWhen ?[0m?[32mI click the lesson hamburger button?[0m                                        ?[90m# LessonSteps.clickHamburgerButton()?[0m
+    ?[32mThen ?[0m?[32mI do not see the lesson navigation menu?[0m                                    ?[90m# LessonSteps.assertNavigationMenuNotVisible()?[0m
+    ?[32mWhen ?[0m?[32mI resize the lesson width to "?[0m?[32m?[1m1200?[0m?[32m" px?[0m                                     ?[90m# LessonSteps.resizeLessonWidth(int)?[0m
+    ?[32mThen ?[0m?[32mI do not see the lesson hamburger button?[0m                                   ?[90m# LessonSteps.assertNavBarWithButtonNotVisible()?[0m
+    ?[32mAnd ?[0m?[32mI see the lesson navigation menu?[0m                                            ?[90m# LessonSteps.assertNavigationMenuVisible()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

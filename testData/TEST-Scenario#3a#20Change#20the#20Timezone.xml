@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Change the Timezone" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:17:42" hostname="mo-acceptance-test-driver-182622c" time="5.897">
+  <properties/>
+  <testcase name="When I am logged in as the default administrator" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And I retrieve the creation date" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then I set the Time Zone to &quot;PST&quot;" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And The Time Zone is set to &quot;PST&quot;" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And I verify that the creation date has changed with the Time Zone" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then I set the Time Zone to &quot;EST&quot;" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And The Time Zone is set to &quot;EST&quot;" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="And I verify that the creation date has changed with the Time Zone" classname="Scenario: Change the Timezone" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Change the Timezone" time="6.953"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

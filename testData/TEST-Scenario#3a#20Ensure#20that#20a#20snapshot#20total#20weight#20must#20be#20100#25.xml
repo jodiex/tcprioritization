@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Ensure that a snapshot total weight must be 100%" tests="15" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:16:28" hostname="mo-acceptance-test-driver-182622c" time="7.398">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Grade Reports&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I click the new snapshot button" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I click the &quot;Add Group&quot; button in the snapshot editor" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I set the &quot;Group Name&quot; textbox input to &quot;Test GR Weight&quot;" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I set the &quot;Weight&quot; textbox input to &quot;99&quot;" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.001"/>
+  <testcase name="And I check assignment &quot;Student Readiness Test&quot;" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="Then I click the save group button" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="When I set the snapshot name to &quot;Test GR Weight&quot;" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I set the visibility checkbox of the snapshot to checked" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="And I click the &quot;Save&quot; button in the snapshot editor" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="Then I see the following error message displayed &quot;Total weight must equal 100%&quot;" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Ensure that a snapshot total weight must be 100%" time="8.377"/>
+  <system-out><![CDATA[
+  Scenario: Ensure that a snapshot is given a name                         ?[90m# snapshot/SnapshotEditor.feature:8?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the "?[0m?[32m?[1mGrade Reports?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click the new snapshot button?[0m                                    ?[90m# SnapshotHomepageSteps.clickNewButton()?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mSave?[0m?[32m" button in the snapshot editor?[0m                   ?[90m# SnapshotEditorSteps.clickButton(String)?[0m
+    ?[32mThen ?[0m?[32mI see an alert open indicating a name must be entered?[0m             ?[90m# SnapshotEditorSteps.assertAlertOpen()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

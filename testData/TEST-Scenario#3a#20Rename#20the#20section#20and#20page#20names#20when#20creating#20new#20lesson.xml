@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Rename the section and page names when creating new lesson" tests="15" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:28:40" hostname="mo-acceptance-test-driver-182622c" time="11.067">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="When I add new section &quot;Section 1&quot;" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="Then a new section &quot;Section 1&quot; appears in the navigation" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="When I add new page &quot;Page 1&quot; from the section drop down" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="And I add new page &quot;Page 2 as Block&quot; from the section drop down and display blocks as separate pages" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="Then a new page &quot;Page 1&quot; appears in the navigation" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="And a new page &quot;Page 2 as Block&quot; appears in the navigation and displayed as separate page" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="When I rename the name of the section to &quot;Section 1 Renamed&quot;" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="Then the new name of the section &quot;Section 1 Renamed&quot; appears in the navigation" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="When I rename the name of the page to &quot;Page 1 Renamed&quot;" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="Then the new name of the page &quot;Page 1 Renamed&quot; appears in the navigation" classname="Scenario: Rename the section and page names when creating new lesson" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Rename the section and page names when creating new lesson" time="12.08"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

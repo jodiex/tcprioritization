@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify lessons can be navigated by changing the URL" tests="40" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:30:12" hostname="mo-acceptance-test-driver-182622c" time="34.989">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When enter Lesson name &quot;Lesson url navigation&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I add new section &quot;Section 1&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then a new section &quot;Section 1&quot; appears in the navigation" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I add new page &quot;Page 1&quot; from the section drop down" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then a new page &quot;Page 1&quot; appears in the navigation" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I click the new question button on the lesson design page" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question 1&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the lesson question editor" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I add new page &quot;Page 2&quot; from the section drop down" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then a new page &quot;Page 2&quot; appears in the navigation" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I click the new question button on the lesson design page" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question 2&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the lesson question editor" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I add new page &quot;Page 3&quot; from the section drop down" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then a new page &quot;Page 3&quot; appears in the navigation" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.001"/>
+  <testcase name="When I click the new question button on the lesson design page" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question 3&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the lesson question editor" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.001"/>
+  <testcase name="When I save &amp; close the lesson on the design page" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then I see summary of the lesson with warning text &quot;WARNING: Empty section&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I save it anyway" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then the new lesson &quot;Lesson url navigation&quot; is visible in its own expanded column" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="And I click on the &quot;Lesson url navigation&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then the module &quot;Lesson url navigation&quot; is opened without launch page" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I change the url to view page &quot;Page 3&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then I am on page &quot;Page 3&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I change the url to view page &quot;Page&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then I am on page &quot;Page&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="When I change the url to view page &quot;Page 2&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="Then I am on page &quot;Page 2&quot;" classname="Scenario: Verify lessons can be navigated by changing the URL" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify lessons can be navigated by changing the URL" time="36.032"/>
+  <system-out><![CDATA[
+  Scenario: Test that when the show launch page policy is set to true, the launch page is displayed ?[90m# ManageLesson.feature:103?[0m
+    ?[32mWhen ?[0m?[32menter Lesson name "?[0m?[32m?[1mLesson with Launch Page?[0m?[32m"?[0m                                                ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button on the lesson design page?[0m                                   ?[90m# LessonEditorSteps.clickNewQuestionButton()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mFormula Question?[0m?[32m" with label "?[0m?[32m?[1mFormula Question Label?[0m?[32m"?[0m                    ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI create a Mathematical Formula response area in the lesson question editor?[0m                 ?[90m# AssignmentEditorQuestionSteps.createFormulaQuestionInQuestionEditor()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                    ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mWhen ?[0m?[32mI click on the Properties tab?[0m                                                              ?[90m# LessonEditorSteps.clickPropertiesTab()?[0m
+    ?[32mThen ?[0m?[32mI see that the show launch page checkbox is set to ?[0m?[32m?[1mfalse?[0m                                   ?[90m# AssignmentEditorPropertiesSteps.assertShowLaunchPageState(boolean)?[0m
+    ?[32mWhen ?[0m?[32mI set the show launch page checkbox to ?[0m?[32m?[1mtrue?[0m                                                ?[90m# AssignmentEditorPropertiesSteps.setShowLaunchPageState(boolean)?[0m
+    ?[32mAnd ?[0m?[32mI save & close the lesson on the properties page?[0m                                            ?[90m# LessonEditorPropertiesSteps.saveAndCloseLesson()?[0m
+    ?[32mAnd ?[0m?[32mI save and close the lesson summary details?[0m                                                 ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mThen ?[0m?[32mthe new lesson "?[0m?[32m?[1mLesson with Launch Page?[0m?[32m" is visible in its own expanded column?[0m             ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                          ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    # Clicks the lesson link, asserts launch page is visible, and then starts the lesson
+    ?[32mThen ?[0m?[32mI launch the "?[0m?[32m?[1mLesson with Launch Page?[0m?[32m" lesson in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m                  ?[90m# ClassHomepageSteps.reopenAssignment(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

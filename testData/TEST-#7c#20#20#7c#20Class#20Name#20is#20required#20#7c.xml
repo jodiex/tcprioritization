@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="|  | Class Name is required |" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:13:14" hostname="mo-acceptance-test-driver-182622c" time="1.368">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="|  | Class Name is required |" time="0.0"/>
+  <testcase name="And I open the New Class page" classname="|  | Class Name is required |" time="0.0"/>
+  <testcase name="When I enter the name for the class " classname="|  | Class Name is required |" time="0.0"/>
+  <testcase name="Then I should see class error message Class Name is required" classname="|  | Class Name is required |" time="0.0"/>
+  <testcase name="classMethod" classname="|  | Class Name is required |" time="2.327"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

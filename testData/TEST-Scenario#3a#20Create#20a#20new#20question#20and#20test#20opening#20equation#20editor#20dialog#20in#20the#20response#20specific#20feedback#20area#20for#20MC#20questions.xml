@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:32:12" hostname="mo-acceptance-test-driver-182622c" time="12.937">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.001"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="When I choose &quot;Multiple Choice&quot; link from the dialog and complete the correct answer" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="And I click the Math Editor button in the second response specific feedback editor" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="Then I assert that the Math Editor dialog is visible" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="And I click Cancel in the Math Editor dialog" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a new question and test opening equation editor dialog in the response specific feedback area for MC questions" time="13.975"/>
+  <system-out><![CDATA[
+  Scenario: Create a new question and test opening equation editor dialog and creating some math when Editing Response Area ?[90m# MathEditorDialog.feature:56?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new question/Text from the main dropdown button?[0m                                                  ?[90m# ContentRepositorySteps.chooseCreatingNewQuestionFromMainDropdownButton()?[0m
+    ?[32mAnd ?[0m?[32mQuestion Designer is opened?[0m                                                                                         ?[90m# QuestionDesignerSteps.assertQuestionDesignerPageIsOpened()?[0m
+    ?[32mAnd ?[0m?[32mI click inside the question text editor?[0m                                                                             ?[90m# QuestionDesignerSteps.clickInsideQuestionTextEditor()?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m            ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mWhen ?[0m?[32mI choose "?[0m?[32m?[1mMathematical Formula?[0m?[32m" link from the dialog and complete the correct answer?[0m                               ?[90m# QuestionDesignerSteps.chooseTypeAndCompleteCorrectAnswer(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Feedback tab?[0m                                                                                           ?[90m# QuestionDesignerSteps.clickFeedbackTab()?[0m
+    ?[32mAnd ?[0m?[32mI click Feedback Editor button to open the Math Editor dialog and assert that the Math Editor dialog is visible?[0m     ?[90m# QuestionDesignerSteps.clickResponseAreaFeedbackMathEditor()?[0m
+    ?[32mAnd ?[0m?[32mI type "?[0m?[32m?[1ma/b?[0m?[32m" in the Equation Editor?[0m                                                                                 ?[90m# MathEditorDialogSteps.typeText(String)?[0m
+    ?[32mAnd ?[0m?[32mI click Done in the Math Editor dialog?[0m                                                                              ?[90m# MathEditorDialogSteps.submitDialog()?[0m
+    ?[32mThen ?[0m?[32mI see a Math Widget in the Feedback Editor?[0m                                                                         ?[90m# QuestionDesignerSteps.assertMathInResponseAreaFeedback()?[0m
+    ?[32mAnd ?[0m?[32mI click Cancel?[0m                                                                                                      ?[90m# QuestionDesignerSteps.clickResponseDialogCancelButton()?[0m
+    ?[32mThen ?[0m?[32mI click the question designer Save & Close button?[0m                                                                  ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

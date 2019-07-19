@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test the validation of Privacy Policy URL on System Settings page." tests="25" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:17:27" hostname="mo-acceptance-test-driver-182622c" time="7.472">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The Privacy Policy Required is false" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.001"/>
+  <testcase name="When I set the Privacy Policy URL to &quot;http://www.example.com/some_page&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And The Privacy Policy URL is &quot;http://www.example.com/some_page&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="When I set the Privacy Policy URL to &quot;https://www.example.com/some_page&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And The Privacy Policy URL is &quot;https://www.example.com/some_page&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="When I set the Privacy Policy URL to &quot;//www.example.com/some_page&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And The Privacy Policy URL is &quot;//www.example.com/some_page&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="When I set the Privacy Policy URL to &quot;thisisnotavalidurl&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The following System Settings error is visible: Invalid Privacy Policy URL" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.001"/>
+  <testcase name="When I set Privacy Policy Required to true" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="When I set the Privacy Policy URL to &quot;&quot;" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The following System Settings error is visible: Invalid Privacy Policy URL" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="Then The Privacy Policy Required is false" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test the validation of Privacy Policy URL on System Settings page." time="8.51"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

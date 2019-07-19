@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:47:59" hostname="mo-acceptance-test-driver-182622c" time="7.038">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="When I click the 'New Class' mapping button" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="Then I am on a New Class page" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="When I create new class with random name" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="When I click the 'Class Homepage' mapping button" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Regrade Jobs&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="Then I am on the Regrade Jobs page" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Successfully access the Regrade Jobs page from gradebook dropdown" time="7.148"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

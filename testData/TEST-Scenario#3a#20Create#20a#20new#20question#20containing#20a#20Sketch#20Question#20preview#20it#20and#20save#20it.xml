@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a new question containing a Sketch Question preview it and save it" tests="16" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:20:48" hostname="mo-acceptance-test-driver-182622c" time="11.04">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;Sketch Question&quot;" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="When I choose &quot;Sketch&quot; link from the dialog and complete the correct answer" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="Then I see the &quot;Sketch&quot; Question Widget in the question text section" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="And I click the Preview button" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="Then I assert that the Sketch question is rendered properly on the Question Preview page" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="Then I close the question preview window" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="Then I click the question designer Save &amp; Close button" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="Then I see that I am on the Content Repository page" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a new question containing a Sketch Question preview it and save it" time="12.079"/>
+  <system-out><![CDATA[
+  Scenario: Create a new question containing a Document Upload Question preview it and save it                   ?[90m# CreateQuestion.feature:143?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mDocument Upload Question?[0m?[32m"?[0m                           ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click inside the question text editor?[0m                                                                  ?[90m# QuestionDesignerSteps.clickInsideQuestionTextEditor()?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mWhen ?[0m?[32mI choose "?[0m?[32m?[1mDocument Upload?[0m?[32m" link from the dialog and complete the correct answer?[0m                         ?[90m# QuestionDesignerSteps.chooseTypeAndCompleteCorrectAnswer(String)?[0m
+    ?[32mAnd ?[0m?[32mI click OK?[0m                                                                                               ?[90m# QuestionDesignerSteps.clickResponseDialogOkButton()?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mDocument Upload?[0m?[32m" Question Widget in the question text section?[0m                                ?[90m# QuestionDesignerSteps.assertQuestionWidgetIsInserted(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Preview button?[0m                                                                               ?[90m# QuestionDesignerSteps.clickPreviewButton()?[0m
+    ?[32mThen ?[0m?[32mI assert that the ?[0m?[32m?[1mDocument Upload?[0m?[32m question is rendered properly on the Question Preview page?[0m            ?[90m# QuestionPreviewSteps.assertQuestionRenderedCorrectly(String)?[0m
+    ?[32mThen ?[0m?[32mI close the question preview window?[0m                                                                     ?[90m# QuestionPreviewSteps.closeQuestionPreviewWindow()?[0m
+    ?[32mThen ?[0m?[32mI click the question designer Save & Close button?[0m                                                       ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+    ?[32mThen ?[0m?[32mI see that I am on the Content Repository page?[0m                                                          ?[90m# ContentRepositorySteps.assertOnRepositoryPage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

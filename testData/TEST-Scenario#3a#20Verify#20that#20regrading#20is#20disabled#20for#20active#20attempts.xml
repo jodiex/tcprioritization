@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify that regrading is disabled for active attempts" tests="39" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:04:39" hostname="mo-acceptance-test-driver-182622c" time="21.192">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I click the 'New Class' mapping button" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I am on a New Class page" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I create new class with random name" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I click the 'Class Homepage' mapping button" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Content Repository&quot; of current class" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I choose creating new assignment in &quot;Default Unit&quot; unit from the main dropdown button" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Assignment 1&quot;" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I click on the questions tab" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I click the new question button" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I create question &quot;Regrading&quot; with label &quot;Regrading&quot;" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.001"/>
+  <testcase name="And I start the &quot;Assignment 1&quot; assignment in &quot;Default Unit&quot; unit" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I enter &quot;x&quot; in Mathematical Formula input" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then quit and save the assignment" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I select &quot;Assignment 1 - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I click the Search button" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="When I click &quot;Assignment 1&quot; in the Class Grades table" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="Then I click &quot;Q1&quot; for the selected assignment" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I see the grade details of question &quot;Regrading&quot;" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="And I see that the regrade button for question 1 is disabled" classname="Scenario: Verify that regrading is disabled for active attempts" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify that regrading is disabled for active attempts" time="21.301"/>
+  <system-out><![CDATA[
+  Scenario: Verify that regrading is enabled for legacy questions that are not deprecated                                              ?[90m# gradebook/ManageRegrading.feature:1358?[0m
+    ?[32mWhen ?[0m?[32mI launch random "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mInstructor?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m ?[90m# TestHarnessSteps.runLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                  ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the 'New Class' mapping button?[0m                                                                                        ?[90m# LTIMappingSteps.clickNewClassButton()?[0m
+    ?[32mThen ?[0m?[32mI am on a New Class page?[0m                                                                                                      ?[90m# AddMapleTAClassSteps.verifyNewClassPage()?[0m
+    ?[32mWhen ?[0m?[32mI create new class with random name?[0m                                                                                           ?[90m# AddMapleTAClassSteps.createNewClassWithRandomName()?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                  ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the 'Class Homepage' mapping button?[0m                                                                                   ?[90m# LTIMappingSteps.clickClassHomepageButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    # Import a legacy question that is not deprecated
+    ?[32mWhen ?[0m?[32mI navigate to the "?[0m?[32m?[1mContent Repository?[0m?[32m" of current class?[0m                                                                       ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI open the Import dialog?[0m                                                                                                       ?[90m# ContentRepositorySteps.openImportDialog()?[0m
+    ?[32mAnd ?[0m?[32mI import the legacy multiple choice question course module?[0m                                                                     ?[90m# ContentRepositorySteps.importLegacyMultipleChoiceQuestion()?[0m
+    ?[32mAnd ?[0m?[32mI view the imported content?[0m                                                                                                    ?[90m# ContentRepositorySteps.viewImportedContent()?[0m
+    # Create an assignment with the legacy question
+    ?[32mWhen ?[0m?[32mI choose creating new assignment in "?[0m?[32m?[1mDefault Unit?[0m?[32m" unit from the main dropdown button?[0m                                         ?[90m# ContentRepositorySteps.chooseCreatingNewAssignmentFromMainDropdownButton(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                                                   ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32menter Assignment name "?[0m?[32m?[1mLegacy Assignment?[0m?[32m"?[0m                                                                                     ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on the questions tab?[0m                                                                                                   ?[90m# AssignmentEditorDetailsSteps.clickQuestionsTab()?[0m
+    ?[32mAnd ?[0m?[32mI click the import question button?[0m                                                                                             ?[90m# AssignmentEditorQuestionSteps.importQuestion()?[0m
+    ?[32mThen ?[0m?[32mThe import questions dialog appears?[0m                                                                                           ?[90m# AssignmentEditorQuestionSteps.assertImportQuestionsVisible()?[0m
+    ?[32mWhen ?[0m?[32mI click on "Questions"?[0m                                                                                                        ?[90m# ContentRepositorySteps.clickOnQuestions()?[0m
+    ?[32mAnd ?[0m?[32mI click on "All Questions"?[0m                                                                                                     ?[90m# ContentRepositorySteps.clickOnAllQuestions()?[0m
+    ?[32mAnd ?[0m?[32mI select the question "?[0m?[32m?[1mNon-QD - Multiple Choice?[0m?[32m"?[0m                                                                               ?[90m# AssignmentEditorQuestionSteps.selectQuestion(String)?[0m
+    ?[32mAnd ?[0m?[32mI click Import Questions in the Import Questions dialog?[0m                                                                        ?[90m# AssignmentEditorQuestionSteps.doImportQuestions()?[0m
+    ?[32mThen ?[0m?[32mverify the question caption text is "?[0m?[32m?[1mNon-QD - Multiple Choice?[0m?[32m"?[0m                                                                ?[90m# AssignmentEditorQuestionSteps.assertSavedQuestionName(String)?[0m
+    ?[32mWhen ?[0m?[32mI save & close the assignment on the questions page?[0m                                                                           ?[90m# AssignmentEditorQuestionSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                                                               ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mWhen ?[0m?[32mI save and close the assignment summary details?[0m                                                                               ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    # Take the assignment
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI start the "?[0m?[32m?[1mLegacy Assignment?[0m?[32m" assignment in "?[0m?[32m?[1mDefault Unit?[0m?[32m" unit?[0m                                                              ?[90m# ClassHomepageSteps.openAssignment(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI submit the assignment?[0m                                                                                                        ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mI confirm to submit the assignment?[0m                                                                                            ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mAnd ?[0m?[32mquit and save the assignment?[0m                                                                                                   ?[90m# MapleTAAssignmentSteps.quitAndSaveAssignment()?[0m
+    # Load assignment in gradebook
+    ?[32mWhen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mThen ?[0m?[32mI navigate to the "?[0m?[32m?[1mClass Grades?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m                                                              ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI am on the Class Grades page?[0m                                                                                                 ?[90m# GradebookClassGradesSteps.waitForClassGradesPage()?[0m
+    ?[32mThen ?[0m?[32mI select "?[0m?[32m?[1mLegacy Assignment - Homework/Quiz?[0m?[32m" in "Assignments" selection list?[0m                                                  ?[90m# GradebookClassGradesSteps.selectAssignment(String)?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mOther users with grades?[0m?[32m" in "List" selection list?[0m                                                                    ?[90m# GradebookClassGradesSteps.selectUser(String)?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mMost Recent?[0m?[32m" in "Results" selection list?[0m                                                                             ?[90m# GradebookClassGradesSteps.selectResult(String)?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mCompleted?[0m?[32m" in "Progress" selection list?[0m                                                                              ?[90m# GradebookClassGradesSteps.selectProgress(String)?[0m
+    ?[32mThen ?[0m?[32mI click the Search button?[0m                                                                                                     ?[90m# GradebookClassGradesSteps.clickSearch()?[0m
+    # Navigate to the details of a question
+    ?[32mWhen ?[0m?[32mI click "?[0m?[32m?[1mLegacy Assignment?[0m?[32m" in the Class Grades table?[0m                                                                         ?[90m# GradebookClassGradesSteps.clickAssignmentHeaderInTable(String)?[0m
+    ?[32mAnd ?[0m?[32mI click "?[0m?[32m?[1mQ1?[0m?[32m" for the selected assignment?[0m                                                                                       ?[90m# GradebookClassGradesSteps.clickQuestionInTable(String)?[0m
+    ?[32mThen ?[0m?[32mI see the grade details of question "?[0m?[32m?[1mNon-QD - Multiple Choice?[0m?[32m"?[0m                                                                ?[90m# GradebookDetailsSteps.assertQuestionTitleVisible(String)?[0m
+    ?[32mAnd ?[0m?[32mI see that the regrade button for question ?[0m?[32m?[1m1?[0m?[32m is ?[0m?[32m?[1menabled?[0m                                                                        ?[90m# GradebookDetailsSteps.assertRegradeQuestionButtonDisabled(int,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

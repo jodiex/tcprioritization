@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" tests="15" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:28:52" hostname="mo-acceptance-test-driver-182622c" time="9.154">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="When enter Lesson name &quot;Lesson with Submit&quot;" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="When I click on the Properties tab" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And I enable the option &quot;Allow Submit&quot;" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And I save &amp; close the lesson on the properties page" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="Then I see summary of the lesson with warning text &quot;WARNING: Empty section&quot;" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="When I save it anyway" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And I click the breadcrumb to return to the class homepage" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="And I click on the &quot;Lesson with Submit&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="Then the module &quot;Lesson with Submit&quot; is opened without launch page" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="Then I see the &quot;Submit Lesson&quot; button" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Enable the option Allow Submit and verify that Submit Lesson is present" time="10.166"/>
+  <system-out><![CDATA[
+  @Lesson @LessonEditor
+  Scenario: Rename the section and page names when creating new lesson                                   ?[90m# ManageLesson.feature:11?[0m
+    ?[32mWhen ?[0m?[32mI add new section "?[0m?[32m?[1mSection 1?[0m?[32m"?[0m                                                                   ?[90m# LessonEditorSteps.addNewSection(String)?[0m
+    ?[32mThen ?[0m?[32ma new section "?[0m?[32m?[1mSection 1?[0m?[32m" appears in the navigation?[0m                                             ?[90m# LessonEditorSteps.assertNewSectionVisible(String)?[0m
+    ?[32mWhen ?[0m?[32mI add new page "?[0m?[32m?[1mPage 1?[0m?[32m" from the section drop down?[0m                                              ?[90m# LessonEditorSteps.addNewPageFromSectionDropDown(String)?[0m
+    ?[32mAnd ?[0m?[32mI add new page "?[0m?[32m?[1mPage 2 as Block?[0m?[32m" from the section drop down and display blocks as separate pages?[0m ?[90m# LessonEditorSteps.addNewPageFromSectionDropDownAsBlock(String)?[0m
+    ?[32mThen ?[0m?[32ma new page "?[0m?[32m?[1mPage 1?[0m?[32m" appears in the navigation?[0m                                                   ?[90m# LessonEditorSteps.assertNewPageVisible(String)?[0m
+    ?[32mAnd ?[0m?[32ma new page "?[0m?[32m?[1mPage 2 as Block?[0m?[32m" appears in the navigation and displayed as separate page?[0m            ?[90m# LessonEditorSteps.assertNewPageVisibleAsBlock(String)?[0m
+    ?[32mWhen ?[0m?[32mI rename the name of the section to "?[0m?[32m?[1mSection 1 Renamed?[0m?[32m"?[0m                                         ?[90m# LessonEditorSteps.renameSectionName(String)?[0m
+    ?[32mThen ?[0m?[32mthe new name of the section "?[0m?[32m?[1mSection 1 Renamed?[0m?[32m" appears in the navigation?[0m                       ?[90m# LessonEditorSteps.assertNewSectionNameVisible(String)?[0m
+    ?[32mWhen ?[0m?[32mI rename the name of the page to "?[0m?[32m?[1mPage 1 Renamed?[0m?[32m"?[0m                                               ?[90m# LessonEditorSteps.renamePageName(String)?[0m
+    ?[32mThen ?[0m?[32mthe new name of the page "?[0m?[32m?[1mPage 1 Renamed?[0m?[32m" appears in the navigation?[0m                             ?[90m# LessonEditorSteps.assertNewPageNameVisible(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

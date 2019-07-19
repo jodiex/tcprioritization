@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:14:21" hostname="mo-acceptance-test-driver-182622c" time="4.622">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="When I click the Source button" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="And I click inside the Source editor" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="And I enter Block Level latex '55' inside the Source Editor" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="When I click the Source button" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.0"/>
+  <testcase name="Then I see that block level math is rendered without non visible html character" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: Test that block level math is displayed without an extra new line caused by the character &amp;zwnj;" time="5.661"/>
+  <system-out><![CDATA[
+  Scenario: Test that < symbol does not eat up content to the right of it when casted as a math widget. ?[90m# CKEditorDialog.feature:47?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new question/Text from the main dropdown button?[0m                              ?[90m# ContentRepositorySteps.chooseCreatingNewQuestionFromMainDropdownButton()?[0m
+    ?[32mAnd ?[0m?[32mQuestion Designer is opened?[0m                                                                     ?[90m# QuestionDesignerSteps.assertQuestionDesignerPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI click the Source button?[0m                                                                      ?[90m# QuestionDesignerSteps.clickSourceButton()?[0m
+    ?[32mAnd ?[0m?[32mI click inside the Source editor?[0m                                                                ?[90m# QuestionDesignerSteps.clickInsideSourceEditor()?[0m
+    ?[32mAnd ?[0m?[32mI enter ?[0m?[32m?[1mInline?[0m?[32m latex '?[0m?[32m?[1m<?[0m?[32m' inside the Source Editor?[0m                                               ?[90m# QuestionDesignerSteps.enterLatexInSourceEditor(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI enter '?[0m?[32m?[1mAND?[0m?[32m' inside the Source editor?[0m                                                          ?[90m# QuestionDesignerSteps.enterTextInSourceEditor(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Source button?[0m                                                                      ?[90m# QuestionDesignerSteps.clickSourceButton()?[0m
+    ?[32mAnd ?[0m?[32mI click the Source button?[0m                                                                       ?[90m# QuestionDesignerSteps.clickSourceButton()?[0m
+    ?[32mThen ?[0m?[32mI see '?[0m?[32m?[1mAND?[0m?[32m' inside the Source editor?[0m                                                           ?[90m# QuestionDesignerSteps.assertTextInSourceEditor(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

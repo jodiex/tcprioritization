@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Visit the privacy policy page when it's not required." tests="6" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:10:29" hostname="mo-acceptance-test-driver-182622c" time="1.188">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Visit the privacy policy page when it's not required." time="0.0"/>
+  <testcase name="When I navigate to the Privacy Policy page with redirect to /1/gradebook" classname="Scenario: Visit the privacy policy page when it's not required." time="0.0"/>
+  <testcase name="Then I am in the Gradebook" classname="Scenario: Visit the privacy policy page when it's not required." time="0.0"/>
+  <testcase name="When I navigate to the Privacy Policy page" classname="Scenario: Visit the privacy policy page when it's not required." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Visit the privacy policy page when it's not required." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Visit the privacy policy page when it's not required." time="2.221"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

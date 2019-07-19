@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TA-8736)" tests="74" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:45:06" hostname="mo-acceptance-test-driver-182622c" time="42.561">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I am on the Content Repository page of Demonstration Class(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.001"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And Question Designer is opened(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;TA-8726 question&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click inside the question text editor(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click OK(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.001"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;TA-8726 Assignment A&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click on the questions tab(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click the import question button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then The import questions dialog appears(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select the question &quot;TA-8726 question&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click Import Questions in the Import Questions dialog(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then verify the question caption text is &quot;TA-8726 question&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I see summary of the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then the new assignment &quot;TA-8726 Assignment A&quot; is visible in its own expanded column(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;TA-8726 Assignment B&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click on the questions tab(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click the import question button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then The import questions dialog appears(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select the question &quot;TA-8726 question&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I click Import Questions in the Import Questions dialog(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then verify the question caption text is &quot;TA-8726 question&quot;(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I see summary of the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then the new assignment &quot;TA-8726 Assignment B&quot; is visible in its own expanded column(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.001"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I start the &quot;TA-8726 Assignment A&quot; assignment in &quot;Student Readiness&quot; unit(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I assert that the Mathematical Formula question is rendered properly(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I enter &quot;2x&quot; in Mathematical Formula input(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.001"/>
+  <testcase name="And I submit the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And quit and save the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I am on the Class Homepage(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I start the &quot;TA-8726 Assignment B&quot; assignment in &quot;Student Readiness&quot; unit(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I submit the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.001"/>
+  <testcase name="Then I confirm to submit the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And quit and save the assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I am on the Class Homepage(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.001"/>
+  <testcase name="Then I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I am on the Class Grades page(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I select in &quot;Assignments&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I put &quot;qa&quot; in the &quot;User&quot; input box(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select &quot;Best&quot; in &quot;Results&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select &quot;Completed&quot; in &quot;Progress&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I click the Search button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I click &quot;TA-8726 Assignment A&quot; in the Class Grades table(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I assert that the grade is &quot;1&quot; for the selected assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I assert that the grade is &quot;1&quot; for the assignment question item(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I am on the Class Grades page(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I select in &quot;Assignments&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I put &quot;qa&quot; in the &quot;User&quot; input box(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select &quot;Best&quot; in &quot;Results&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I select &quot;Completed&quot; in &quot;Progress&quot; selection list(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I click the Search button(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="When I click &quot;TA-8726 Assignment B&quot; in the Class Grades table(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="Then I assert that the grade is &quot;0&quot; for the selected assignment(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <testcase name="And I assert that the grade is &quot;0&quot; for the assignment question item(Scenario: Ensure gradebook shows proper assignment's question scores " classname="TA-8736)" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

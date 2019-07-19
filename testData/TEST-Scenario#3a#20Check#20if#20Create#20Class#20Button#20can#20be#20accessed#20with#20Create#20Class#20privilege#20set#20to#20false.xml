@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:06:51" hostname="mo-acceptance-test-driver-182622c" time="7.035">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="When I go to the Role Manager page" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="And I click to edit the &quot;Instructor&quot; role" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="Then I set Create Class privilege to &quot;false&quot;" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="Then I set the Create LTI Mapping privilege to &quot;true&quot;" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="Then I click Submit" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;default&quot; and document target &quot;window&quot;" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="And Create Class button visibility is set to &quot;false&quot;" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Check if Create Class Button can be accessed with Create Class privilege set to false" time="7.145"/>
+  <system-out><![CDATA[
+  Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false                                         ?[90m# lti/CreateLtiMappingPrivilegeTest.feature:8?[0m
+    ?[32mWhen ?[0m?[32mI go to the Role Manager page?[0m                                                                                                        ?[90m# RoleManagerSteps.navigateToAddUserPage()?[0m
+    ?[32mAnd ?[0m?[32mI click to edit the "?[0m?[32m?[1mInstructor?[0m?[32m" role?[0m                                                                                                 ?[90m# RoleManagerSteps.clickRoleToEdit(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Editor page?[0m                                                                                                         ?[90m# RoleEditorSteps.assertOnRoleEditorPage()?[0m
+    ?[32mThen ?[0m?[32mI set Create Class privilege to "?[0m?[32m?[1mtrue?[0m?[32m"?[0m                                                                                               ?[90m# RoleEditorSteps.setCreateClass(boolean)?[0m
+    ?[32mThen ?[0m?[32mI set the Create LTI Mapping privilege to "?[0m?[32m?[1mfalse?[0m?[32m"?[0m                                                                                    ?[90m# RoleEditorSteps.setCreateLtiMapping(boolean)?[0m
+    ?[32mThen ?[0m?[32mI click Submit?[0m                                                                                                                       ?[90m# RoleEditorSteps.clickSubmit()?[0m
+    ?[32mAnd ?[0m?[32mI directly log out?[0m                                                                                                                    ?[90m# LoginSteps.directlyLogOut()?[0m
+    ?[32mWhen ?[0m?[32mI launch random "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mInstructor?[0m?[32m" and outcome URL "?[0m?[32m?[1mdefault?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m ?[90m# TestHarnessSteps.runLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI see the Error Accessing Module message?[0m                                                                                             ?[90m# LTIMappingSteps.assertErrorMessage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

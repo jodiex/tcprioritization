@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Attempt to remove content from root group" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:34:42" hostname="mo-acceptance-test-driver-182622c" time="7.908">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="Then Question Designer is opened" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;Remove Content 1&quot;" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="Then I see that I am on the Content Repository page" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="When I expand the &quot;Text&quot; column" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="And I select the question by name &quot;Remove Content 1&quot;" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="And I click the &quot;Remove&quot; button in the bulk row" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="And I click the Confirm option" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="Then I see an error message stating that the content cannot be removed" classname="Scenario: Attempt to remove content from root group" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Attempt to remove content from root group" time="8.945"/>
+  <system-out><![CDATA[
+  Scenario: Verify TOS URL when sharing to Cloud                                         ?[90m# QuestionInRepository.feature:48?[0m
+    ?[32mWhen ?[0m?[32mI click on "Questions"?[0m                                                          ?[90m# ContentRepositorySteps.clickOnQuestions()?[0m
+    ?[32mThen ?[0m?[32mI select the question by name "?[0m?[32m?[1mStudent Readiness?[0m?[32m"?[0m                               ?[90m# ContentRepositorySteps.selectQuestion(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Share button?[0m                                                        ?[90m# ContentRepositorySteps.clickShareButton()?[0m
+    ?[32mThen ?[0m?[32mthe Share dialog is visible?[0m                                                     ?[90m# ContentRepositorySteps.assertShareDialogVisible()?[0m
+    ?[32mThen ?[0m?[32mverify the Terms of Service URL is "?[0m?[32m?[1mhttps://www.digitaled.com/cloud/terms.aspx?[0m?[32m"?[0m ?[90m# ContentRepositorySteps.assertShareDialogTosUrl(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

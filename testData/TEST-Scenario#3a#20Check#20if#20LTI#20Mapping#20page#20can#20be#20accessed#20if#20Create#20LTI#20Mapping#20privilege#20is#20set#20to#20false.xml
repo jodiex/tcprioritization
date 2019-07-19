@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:06:43" hostname="mo-acceptance-test-driver-182622c" time="8.491">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="When I go to the Role Manager page" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="And I click to edit the &quot;Instructor&quot; role" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="Then I set Create Class privilege to &quot;true&quot;" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="Then I set the Create LTI Mapping privilege to &quot;false&quot;" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="Then I click Submit" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;default&quot; and document target &quot;window&quot;" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="Then I see the Error Accessing Module message" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Check if LTI Mapping page can be accessed if Create LTI Mapping privilege is set to false" time="8.603"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

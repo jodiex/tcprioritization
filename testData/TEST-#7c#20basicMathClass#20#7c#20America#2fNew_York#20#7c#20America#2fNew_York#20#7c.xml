@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| basicMathClass | America/New_York | America/New_York |" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:13:03" hostname="mo-acceptance-test-driver-182622c" time="3.412">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="| basicMathClass | America/New_York | America/New_York |" time="0.0"/>
+  <testcase name="And I open the New Class page" classname="| basicMathClass | America/New_York | America/New_York |" time="0.0"/>
+  <testcase name="When I enter the valid information for class basicMathClass and change the time zone selection to America/New_York" classname="| basicMathClass | America/New_York | America/New_York |" time="0.0"/>
+  <testcase name="Then the class is created" classname="| basicMathClass | America/New_York | America/New_York |" time="0.0"/>
+  <testcase name="And I see the time zone America/New_York on the page" classname="| basicMathClass | America/New_York | America/New_York |" time="0.0"/>
+  <testcase name="classMethod" classname="| basicMathClass | America/New_York | America/New_York |" time="15.982"/>
+  <system-out><![CDATA[Creating local driver for params: {grid.url=, mobile.platform=, mobile.application=, mobile.device.name=, type=local, test.file.dir=, version=, platform=, headless=true, worksheet.name=, mobile.platform.version=, deploy.url=http://182622c-mobius.test.digitaled.tools/, browser=chrome, mobile.appium_version=, platform.description=}
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634) on port 4596
+Only local connections are allowed.
+Jul 19, 2019 4:12:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

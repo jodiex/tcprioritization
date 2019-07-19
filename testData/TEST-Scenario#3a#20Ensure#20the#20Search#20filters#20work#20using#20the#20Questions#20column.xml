@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Ensure the Search filters work using the Questions column" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:34:22" hostname="mo-acceptance-test-driver-182622c" time="5.63">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Ensure the Search filters work using the Questions column" time="0.001"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Ensure the Search filters work using the Questions column" time="0.0"/>
+  <testcase name="When I click &quot;All Content Types&quot; in the &quot;Current Class&quot; column" classname="Scenario: Ensure the Search filters work using the Questions column" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;All Content Types&quot; column and verify the Search filters are visible inside column" classname="Scenario: Ensure the Search filters work using the Questions column" time="0.0"/>
+  <testcase name="When I set the &quot;Type&quot; dropdown to &quot;True/False&quot; in the &quot;All Content Types&quot; column" classname="Scenario: Ensure the Search filters work using the Questions column" time="0.0"/>
+  <testcase name="Then verify that &quot;[Demo] True/False&quot; is visible in the Search results in the &quot;All Content Types&quot; column" classname="Scenario: Ensure the Search filters work using the Questions column" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Ensure the Search filters work using the Questions column" time="6.666"/>
+  <system-out><![CDATA[
+  Scenario: Ensure the Search error message disappears after subsequent Searches                                            ?[90m# QuestionInRepository.feature:23?[0m
+    ?[32mWhen ?[0m?[32mI click "?[0m?[32m?[1mAll Content Types?[0m?[32m" in the "?[0m?[32m?[1mCurrent Class?[0m?[32m" column?[0m                                                          ?[90m# ContentRepositorySteps.clickLinkInParentColumn(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Search button in the "?[0m?[32m?[1mAll Content Types?[0m?[32m" column and verify the Search filters are visible inside column?[0m ?[90m# ContentRepositorySteps.clickSearchButtonInQuestionColumn(String)?[0m
+    ?[32mAnd ?[0m?[32mI enter the Search phrase "?[0m?[32m?[1m*()?[0m?[32m" in the Search bar in the "?[0m?[32m?[1mAll Content Types?[0m?[32m" column?[0m                                 ?[90m# ContentRepositorySteps.performTextSearch(String,String)?[0m
+    ?[32mThen ?[0m?[32mverify the Search error message is visible in the "?[0m?[32m?[1mAll Content Types?[0m?[32m" column?[0m                                       ?[90m# ContentRepositorySteps.assertSearchErrorMessageVisibile(String)?[0m
+    ?[32mWhen ?[0m?[32mI enter the Search phrase "?[0m?[32m?[1mhelloWorld?[0m?[32m" in the Search bar in the "?[0m?[32m?[1mAll Content Types?[0m?[32m" column?[0m                         ?[90m# ContentRepositorySteps.performTextSearch(String,String)?[0m
+    ?[32mThen ?[0m?[32mverify the Search error message is invisible in the "?[0m?[32m?[1mAll Content Types?[0m?[32m" column?[0m                                     ?[90m# ContentRepositorySteps.assertSearchErrorMessageInvisible(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

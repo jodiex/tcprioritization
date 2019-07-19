@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Multiple class calendars opened" tests="25" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:43:53" hostname="mo-acceptance-test-driver-182622c" time="13.789">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I wait until the calendar has been loaded" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I clicked the calendar &quot;month&quot; view button" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="When I create a &quot;Master Class&quot; event &quot;Master Class Event&quot; that starts &quot;today&quot; and ends &quot;tomorrow&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Master Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="When I create a &quot;Demonstration Class&quot; event &quot;Demonstration Class Event&quot; that starts &quot;today&quot; and ends &quot;tomorrow&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Demonstration Class&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="When I open a new tab on &quot;Class Homepage&quot; page of &quot;Demonstration&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I wait until the calendar has been loaded" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Demonstration Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I see no calendar event &quot;Master Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="When I open a new tab on &quot;Class Homepage&quot; page of &quot;Master Class&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I wait until the calendar has been loaded" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Master Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I see no calendar event &quot;Demonstration Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="When I switch back to &quot;Demonstration Class&quot; window" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I click the next button on the calendar" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I click the previous button on the calendar" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I clicked the calendar &quot;month&quot; view button" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Demonstration Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I see no calendar event &quot;Master Class Event&quot;" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="And I close all the extra windows" classname="Scenario: Multiple class calendars opened" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Multiple class calendars opened" time="14.701"/>
+  <system-out><![CDATA[
+  Scenario: Create an all day private event                                                                  ?[90m# calendar/Calendar.feature:24?[0m
+    ?[32mWhen ?[0m?[32mI create an all day private calendar event "?[0m?[32m?[1mTestAllDayPrivateEvent?[0m?[32m" that starts "?[0m?[32m?[1m7 days from today?[0m?[32m"?[0m ?[90m# CalendarSteps.createAllDayPrivateCalendarEvent(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mTestAllDayPrivateEvent?[0m?[32m"?[0m                                                     ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

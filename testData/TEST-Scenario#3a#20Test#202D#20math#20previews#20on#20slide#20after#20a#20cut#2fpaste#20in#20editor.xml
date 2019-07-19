@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test 2D math previews on slide after a cut/paste in editor" tests="21" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:16:03" hostname="mo-acceptance-test-driver-182622c" time="8.241">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I choose creating new Slideshow from the main dropdown button" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And Slideshow Designer is opened" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="When I click the Source button" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I click inside the Source editor" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I clear the contents of the Source editor" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I enter '&lt;div class=&quot;mSlide-slide&quot; data-noline=&quot;1&quot;&gt;&lt;h1 class=&quot;mSlide-title&quot;&gt;&lt;/h1&gt;&lt;p id=&quot;cut&quot;&gt;Title&lt;/p&gt;&lt;p&gt;text \(\frac{a}{b}\) text&lt;/p&gt;&lt;/div&gt;' inside the Source editor" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I click the Source button" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="Then I see the &quot;a/b&quot; Math Widget in the question text section" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="When I highlight the text in the element with id &quot;cut&quot;" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I enter the control key combination &quot;x&quot;" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I hit the delete key" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I click the element with class &quot;mSlide-title&quot;" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="And I enter the control key combination &quot;v&quot;" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="Then I see the &quot;a/b&quot; Math Widget in the question text section" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="When I click to Preview the Slideshow" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="Then I am previewing the Slideshow" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="When I begin playback of the Slideshow" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="Then I see 2D math displayed on the slide" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test 2D math previews on slide after a cut/paste in editor" time="9.238"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

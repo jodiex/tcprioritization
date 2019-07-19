@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Missing resource_link_id" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:09:43" hostname="mo-acceptance-test-driver-182622c" time="3.403">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="When I go to the LTI Test Harness page" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="And I clear the LTI Test Harness form" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="And I fill the LTI Test Harness form with random data" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="And I clear the &quot;resource_link_id&quot; LTI field" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="And I launch prepared &quot;basic-lti-launch-request&quot; LTI request with role &quot;Administrator&quot; and outcome URL &quot;default&quot; and document target &quot;window&quot;" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="Then I am on the LTI Test Harness Error page" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="And I see the LTI test harness error &quot;Parameter resource_link_id is not set. Please contact your system administrator.&quot;" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="Then I close the LTI Test Harness leftover windows" classname="Scenario: Missing resource_link_id" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Missing resource_link_id" time="3.512"/>
+  <system-out><![CDATA[
+  Scenario: Create CIM link to Assignment                                                                                                   ?[90m# lti/LTIMapping.feature:184?[0m
+    ?[32mWhen ?[0m?[32mI launch random "?[0m?[32m?[1mContentItemSelectionRequest?[0m?[32m" LTI request with role "?[0m?[32m?[1mAdministrator?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mframe?[0m?[32m"?[0m ?[90m# TestHarnessSteps.runLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                       ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    # Create new class
+    ?[32mWhen ?[0m?[32mI click the 'New Class' mapping button?[0m                                                                                             ?[90m# LTIMappingSteps.clickNewClassButton()?[0m
+    ?[32mAnd ?[0m?[32mI switch to the page opened after submission of the LTI harness page?[0m                                                                ?[90m# TestHarnessSteps.switchToLaunchedPage()?[0m
+    ?[32mAnd ?[0m?[32mI create new class with random name?[0m                                                                                                 ?[90m# AddMapleTAClassSteps.createNewClassWithRandomName()?[0m
+    ?[32mAnd ?[0m?[32mI verify and close the LTI Page window?[0m                                                                                              ?[90m# LTIPageSteps.verifyAndCloseWindow()?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                       ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    # Create new assignment
+    ?[32mWhen ?[0m?[32mI click the 'New Assignment' mapping button?[0m                                                                                        ?[90m# LTIMappingSteps.clickNewAssignmentButton()?[0m
+    ?[32mAnd ?[0m?[32mI switch to the page opened after submission of the LTI harness page?[0m                                                                ?[90m# TestHarnessSteps.switchToLaunchedPage()?[0m
+    ?[32mAnd ?[0m?[32mI create empty assignment with random name?[0m                                                                                          ?[90m# AssignmentEditorDetailsSteps.createEmptyAssignmentWithRandomName()?[0m
+    ?[32mAnd ?[0m?[32mI verify and close the LTI Page window?[0m                                                                                              ?[90m# LTIPageSteps.verifyAndCloseWindow()?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                       ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    # Map to the Assignment and test the CIM mapping
+    ?[32mWhen ?[0m?[32mI click the 'Assignment' mapping button?[0m                                                                                            ?[90m# LTIMappingSteps.clickAssignmentButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Test Harness page?[0m                                                                                                      ?[90m# TestHarnessSteps.verifyTestHarnessPage()?[0m
+    ?[32mAnd ?[0m?[32mI launch prepared "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mAdministrator?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m  ?[90m# TestHarnessSteps.submitLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Assignment Review Page?[0m                                                                                                 ?[90m# AssignmentLaunchPageSteps.assertAssignmentReviewPage()?[0m
+    ?[32mAnd ?[0m?[32mI close the LTI Test Harness leftover windows?[0m                                                                                       ?[90m# TestHarnessSteps.closeLeftoverWindows()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

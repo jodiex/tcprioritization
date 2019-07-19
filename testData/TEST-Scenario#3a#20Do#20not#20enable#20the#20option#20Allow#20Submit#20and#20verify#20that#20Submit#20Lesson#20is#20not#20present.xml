@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:29:02" hostname="mo-acceptance-test-driver-182622c" time="8.442">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="When enter Lesson name &quot;Lesson without Submit&quot;" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="When I save &amp; close the lesson on the design page" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="Then I see summary of the lesson with warning text &quot;WARNING: Empty section&quot;" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="When I save it anyway" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="And I click the breadcrumb to return to the class homepage" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="And I click on the &quot;Lesson without Submit&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="Then the module &quot;Lesson without Submit&quot; is opened without launch page" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="Then I do not see the &quot;Submit Lesson&quot; button" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Do not enable the option Allow Submit and verify that Submit Lesson is not present" time="9.482"/>
+  <system-out><![CDATA[
+  @Lesson @LessonEditor
+  Scenario: Enable the option Allow Submit and verify that Submit Lesson is present ?[90m# ManageLesson.feature:24?[0m
+    ?[32mWhen ?[0m?[32menter Lesson name "?[0m?[32m?[1mLesson with Submit?[0m?[32m"?[0m                                     ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click on the Properties tab?[0m                                              ?[90m# LessonEditorSteps.clickPropertiesTab()?[0m
+    ?[32mAnd ?[0m?[32mI enable the option "Allow Submit"?[0m                                          ?[90m# LessonEditorPropertiesSteps.enableAllowSubmit()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the lesson on the properties page?[0m                            ?[90m# LessonEditorPropertiesSteps.saveAndCloseLesson()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the lesson with warning text "?[0m?[32m?[1mWARNING: Empty section?[0m?[32m"?[0m     ?[90m# AssignmentEditorDetailsSteps.assertNoQuestionsInAssignmentWarningMessageIsDisplayed(String)?[0m
+    ?[32mWhen ?[0m?[32mI save it anyway?[0m                                                           ?[90m# AssignmentEditorDetailsSteps.saveAssignmentAnyway()?[0m
+    ?[32mAnd ?[0m?[32mI click the breadcrumb to return to the class homepage?[0m                      ?[90m# PageLoadingSteps.returnToClassHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI click on the "?[0m?[32m?[1mLesson with Submit?[0m?[32m" module in the "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m  ?[90m# ClassHomepageSteps.clickOnModuleLink(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe module "?[0m?[32m?[1mLesson with Submit?[0m?[32m" is opened without launch page?[0m              ?[90m# ClassHomepageSteps.switchToModulePage(String)?[0m
+    ?[32mThen ?[0m?[32mI see the "Submit Lesson" button?[0m                                           ?[90m# LessonSteps.assertSubmitLessonButtonVisible()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

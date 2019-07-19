@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Choose to restore the Instructor role and submit the change" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:25:06" hostname="mo-acceptance-test-driver-182622c" time="3.428">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="And I go to the Role Manager page" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="When I click to edit the &quot;Instructor Test&quot; role" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="When I click the &quot;Restore to Default&quot; button in the Role Editor" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="And I see the role name is &quot;Instructor&quot;" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="And I do not see the Edit Student License privilege checked" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="When I click the &quot;Submit&quot; button in the Role Editor" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="Then I am on the Role Manager page" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="And I see the &quot;Instructor&quot; role in the list" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.001"/>
+  <testcase name="And I do not see the &quot;Instructor Test&quot; role in the list" classname="Scenario: Choose to restore the Instructor role and submit the change" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Choose to restore the Instructor role and submit the change" time="4.535"/>
+  <system-out><![CDATA[
+  Scenario: Choose to restore the Instructor role but do not submit the change ?[90m# usermanager/EditBuiltInRole.feature:28?[0m
+    ?[32mWhen ?[0m?[32mI click to edit the "?[0m?[32m?[1mInstructor Test?[0m?[32m" role?[0m                            ?[90m# RoleManagerSteps.clickRoleToEdit(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Editor page?[0m                                          ?[90m# RoleEditorSteps.assertOnRoleEditorPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the "?[0m?[32m?[1mRestore to Default?[0m?[32m" button in the Role Editor?[0m            ?[90m# RoleEditorSteps.clickRoleEditorButton(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Editor page?[0m                                          ?[90m# RoleEditorSteps.assertOnRoleEditorPage()?[0m
+    ?[32mAnd ?[0m?[32mI see the role name is "?[0m?[32m?[1mInstructor?[0m?[32m"?[0m                                    ?[90m# RoleEditorSteps.assertRoleNameInForm(String)?[0m
+    ?[32mAnd ?[0m?[32mI do not see the Edit Student License privilege checked?[0m                ?[90m# RoleEditorSteps.assertEditStudentLicenseNotChecked()?[0m
+    ?[32mWhen ?[0m?[32mI click the "?[0m?[32m?[1mCancel?[0m?[32m" button in the Role Editor?[0m                        ?[90m# RoleEditorSteps.clickRoleEditorButton(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Manager page?[0m                                         ?[90m# RoleManagerSteps.assertOnRoleManagerPage()?[0m
+    ?[32mAnd ?[0m?[32mI see the "?[0m?[32m?[1mInstructor Test?[0m?[32m" role in the list?[0m                           ?[90m# RoleManagerSteps.assertRoleInList(String)?[0m
+    ?[32mAnd ?[0m?[32mI do not see the "?[0m?[32m?[1mInstructor?[0m?[32m" role in the list?[0m                         ?[90m# RoleManagerSteps.assertRoleNotInList(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

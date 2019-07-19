@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: User is navigating between questions," tests="34" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:42:04" hostname="mo-acceptance-test-driver-182622c" time="16.206">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: User is navigating between questions," time="0.001"/>
+  <testcase name="And &quot;Student Readiness Test&quot; assignment in &quot;Student Readiness&quot; unit is opened" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And the content of &quot;Question 1&quot; with title &quot;Assignment Navigation&quot; is displayed" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="When I use &quot;Next&quot; button to navigate to &quot;Question 2&quot;" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="Then the content of &quot;Question 2&quot; with title &quot;Toggling Entry Modes&quot; is displayed" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="But &quot;Question 2&quot; item in the question menu is disabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Back&quot; button is enabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Next&quot; button is enabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="When I use &quot;Back&quot; button to navigate to &quot;Question 1&quot;" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="Then the content of &quot;Question 1&quot; with title &quot;Assignment Navigation&quot; is displayed" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="But &quot;Question 1&quot; item in the question menu is disabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Back&quot; button is disabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Next&quot; button is enabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="Then I save and quit assignment to clear assignment state" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: User is navigating between questions," time="8.913"/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Student Readiness Test&quot; assignment in &quot;Student Readiness&quot; unit is opened" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And the content of &quot;Question 1&quot; with title &quot;Assignment Navigation&quot; is displayed" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="When I use &quot;Question Menu&quot; button to navigate to &quot;Question 9&quot;" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="Then the content of &quot;Question 9&quot; with title &quot;Student Help&quot; is displayed" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="But &quot;Question 9&quot; item in the question menu is disabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Back&quot; button is enabled" classname="Scenario: User is navigating between questions," time="0.001"/>
+  <testcase name="And &quot;Next&quot; button is enabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="When I use &quot;Next&quot; button to navigate to &quot;Question 10&quot;" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="Then the content of &quot;Question 10&quot; with first line &quot;Congratulations!&quot; is displayed" classname="Scenario: User is navigating between questions," time="0.001"/>
+  <testcase name="But &quot;Question 10&quot; item in the question menu is disabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Back&quot; button is enabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And &quot;Next&quot; button is disabled" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="Then I save and quit assignment to clear assignment state" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: User is navigating between questions," time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: User is navigating between questions," time="8.378"/>
+  <system-out><![CDATA[
+  @HTMLInput
+  Scenario: Give the right responses to the questions containing only HTML input elements                                    ?[90m# assignment/StudentReadinessTest.feature:11?[0m
+    ?[32mWhen ?[0m?[32mI give the right responses to all the questions except MathML questions 2-4?[0m                                         ?[90m# StudentReadinessTestSteps.respondToAllQuestionsExceptMathMLQuestions()?[0m
+    ?[32mAnd ?[0m?[32mI submit the assignment?[0m                                                                                              ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see the submission report with warning text "?[0m?[32m?[1mWarning: There appears to be errors in one or more of your answers.?[0m?[32m"?[0m ?[90m# MapleTAAssignmentSteps.assertSubmissionReportWarningMessage(String)?[0m
+    ?[32mAnd ?[0m?[32ma table with the question problems?[0m                                                                                   ?[90m# MapleTAAssignmentSteps.assertSubmissionReportTable(SubmissionReportPage$SubmissionReportTableRow>)?[0m
+    ?[32mWhen ?[0m?[32mI submit the assignment again?[0m                                                                                       ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mmy score ?[0m?[32m?[1m7?[0m?[32m out of ?[0m?[32m?[1m10?[0m?[32m (?[0m?[32m?[1m70?[0m?[32m %) is shown in a grade report?[0m                                                              ?[90m# MapleTAAssignmentSteps.assertScore(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI save and quit assignment to clear assignment state?[0m                                                                 ?[90m# MapleTAAssignmentSteps.clearAssignmentState()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Class Homepage?[0m                                                                                           ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+
+  @Navigation @Button
+  Scenario: User is navigating between questions,                                    ?[90m# assignment/StudentReadinessTest.feature:26?[0m
+    but he is not permitted to move before the first question
+
+    ?[32mWhen ?[0m?[32mI use "?[0m?[32m?[1mNext?[0m?[32m" button to navigate to "?[0m?[32m?[1mQuestion 2?[0m?[32m"?[0m                             ?[90m# MapleTAAssignmentSteps.navigateToQuestion(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe content of "?[0m?[32m?[1mQuestion 2?[0m?[32m" with title "?[0m?[32m?[1mToggling Entry Modes?[0m?[32m" is displayed?[0m  ?[90m# MapleTAAssignmentSteps.assertQuestionTitle(String,String)?[0m
+    ?[32mBut ?[0m?[32m"?[0m?[32m?[1mQuestion 2?[0m?[32m" item in the question menu is disabled?[0m                           ?[90m# MapleTAAssignmentSteps.assertQuestionItemInQuestionMenuIsDisabled(String)?[0m
+    ?[32mAnd ?[0m?[32m"Back" button is ?[0m?[32m?[1menabled?[0m                                                     ?[90m# MapleTAAssignmentSteps.assertBackButtonState(String)?[0m
+    ?[32mAnd ?[0m?[32m"Next" button is ?[0m?[32m?[1menabled?[0m                                                     ?[90m# MapleTAAssignmentSteps.assertNextButtonState(String)?[0m
+    ?[32mWhen ?[0m?[32mI use "?[0m?[32m?[1mBack?[0m?[32m" button to navigate to "?[0m?[32m?[1mQuestion 1?[0m?[32m"?[0m                             ?[90m# MapleTAAssignmentSteps.navigateToQuestion(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe content of "?[0m?[32m?[1mQuestion 1?[0m?[32m" with title "?[0m?[32m?[1mAssignment Navigation?[0m?[32m" is displayed?[0m ?[90m# MapleTAAssignmentSteps.assertQuestionTitle(String,String)?[0m
+    ?[32mBut ?[0m?[32m"?[0m?[32m?[1mQuestion 1?[0m?[32m" item in the question menu is disabled?[0m                           ?[90m# MapleTAAssignmentSteps.assertQuestionItemInQuestionMenuIsDisabled(String)?[0m
+    ?[32mAnd ?[0m?[32m"Back" button is ?[0m?[32m?[1mdisabled?[0m                                                    ?[90m# MapleTAAssignmentSteps.assertBackButtonState(String)?[0m
+    ?[32mAnd ?[0m?[32m"Next" button is ?[0m?[32m?[1menabled?[0m                                                     ?[90m# MapleTAAssignmentSteps.assertNextButtonState(String)?[0m
+    ?[32mThen ?[0m?[32mI save and quit assignment to clear assignment state?[0m                        ?[90m# MapleTAAssignmentSteps.clearAssignmentState()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Class Homepage?[0m                                                   ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

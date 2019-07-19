@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Privacy Policy Link" tests="21" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:10:58" hostname="mo-acceptance-test-driver-182622c" time="6.685">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I enable Privacy Policy Required with the dummy URL" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="Given I refresh the System Settings page" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I accept the privacy policy if necessary" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="When I verify the Privacy Policy link is visible" classname="Scenario: Privacy Policy Link" time="0.001"/>
+  <testcase name="And I click the Privacy Policy link" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="Given I navigate to the System Settings page" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I set Privacy Policy Required to false" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I set the Privacy Policy URL to &quot;&quot;" classname="Scenario: Privacy Policy Link" time="0.001"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And The Privacy Policy Required is false" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I verify the Privacy Policy link is not visible" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I set Privacy Policy Required to false" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="When I set the Privacy Policy URL to be the dummy page" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And The Privacy Policy Required is false" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="And I verify the Privacy Policy link is not visible" classname="Scenario: Privacy Policy Link" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Privacy Policy Link" time="7.73"/>
+  <system-out><![CDATA[
+  # ---------------------------------------------------------------------------------------------
+  Scenario: Access a legacy page when the privacy policy is required.    ?[90m# privacyPolicy/PrivacyPolicyEnabled.feature:62?[0m
+    # Create a new user for this scenario.
+    ?[32mGiven ?[0m?[32mI open the Create User page?[0m                                    ?[90m# AddUserSteps.navigateToAddUserPage()?[0m
+    ?[32mWhen ?[0m?[32mI enter the valid information for the user ?[0m?[32m?[1mpoole?[0m                ?[90m# AddUserSteps.enterValidUserDetails(String)?[0m
+    ?[32mThen ?[0m?[32mthe user ?[0m?[32m?[1mpoole?[0m?[32m is created?[0m                                       ?[90m# AddUserSteps.assertUserIsAdded(String)?[0m
+    # Navigate to homepage for demo class.
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                               ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mThen ?[0m?[32mI am on the System Homepage?[0m                                     ?[90m# SystemHomepageSteps.assertSystemHomepage()?[0m
+    ?[32mThen ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m    ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    # Register the new user into the demo class.
+    ?[32mWhen ?[0m?[32mI click the Register Users menu item?[0m                            ?[90m# ClassHomepageSteps.navigateToRegisterUsersPage()?[0m
+    ?[32mAnd ?[0m?[32mI search for user ?[0m?[32m?[1mpoole?[0m                                          ?[90m# SearchUserSteps.searchForUser(String)?[0m
+    ?[32mAnd ?[0m?[32mI select the user "?[0m?[32m?[1mpoole?[0m?[32m" in the list of users to add?[0m            ?[90m# RegisterUsersSteps.selectUser(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Register button on the Register Users page?[0m           ?[90m# RegisterUsersSteps.clickRegisterButton()?[0m
+    ?[32mThen ?[0m?[32mThe users were successfully registered in the class?[0m             ?[90m# RegisterUsersSteps.assertUsersRegistered()?[0m
+    # Log in as the new user.
+    ?[32mGiven ?[0m?[32mI log out?[0m                                                      ?[90m# LoginSteps.logOut()?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the Maple TA login page?[0m                           ?[90m# LoginSteps.navigateToLoginPage()?[0m
+    ?[32mThen ?[0m?[32mI am on the Maple TA login page?[0m                                 ?[90m# LoginSteps.assertLoginPage()?[0m
+    ?[32mThen ?[0m?[32mI enter valid credentials for user ?[0m?[32m?[1mpoole?[0m                        ?[90m# LoginSteps.enterValidCredentials(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Privacy Policy page?[0m                                 ?[90m# PrivacyPolicySteps.assertPrivacyPolicyPage()?[0m
+    # Attempting to access a legacy page results in being sent to the privacy policy page.
+    ?[32mWhen ?[0m?[32mI directly open module in class id ?[0m?[32m?[1m1?[0m?[32m with assignment class id ?[0m?[32m?[1m1?[0m ?[90m# MapleTAAssignmentSteps.navigateDirectlyToModule(int,int)?[0m
+    ?[32mThen ?[0m?[32mI am on the Privacy Policy page?[0m                                 ?[90m# PrivacyPolicySteps.assertPrivacyPolicyPage()?[0m
+    ?[32mAnd ?[0m?[32mThe Accept Privacy Policy button is visible?[0m                      ?[90m# PrivacyPolicySteps.assertAcceptButtonVisible()?[0m
+    # After accepting the privacy policy, we should be sent to our original destination.
+    ?[32mWhen ?[0m?[32mI accept the Privacy Policy?[0m                                     ?[90m# PrivacyPolicySteps.clickAcceptButton()?[0m
+    ?[32mThen ?[0m?[32mI am in module "?[0m?[32m?[1mStudent Readiness Test?[0m?[32m"?[0m                         ?[90m# MapleTAAssignmentSteps.assertInModule(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

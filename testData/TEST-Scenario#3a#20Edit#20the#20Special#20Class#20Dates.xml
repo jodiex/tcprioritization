@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Edit the Special Class Dates" tests="39" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:44:13" hostname="mo-acceptance-test-driver-182622c" time="14.995">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I go to the Class Info page" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I go to the Class Edit page" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I choose the day &quot;10&quot; for the &quot;Class Start Date&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class Start Date&quot; is &quot;10&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I choose the day &quot;2&quot; for the &quot;Class End Date&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the date error is present for the &quot;Class End Date&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I choose the day &quot;20&quot; for the &quot;Class End Date&quot;" classname="Scenario: Edit the Special Class Dates" time="0.001"/>
+  <testcase name="Then I assert the &quot;Class End Date&quot; is &quot;20&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I click submit" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I wait until the calendar has been loaded" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I clicked the calendar &quot;month&quot; view button" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Class Start&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;Class End&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I go to the Class Info page" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I go to the Class Edit page" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class Start Date&quot; is &quot;10&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class End Date&quot; is &quot;20&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I clear the &quot;Class Start Date&quot; field" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class Start Date&quot; is empty" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I clear the &quot;Class End Date&quot; field" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class End Date&quot; is empty" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I click submit" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Edit the Special Class Dates" time="0.001"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="When I wait until the calendar has been loaded" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I clicked the calendar &quot;month&quot; view button" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I see no calendar event &quot;Class Start&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I see no calendar event &quot;Class End&quot;" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I go to the Class Info page" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I go to the Class Edit page" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class Start Date&quot; is empty" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="Then I assert the &quot;Class End Date&quot; is empty" classname="Scenario: Edit the Special Class Dates" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Edit the Special Class Dates" time="16.047"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

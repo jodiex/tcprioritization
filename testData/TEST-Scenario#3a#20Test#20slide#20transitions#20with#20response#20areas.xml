@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test slide transitions with response areas" tests="19" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:15:51" hostname="mo-acceptance-test-driver-182622c" time="10.565">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And I choose creating new Slideshow from the main dropdown button" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And Slideshow Designer is opened" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="When I click inside the slideshow content in the editor" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="When I click on the &quot;Mathematical Formula&quot; Question Widget in the question editor" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And I drag the Element-In marker 400 pixels right" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="When I click to Preview the Slideshow" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="Then I am previewing the Slideshow" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="When I begin playback of the Slideshow" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="Then I don't see the Mathematical Formula response area" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="When I click the Next slide button" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="Then I see the Mathematical Formula response area" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="And I close the question preview window" classname="Scenario: Test slide transitions with response areas" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test slide transitions with response areas" time="11.61"/>
+  <system-out><![CDATA[
+  Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible (UW-1071)     ?[90m# question/slideshow/TestSlideButtons.feature:24?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mNew Question 2?[0m?[32m"?[0m                                     ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Slideshow Audio File Manager button?[0m                                                         ?[90m# AddSlideshowSteps.clickAudioFileManagerButton()?[0m
+    ?[32mThen ?[0m?[32mI click the audio file named "?[0m?[32m?[1mAudio_Test.mp3?[0m?[32m"?[0m                                                           ?[90m# AddSlideshowSteps.clickOnAudioFile(String)?[0m
+    # Drag a couple of pause markers into the waveform:
+    ?[32mThen ?[0m?[32mI click the New Pause button?[0m                                                                            ?[90m# AddSlideshowSteps.clickNewPauseButton()?[0m
+    ?[32mThen ?[0m?[32mI drag the new Pause marker ?[0m?[32m?[1m200?[0m?[32m pixels right?[0m                                                            ?[90m# AddSlideshowSteps.dragNewPauseMarker(int)?[0m
+    ?[32mThen ?[0m?[32mI click the New Pause button?[0m                                                                            ?[90m# AddSlideshowSteps.clickNewPauseButton()?[0m
+    ?[32mThen ?[0m?[32mI drag the new Pause marker ?[0m?[32m?[1m600?[0m?[32m pixels right?[0m                                                            ?[90m# AddSlideshowSteps.dragNewPauseMarker(int)?[0m
+    # Add a response area to appear in between the pauses:
+    ?[32mThen ?[0m?[32mI click inside the slideshow content in the editor?[0m                                                      ?[90m# AddSlideshowSteps.clickSlideshowContentArea()?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mWhen ?[0m?[32mI choose "?[0m?[32m?[1mMathematical Formula?[0m?[32m" link from the dialog and complete the correct answer?[0m                    ?[90m# QuestionDesignerSteps.chooseTypeAndCompleteCorrectAnswer(String)?[0m
+    ?[32mAnd ?[0m?[32mI click OK?[0m                                                                                               ?[90m# QuestionDesignerSteps.clickResponseDialogOkButton()?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mMathematical Formula?[0m?[32m" Question Widget in the question text section?[0m                           ?[90m# QuestionDesignerSteps.assertQuestionWidgetIsInserted(String)?[0m
+    ?[32mThen ?[0m?[32mI click on the "?[0m?[32m?[1mMathematical Formula?[0m?[32m" Question Widget in the question editor?[0m                            ?[90m# QuestionDesignerSteps.clickQuestionWidget(String)?[0m
+    ?[32mThen ?[0m?[32mI drag the Element-In marker ?[0m?[32m?[1m400?[0m?[32m pixels right?[0m                                                           ?[90m# AddSlideshowSteps.dragElementInMarker(int)?[0m
+    ?[32mWhen ?[0m?[32mI click to Preview the Slideshow?[0m                                                                        ?[90m# AddSlideshowSteps.clickPreviewButton()?[0m
+    ?[32mAnd ?[0m?[32mI resize the slideshow preview window to the default size?[0m                                                ?[90m# AddSlideshowSteps.resizeSlideshowPreview()?[0m
+    ?[32mThen ?[0m?[32mI am previewing the Slideshow?[0m                                                                           ?[90m# AddSlideshowSteps.assertSlideshowPreviewPage()?[0m
+    # Confirm How Did I Do button NOT presented when slideshow pauses while no response area visible:
+    ?[32mWhen ?[0m?[32mI begin playback of the Slideshow?[0m                                                                       ?[90m# AddSlideshowSteps.beginPlayback()?[0m
+    ?[32mWhen ?[0m?[32mthe Slideshow pause bar appears?[0m                                                                         ?[90m# AddSlideshowSteps.assertPauseBarAppears()?[0m
+    ?[32mThen ?[0m?[32mI don't see the Mathematical Formula response area?[0m                                                      ?[90m# MathmeticalFormulaElementSteps.assertMathFormulaQuestionNotVisible()?[0m
+    ?[32mAnd ?[0m?[32mI don't see How Did I Do on the slide pause bar?[0m                                                          ?[90m# AddSlideshowSteps.assertHowDidIDoNotVisible()?[0m
+    # Confirm How Did I Do button IS presented when slideshow pauses while a response area is visible:
+    ?[32mWhen ?[0m?[32mI click the Continue button on the slide pause bar?[0m                                                      ?[90m# AddSlideshowSteps.clickContinueButton()?[0m
+    ?[32mWhen ?[0m?[32mthe Slideshow pause bar appears?[0m                                                                         ?[90m# AddSlideshowSteps.assertPauseBarAppears()?[0m
+    ?[32mThen ?[0m?[32mI see the Mathematical Formula response area?[0m                                                            ?[90m# MathmeticalFormulaElementSteps.assertSlideMathFormulaQuestionVisible()?[0m
+    ?[32mAnd ?[0m?[32mI see How Did I Do on the slide pause bar?[0m                                                                ?[90m# AddSlideshowSteps.assertHowDidIDoVisible()?[0m
+    ?[32mAnd ?[0m?[32mI enter "?[0m?[32m?[1m2x?[0m?[32m" in Mathematical Formula input?[0m                                                               ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI click How Did I Do in the Slide?[0m                                                                        ?[90m# QuestionPreviewSteps.clickSlideHowDidIDo()?[0m
+    ?[32mThen ?[0m?[32mI assert that the Mathematical Formula answer is correct?[0m                                                ?[90m# MathmeticalFormulaElementSteps.assertSlideMathFormulaCorrect()?[0m
+    ?[32mThen ?[0m?[32mI close the question preview window?[0m                                                                     ?[90m# QuestionPreviewSteps.closeQuestionPreviewWindow()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Enable Self Registration" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:35:55" hostname="mo-acceptance-test-driver-182622c" time="2.301">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Enable Self Registration" time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Enable Self Registration" time="0.0"/>
+  <testcase name="When I set Allow Self Registration checkbox to checked" classname="Scenario: Enable Self Registration" time="0.0"/>
+  <testcase name="When I submit the changes to System Settings" classname="Scenario: Enable Self Registration" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Enable Self Registration" time="0.0"/>
+  <testcase name="Then The Allow Self Registration checkbox is checked" classname="Scenario: Enable Self Registration" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Enable Self Registration" time="3.284"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

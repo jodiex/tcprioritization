@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Class schedule unable to redo action in previous sequence of actions" tests="20" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:23:55" hostname="mo-acceptance-test-driver-182622c" time="45.297">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists a class called &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 1&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 2&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As1&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As2&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex1&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex2&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="Given I change the assignment &quot;As1&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class to start &quot;today&quot; and end &quot;tomorrow&quot;" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;TimelineClass&quot; class" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I go to the Edit Class Schedule page" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I see a timeline is rendered" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="When I select the following modules &quot;As1&quot; on the timeline" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I move the selected modules &quot;forward&quot; one day on the timeline" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I move the selected modules &quot;forward&quot; one day on the timeline" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I move the selected modules &quot;backward&quot; one day on the timeline" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I click the undo button" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="And I move the selected modules &quot;forward&quot; one day on the timeline" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.001"/>
+  <testcase name="Then I see the redo button is disabled on the timeline" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Class schedule unable to redo action in previous sequence of actions" time="46.414"/>
+  <system-out><![CDATA[
+  Scenario: Test the timeline is displaying not-set dates properly                                                                ?[90m# timeline/Timeline.feature:132?[0m
+    # need an assignment with no end(As2), no start(Ex1) and no start & no end (Ex2)
+    ?[32mWhen ?[0m?[32mI change the assignment "?[0m?[32m?[1mAs1?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 1?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1mtoday?[0m?[32m" and end "?[0m?[32m?[1mtomorrow?[0m?[32m"?[0m ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the assignment "?[0m?[32m?[1mAs2?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 1?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1mtoday?[0m?[32m" and end "?[0m?[32m?[1m?[0m?[32m"?[0m          ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the assignment "?[0m?[32m?[1mEx1?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 2?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1m?[0m?[32m" and end "?[0m?[32m?[1mtoday?[0m?[32m"?[0m          ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the assignment "?[0m?[32m?[1mEx2?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 2?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1m?[0m?[32m" and end "?[0m?[32m?[1m?[0m?[32m"?[0m               ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    # proceed with test, make sure timeline is rendered
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mTimelineClass?[0m?[32m" class?[0m                                                                    ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI go to the Edit Class Schedule page?[0m                                                                                      ?[90m# ClassHomepageSteps.navigateToEditClassSchedulePage()?[0m
+    ?[32mAnd ?[0m?[32mI see a timeline is rendered?[0m                                                                                              ?[90m# TimelineSteps.assertTimelineRendered()?[0m
+    ?[32mAnd ?[0m?[32mI see ?[0m?[32m?[1m2?[0m?[32m modules with no ?[0m?[32m?[1mstart?[0m?[32m date?[0m                                                                                        ?[90m# TimelineSteps.assertNumberOfNullDates(int,String)?[0m
+    ?[32mAnd ?[0m?[32mI see ?[0m?[32m?[1m2?[0m?[32m modules with no ?[0m?[32m?[1mend?[0m?[32m date?[0m                                                                                          ?[90m# TimelineSteps.assertNumberOfNullDates(int,String)?[0m
+    # jumping back a year make As2 not visible
+    ?[32mWhen ?[0m?[32mI use the jump to button to jump to "?[0m?[32m?[1m365 days ago?[0m?[32m"?[0m                                                                       ?[90m# TimelineSteps.useJumpToButton(String)?[0m
+    ?[32mThen ?[0m?[32mI see the timeline is viewing the ?[0m?[32m?[1mlast?[0m?[32m year?[0m                                                                              ?[90m# TimelineSteps.assertYearOfTimeline(String)?[0m
+    ?[32mAnd ?[0m?[32mI see ?[0m?[32m?[1m2?[0m?[32m modules with no ?[0m?[32m?[1mstart?[0m?[32m date?[0m                                                                                        ?[90m# TimelineSteps.assertNumberOfNullDates(int,String)?[0m
+    ?[32mAnd ?[0m?[32mI see ?[0m?[32m?[1m1?[0m?[32m modules with no ?[0m?[32m?[1mend?[0m?[32m date?[0m                                                                                          ?[90m# TimelineSteps.assertNumberOfNullDates(int,String)?[0m
+    # jumping forward a year makes Ex1 not visible
+    ?[32mWhen ?[0m?[32mI use the jump to button to jump to "?[0m?[32m?[1m365 days from today?[0m?[32m"?[0m                                                                ?[90m# TimelineSteps.useJumpToButton(String)?[0m
+    ?[32mThen ?[0m?[32mI see the timeline is viewing the ?[0m?[32m?[1mnext?[0m?[32m year?[0m                                                                              ?[90m# TimelineSteps.assertYearOfTimeline(String)?[0m
+    ?[32mAnd ?[0m?[32mI see ?[0m?[32m?[1m2?[0m?[32m modules with no ?[0m?[32m?[1mend?[0m?[32m date?[0m                                                                                          ?[90m# TimelineSteps.assertNumberOfNullDates(int,String)?[0m
+    ?[32mAnd ?[0m?[32mI see ?[0m?[32m?[1m1?[0m?[32m modules with no ?[0m?[32m?[1mstart?[0m?[32m date?[0m                                                                                        ?[90m# TimelineSteps.assertNumberOfNullDates(int,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

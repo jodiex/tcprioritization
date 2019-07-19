@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test the timeline is displaying not-set dates properly" tests="26" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:22:20" hostname="mo-acceptance-test-driver-182622c" time="94.154">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists a class called &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 1&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 2&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As1&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As2&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex1&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex2&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="When I change the assignment &quot;As1&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class to start &quot;today&quot; and end &quot;tomorrow&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I change the assignment &quot;As2&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class to start &quot;today&quot; and end &quot;&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I change the assignment &quot;Ex1&quot; in the unit &quot;Unit 2&quot; part of the &quot;TimelineClass&quot; class to start &quot;&quot; and end &quot;today&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I change the assignment &quot;Ex2&quot; in the unit &quot;Unit 2&quot; part of the &quot;TimelineClass&quot; class to start &quot;&quot; and end &quot;&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;TimelineClass&quot; class" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I go to the Edit Class Schedule page" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see a timeline is rendered" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see 2 modules with no start date" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see 2 modules with no end date" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="When I use the jump to button to jump to &quot;365 days ago&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="Then I see the timeline is viewing the last year" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see 2 modules with no start date" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see 1 modules with no end date" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="When I use the jump to button to jump to &quot;365 days from today&quot;" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="Then I see the timeline is viewing the next year" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see 2 modules with no end date" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="And I see 1 modules with no start date" classname="Scenario: Test the timeline is displaying not-set dates properly" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test the timeline is displaying not-set dates properly" time="95.316"/>
+  <system-out><![CDATA[
+  Scenario: Test of moving timeline modules save changes                                                                                          ?[90m# timeline/Timeline.feature:100?[0m
+    # Setup up the dates for the test
+    ?[32mWhen ?[0m?[32mI change the assignment "?[0m?[32m?[1mAs2?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 1?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1mtomorrow?[0m?[32m" and end "?[0m?[32m?[1m2 days from today?[0m?[32m"?[0m     ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    # change the dates of As1
+    ?[32mAnd ?[0m?[32mI navigate to the assignment editor for "?[0m?[32m?[1mAs1?[0m?[32m" in unit "?[0m?[32m?[1mUnit 1?[0m?[32m" of class "?[0m?[32m?[1mTimelineClass?[0m?[32m"?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.navigateToEditorForGivenAssignment(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the "?[0m?[32m?[1mStart Date?[0m?[32m" date to "?[0m?[32m?[1mtoday?[0m?[32m" in the policy editor?[0m                                                                            ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the "?[0m?[32m?[1mEnd Date?[0m?[32m" date to "?[0m?[32m?[1mtomorrow?[0m?[32m" in the policy editor?[0m                                                                           ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the "?[0m?[32m?[1mRestrict Feedback Until?[0m?[32m" date to "?[0m?[32m?[1m3 days from today?[0m?[32m" in the policy editor?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI save the assignment on the policies page and return to content repository?[0m                                                               ?[90m# AssignmentEditorPropertiesSteps.saveAndCloseAssignmentReturnToRepository()?[0m
+    # proceed with test, make sure timeline is rendered
+    ?[32mAnd ?[0m?[32mI navigate to the System Homepage?[0m                                                                                                         ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mTimelineClass?[0m?[32m" class?[0m                                                                                    ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI go to the Edit Class Schedule page?[0m                                                                                                      ?[90m# ClassHomepageSteps.navigateToEditClassSchedulePage()?[0m
+    ?[32mAnd ?[0m?[32mI see a timeline is rendered?[0m                                                                                                              ?[90m# TimelineSteps.assertTimelineRendered()?[0m
+    ?[32mAnd ?[0m?[32mI see the following modules "?[0m?[32m?[1mAs1,As2?[0m?[32m" on the timeline?[0m                                                                                     ?[90m# TimelineSteps.assertTimelineModules(String)?[0m
+    # ensure you can select some modules
+    ?[32mAnd ?[0m?[32mI click the unit "?[0m?[32m?[1mUnit 1?[0m?[32m"?[0m                                                                                                                 ?[90m# TimelineSteps.clickUnit(String)?[0m
+    # move the modules in the unit and make sure the dates changed
+    ?[32mWhen ?[0m?[32mI move the selected modules "?[0m?[32m?[1mforward?[0m?[32m" one day on the timeline?[0m                                                                            ?[90m# TimelineSteps.moveSelectedTimelineModules(String)?[0m
+    ?[32mAnd ?[0m?[32mI see the ?[0m?[32m?[1mundo?[0m?[32m button is ?[0m?[32m?[1menabled?[0m?[32m on the timeline?[0m                                                                                          ?[90m# TimelineSteps.assertRedoButton(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI navigate to the assignment editor for "?[0m?[32m?[1mAs1?[0m?[32m" in unit "?[0m?[32m?[1mUnit 1?[0m?[32m" of class "?[0m?[32m?[1mTimelineClass?[0m?[32m"?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.navigateToEditorForGivenAssignment(String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI see "?[0m?[32m?[1mStart Date?[0m?[32m" date is set to "?[0m?[32m?[1mtomorrow?[0m?[32m" in the policy editor?[0m                                                                        ?[90m# AssignmentEditorPropertiesSteps.assertAssignmentDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI see "?[0m?[32m?[1mEnd Date?[0m?[32m" date is set to "?[0m?[32m?[1m2 days from today?[0m?[32m" in the policy editor?[0m                                                                  ?[90m# AssignmentEditorPropertiesSteps.assertAssignmentDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI see "?[0m?[32m?[1mRestrict Feedback Until?[0m?[32m" date is set to "?[0m?[32m?[1m4 days from today?[0m?[32m" in the policy editor?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.assertAssignmentDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI save the assignment on the policies page and return to content repository?[0m                                                               ?[90m# AssignmentEditorPropertiesSteps.saveAndCloseAssignmentReturnToRepository()?[0m
+    ?[32mAnd ?[0m?[32mI see the assignment "?[0m?[32m?[1mAs2?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 1?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class starts "?[0m?[32m?[1m2 days from today?[0m?[32m" and ends "?[0m?[32m?[1m3 days from today?[0m?[32m"?[0m ?[90m# AssignmentEditorPropertiesSteps.assertAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

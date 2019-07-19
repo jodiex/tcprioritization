@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Successfully update question grade when viewing details in gradebook" tests="61" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:44:29" hostname="mo-acceptance-test-driver-182622c" time="35.738">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I am on the Content Repository page of Demonstration Class" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;Gradebook test question&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Gradebook test&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click the import question button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then The import questions dialog appears" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select the question &quot;Gradebook test question&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click Import Questions in the Import Questions dialog" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then verify the question caption text is &quot;Gradebook test question&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then the new assignment &quot;Gradebook test&quot; is visible in its own expanded column" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I start the &quot;Gradebook test&quot; assignment in &quot;Student Readiness&quot; unit" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I submit the assignment" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I confirm to submit the assignment" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And quit and save the assignment" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I am on the Class Homepage" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I am on the Class Grades page" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I select &quot;Gradebook test - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I put &quot;qa&quot; in the &quot;User&quot; input box" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select &quot;Most Recent&quot; in &quot;Results&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select &quot;Completed&quot; in &quot;Progress&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I click the Search button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I click the grade for the selected assignment" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I see the test record details of &quot;Gradebook test&quot; for user &quot;qa&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I see my total score &quot;0/1.0&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I select the question &quot;Q1&quot; on the gradebook details page" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I choose to update grade for question &quot;Q1&quot; to &quot;0.5&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click the &quot;Save Question Grades&quot; button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I see the question grade of &quot;Q1&quot; updated to &quot;0.50/1.00&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I see my total score &quot;0.50/1.00&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I select &quot;Gradebook test - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I put &quot;qa&quot; in the &quot;User&quot; input box" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select &quot;Most Recent&quot; in &quot;Results&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I select &quot;Completed&quot; in &quot;Progress&quot; selection list" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I click the Search button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="When I click &quot;Gradebook test&quot; in the Class Grades table" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click &quot;Q1&quot; for the selected assignment" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I select all in the grades table and choose to update grade to &quot;0.6&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="And I click the &quot;Save Question Grades&quot; button" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="Then I see the question grade of &quot;Q1&quot; updated to &quot;0.60/1.00&quot;" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Successfully update question grade when viewing details in gradebook" time="36.704"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

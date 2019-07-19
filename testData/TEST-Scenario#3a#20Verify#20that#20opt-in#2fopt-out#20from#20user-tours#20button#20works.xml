@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify that opt-in/opt-out from user-tours button works" tests="21" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:25:40" hostname="mo-acceptance-test-driver-182622c" time="12.686">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I navigate to the System Settings page" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="And I set the Enable User Tours checkbox state to true" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="And The changes to System Settings were successfully saved." classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="And I reset completed user-tours" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I opt-out from user-tours" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then The user tour is not present on page" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I opt-in to user-tours" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then The user tour is present on page" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="Then I end the user-tour" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify that opt-in/opt-out from user-tours button works" time="13.772"/>
+  <system-out><![CDATA[
+  Scenario: Verify that user-tour shows up on the page and template is correct ?[90m# usertours/UserTour.feature:14?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m           ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mThen ?[0m?[32mThe user tour is present on page?[0m                                      ?[90m# UserTourSteps.assertUserTourPresent()?[0m
+    ?[32mAnd ?[0m?[32mThe user tour template is loaded correctly?[0m                             ?[90m# UserTourSteps.assertUserTourTemplateCorrect()?[0m
+    ?[32mAnd ?[0m?[32mI navigate to the last step of the user-tour?[0m                           ?[90m# UserTourSteps.navigateToTheLastStep()?[0m
+    ?[32mThen ?[0m?[32mThe user tour is present on page?[0m                                      ?[90m# UserTourSteps.assertUserTourPresent()?[0m
+    ?[32mAnd ?[0m?[32mThe user tour template has next button transformed into end button?[0m     ?[90m# UserTourSteps.assertNextButtonTransformedIntoEndButton()?[0m
+    ?[32mThen ?[0m?[32mI end the user-tour?[0m                                                   ?[90m# UserTourSteps.endUserTour()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

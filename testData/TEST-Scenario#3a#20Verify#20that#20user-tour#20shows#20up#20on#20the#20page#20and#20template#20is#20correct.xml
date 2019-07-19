@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify that user-tour shows up on the page and template is correct" tests="17" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:25:27" hostname="mo-acceptance-test-driver-182622c" time="12.328">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then I navigate to the System Settings page" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And I set the Enable User Tours checkbox state to true" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And The changes to System Settings were successfully saved." classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then I click on the View Profile link" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And I reset completed user-tours" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then The user tour is present on page" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And The user tour template is loaded correctly" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And I navigate to the last step of the user-tour" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then The user tour is present on page" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="And The user tour template has next button transformed into end button" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="Then I end the user-tour" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify that user-tour shows up on the page and template is correct" time="13.4"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

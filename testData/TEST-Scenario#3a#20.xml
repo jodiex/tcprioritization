@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: " tests="24" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:12:10" hostname="mo-acceptance-test-driver-182622c" time="19.156">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: " time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: " time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: " time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: " time="0.0"/>
+  <testcase name="When I enter in the Algorithm Editor &quot;asdfasdasdsadf&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="And I click the Refresh Algorithm link" classname="Scenario: " time="0.0"/>
+  <testcase name="Then I see the Algorithm error message &quot;Randomization identities must contain &quot;=&quot;&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: " time="6.854"/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: " time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: " time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: " time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: " time="0.0"/>
+  <testcase name="When I enter in the Algorithm Editor &quot;asdfasdasdsadf&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: " time="0.0"/>
+  <testcase name="Then I see the Algorithm error message &quot;Randomization identities must contain &quot;=&quot;&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: " time="6.468"/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: " time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: " time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: " time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: " time="0.001"/>
+  <testcase name="When I enter in the Algorithm Editor &quot;asdfasdasdsadf&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="And I click Preview and see the error message &quot;Randomization identities must contain &quot;=&quot;&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="Then I see the Algorithm error message &quot;Randomization identities must contain &quot;=&quot;&quot;" classname="Scenario: " time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: " time="6.888"/>
+  <system-out><![CDATA[
+  Scenario:                                                                            ?[90m# question/AddAlgorithm.feature:10?[0m
+    ?[32mWhen ?[0m?[32mI enter in the Algorithm Editor "?[0m?[32m?[1masdfasdasdsadf?[0m?[32m"?[0m                              ?[90m# QuestionDesignerSteps.enterAlgorithmText(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Refresh Algorithm link?[0m                                             ?[90m# QuestionDesignerSteps.clickRefreshAlgorithmLink()?[0m
+    ?[32mThen ?[0m?[32mI see the Algorithm error message "?[0m?[32m?[1mRandomization identities must contain "="?[0m?[32m"?[0m ?[90m# QuestionDesignerSteps.assertAlgorithmError(String)?[0m
+
+  Scenario:                                                                            ?[90m# question/AddAlgorithm.feature:15?[0m
+    ?[32mWhen ?[0m?[32mI enter in the Algorithm Editor "?[0m?[32m?[1masdfasdasdsadf?[0m?[32m"?[0m                              ?[90m# QuestionDesignerSteps.enterAlgorithmText(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the question designer Save & Close button?[0m                              ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+    ?[32mThen ?[0m?[32mI see the Algorithm error message "?[0m?[32m?[1mRandomization identities must contain "="?[0m?[32m"?[0m ?[90m# QuestionDesignerSteps.assertAlgorithmError(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Grade 0% assignment with one MathApp Question" tests="42" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:25:15" hostname="mo-acceptance-test-driver-182622c" time="34.842">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I navigate to the System Settings page" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then I change the Math App engine selection to &quot;MapleNet (Math App)&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And The changes to System Settings were successfully saved." classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;New Math App Question&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I choose &quot;Math App&quot; link from the dialog" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I choose a demo worksheet &quot;DrawCircle&quot; for the Math App question" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I set the grading type for the Math App question to &quot;Manual Grading&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.001"/>
+  <testcase name="And I click OK" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then I see the &quot;Math App&quot; Question Widget in the question text section" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And After clicking Preview button I assert that the Math App question with &quot;DrawCircle&quot; worksheet is correctly rendered" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I close the question preview window" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then I click the question designer Save &amp; Close button" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Parabola_MathApp&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I click the import question button" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I select the question &quot;New Math App Question&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I click Import Questions in the Import Questions dialog" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then the new assignment &quot;Parabola_MathApp&quot; is visible in its own expanded column" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And it is named as &quot;Parabola_MathApp&quot; in &quot;Student Readiness&quot; column" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I launch the &quot;Parabola_MathApp&quot; assignment in &quot;Student Readiness&quot; unit" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then I assert that the Math App question is rendered properly" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="When I click the plot of &quot;New Math App Question&quot;" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I wait for &quot;2&quot; seconds" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="And I submit the assignment but allow for more time for the page to load" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="Then my score 0 out of 1 (0 %) is shown in a grade report" classname="Scenario: Grade 0% assignment with one MathApp Question" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Grade 0% assignment with one MathApp Question" time="35.795"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

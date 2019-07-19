@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" tests="19" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:29:55" hostname="mo-acceptance-test-driver-182622c" time="16.003">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And Lesson Editor is opened" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.001"/>
+  <testcase name="When enter Lesson name &quot;Lesson with Launch Page&quot;" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I click the new question button on the lesson design page" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the lesson question editor" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="When I click on the Properties tab" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="Then I see that the show launch page checkbox is set to false" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="When I set the show launch page checkbox to true" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I save &amp; close the lesson on the properties page" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I save and close the lesson summary details" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="Then the new lesson &quot;Lesson with Launch Page&quot; is visible in its own expanded column" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="Then I launch the &quot;Lesson with Launch Page&quot; lesson in &quot;Student Readiness&quot; unit" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test that when the show launch page policy is set to true, the launch page is displayed" time="17.066"/>
+  <system-out><![CDATA[
+  Scenario: Verify the Show Launch Page policy checkbox is disabled when the lesson has advanced policies ?[90m# ManageLesson.feature:91?[0m
+    ?[32mWhen ?[0m?[32mI click on the Properties tab?[0m                                                                    ?[90m# LessonEditorSteps.clickPropertiesTab()?[0m
+    ?[32mThen ?[0m?[32mI see that the show launch page checkbox is set to ?[0m?[32m?[1mfalse?[0m                                         ?[90m# AssignmentEditorPropertiesSteps.assertShowLaunchPageState(boolean)?[0m
+    ?[32mWhen ?[0m?[32mI click the Advanced Policies button?[0m                                                             ?[90m# AssignmentEditorPropertiesSteps.clickAdvancedPoliciesButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Advanced Policies Editor page?[0m                                                        ?[90m# AdvancedPoliciesEditorSteps.assertOnAdvancedPoliciesPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the Design button?[0m                                                                        ?[90m# AdvancedPoliciesEditorSteps.clickDesignButton()?[0m
+    ?[32mThen ?[0m?[32mI see the Remove Criterion button?[0m                                                                ?[90m# AdvancedPoliciesEditorSteps.assertRemoveCriterionButtonIsVisible()?[0m
+    ?[32mWhen ?[0m?[32mI click the Back button?[0m                                                                          ?[90m# AdvancedPoliciesEditorSteps.clickBackButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Policy Editor?[0m                                                                        ?[90m# AssignmentEditorPropertiesSteps.assertOnPolicyEditor()?[0m
+    ?[32mAnd ?[0m?[32mI see that the show launch page checkbox is set to ?[0m?[32m?[1mtrue?[0m                                           ?[90m# AssignmentEditorPropertiesSteps.assertShowLaunchPageState(boolean)?[0m
+    ?[32mAnd ?[0m?[32mI see that the show launch page checkbox is disabled?[0m                                              ?[90m# AssignmentEditorPropertiesSteps.assertShowLaunchPageDisabled()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create and Update School Private Event" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:43:39" hostname="mo-acceptance-test-driver-182622c" time="7.602">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="And I wait until the calendar has been loaded" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="And I clicked the calendar &quot;month&quot; view button" classname="Scenario: Create and Update School Private Event" time="0.001"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="When I create a school calendar event &quot;TestUpdateClassEvent&quot; that starts &quot;tomorrow at 2:00&quot; and ends &quot;6 days from today&quot;" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;TestUpdateClassEvent&quot;" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="And I see the organizer of the calendar event &quot;TestUpdateClassEvent&quot; is &quot;System&quot;" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="When I edit the calendar event &quot;TestUpdateClassEvent&quot; and set the description to &quot;Updated&quot;" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;TestUpdateClassEvent&quot;" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="And I see the description of the calendar event &quot;TestUpdateClassEvent&quot; is &quot;Updated&quot;" classname="Scenario: Create and Update School Private Event" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create and Update School Private Event" time="8.566"/>
+  <system-out><![CDATA[
+  Scenario: Create and delete private calendar event                                                                          ?[90m# calendar/Calendar.feature:9?[0m
+    ?[32mWhen ?[0m?[32mI create a private calendar event "?[0m?[32m?[1mTestDeletePrivateEvent?[0m?[32m" that starts "?[0m?[32m?[1mtoday at 12:00?[0m?[32m" and ends "?[0m?[32m?[1mtomorrow at 13:00?[0m?[32m"?[0m ?[90m# CalendarSteps.createPrivateCalendarEvent(String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mTestDeletePrivateEvent?[0m?[32m"?[0m                                                                      ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI see the organizer of the calendar event "?[0m?[32m?[1mTestDeletePrivateEvent?[0m?[32m" is "?[0m?[32m?[1mSystem?[0m?[32m"?[0m                                        ?[90m# CalendarSteps.assertCalendarEventOrganizer(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI delete the calendar event "?[0m?[32m?[1mTestDeletePrivateEvent?[0m?[32m"?[0m                                                                 ?[90m# CalendarSteps.deleteCalendarEvent(String)?[0m
+    ?[32mThen ?[0m?[32mI see no calendar event "?[0m?[32m?[1mTestDeletePrivateEvent?[0m?[32m"?[0m                                                                     ?[90m# CalendarSteps.assertNoCalendarEvent(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

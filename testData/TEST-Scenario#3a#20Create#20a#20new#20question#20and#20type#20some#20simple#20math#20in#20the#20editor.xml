@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a new question and type some simple math in the editor" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:31:24" hostname="mo-acceptance-test-driver-182622c" time="8.66">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="And I click Equation Editor button to open the Math Editor dialog and assert that the Math Editor dialog is visible" classname="Scenario: Create a new question and type some simple math in the editor" time="0.001"/>
+  <testcase name="When I type &quot;a/b&quot; in the Equation Editor" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="And I click Done in the Math Editor dialog" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="Then I see the &quot;a/b&quot; Math Widget in the question text section" classname="Scenario: Create a new question and type some simple math in the editor" time="0.001"/>
+  <testcase name="And I click the Preview button" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="Then I assert that the &quot;a/b&quot; math is rendered properly on the Question Preview page" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="And I close the question preview window" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="Then I click the question designer Save &amp; Close button" classname="Scenario: Create a new question and type some simple math in the editor" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a new question and type some simple math in the editor" time="9.669"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

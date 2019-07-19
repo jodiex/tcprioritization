@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Privacy policy with Class Homepage LTI launch." tests="27" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:11:06" hostname="mo-acceptance-test-driver-182622c" time="14.202">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I enable Privacy Policy Required with the dummy URL" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I navigate to the Shared Secret page" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I check if Consumer Key and Shared Secret exist, if not, I create them" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And The Accept Privacy Policy button is visible" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="When I accept the Privacy Policy" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="When I click the 'New Class' mapping button" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I create new class with random name" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.001"/>
+  <testcase name="When I click the 'Class Homepage' mapping button" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I close the LTI Test Harness leftover windows" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="When I go to the LTI Test Harness page" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I restore the launched LTI Test Harness form" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I update LTI user fields" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I launch prepared &quot;basic-lti-launch-request&quot; LTI request with role &quot;Student&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And The Accept Privacy Policy button is visible" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="When I accept the Privacy Policy" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I close the LTI Test Harness leftover windows" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I directly log out" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Privacy policy with Class Homepage LTI launch." time="15.215"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

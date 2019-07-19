@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:14:27" hostname="mo-acceptance-test-driver-182622c" time="9.041">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="And I choose creating new Slideshow from the main dropdown button" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="And Slideshow Designer is opened" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;New Question 2&quot;" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="When I click the Slideshow Audio File Manager button" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="Then I click the audio file named &quot;Audio_Test.mp3&quot;" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.001"/>
+  <testcase name="When I click to Preview the Slideshow" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="Then I am previewing the Slideshow" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="When I begin playback of the Slideshow" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="And I pause playback of the Slideshow" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="When current playback time is greater than 0" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="Then I close the question preview window" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Ensure Audio works when previewing a Slidehow Question with mp3" time="10.05"/>
+  <system-out><![CDATA[
+  Scenario: Ensure Audio works when previewing a Slidehow Question with set Duration ?[90m# question/slideshow/TestAudioPlayback.feature:10?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mNew Question 1?[0m?[32m"?[0m         ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mThen ?[0m?[32mI set the duration to "?[0m?[32m?[1m10?[0m?[32m" seconds?[0m                                          ?[90m# AddSlideshowSteps.clickAndSetDuration(String)?[0m
+    ?[32mWhen ?[0m?[32mI click to Preview the Slideshow?[0m                                            ?[90m# AddSlideshowSteps.clickPreviewButton()?[0m
+    ?[32mThen ?[0m?[32mI am previewing the Slideshow?[0m                                               ?[90m# AddSlideshowSteps.assertSlideshowPreviewPage()?[0m
+    ?[32mWhen ?[0m?[32mI begin playback of the Slideshow?[0m                                           ?[90m# AddSlideshowSteps.beginPlayback()?[0m
+    ?[32mAnd ?[0m?[32mI pause playback of the Slideshow?[0m                                            ?[90m# AddSlideshowSteps.pauseSlideshow()?[0m
+    ?[32mWhen ?[0m?[32mcurrent playback time is greater than 0?[0m                                     ?[90m# AddSlideshowSteps.assertSlideshowPlayed()?[0m
+    ?[32mThen ?[0m?[32mI close the question preview window?[0m                                         ?[90m# QuestionPreviewSteps.closeQuestionPreviewWindow()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

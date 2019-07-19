@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Successfully show search filters for all question types and question groups" tests="16" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:33:55" hostname="mo-acceptance-test-driver-182622c" time="19.433">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="When I click &quot;All Content Types&quot; in the &quot;Current Class&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;All Content Types&quot; column and verify the Search filters are visible inside column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="When I click &quot;Questions&quot; in the &quot;Current Class&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;Questions&quot; column and verify the Search filters are visible inside column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="When I click &quot;Interactive Narratives&quot; in the &quot;Current Class&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;Interactive Narratives&quot; column and verify the Search filters are visible inside column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="When I click &quot;Math Apps&quot; in the &quot;Current Class&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;Math Apps&quot; column and verify the Search filters are visible inside column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="When I click &quot;Text&quot; in the &quot;Current Class&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;Text&quot; column and verify the Search filters are visible inside column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="When I click &quot;Questions&quot; in the &quot;Current Class&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="And I click &quot;Student Readiness&quot; in the &quot;Questions&quot; column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="Then I click the Search button in the &quot;Student Readiness&quot; column and verify the Search filters are visible inside column" classname="Scenario: Successfully show search filters for all question types and question groups" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Successfully show search filters for all question types and question groups" time="20.44"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

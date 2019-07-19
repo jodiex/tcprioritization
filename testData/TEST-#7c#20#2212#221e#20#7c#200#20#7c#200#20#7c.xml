@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| −∞ | 0 | 0 |" tests="39" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:13:53" hostname="mo-acceptance-test-driver-182622c" time="24.012">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And Assignment Editor is opened" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="When I enter valid information for the assignment &quot;Different Types of Questions Test&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I click the new question button" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I enter valid information for the question name as &quot;Test List Question&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I see the ckeditor" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I choose &quot;List&quot; link from the dialog" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I click the drop down menu radio button for a list question" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I set the value to &quot;0&quot; for list response &quot;1&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I set the weight to &quot;1.0&quot; for list response &quot;1&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I set the value to &quot;@&quot; for list response &quot;2&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I set the weight to &quot;0.0&quot; for list response &quot;2&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I set the value to &quot;−∞&quot; for list response &quot;3&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I set the weight to &quot;0.0&quot; for list response &quot;3&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I click OK" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I choose to create a new question from the Add dropdown button" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I enter valid information for the question name as &quot;Test Random Question&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I see the ckeditor" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I save &amp; close the assignment on the questions page" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I see summary of the assignment" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I save and close the assignment summary details" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="Then the new assignment &quot;Different Types of Questions Test&quot; is visible in its own expanded column" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I launch the &quot;Different Types of Questions Test&quot; assignment in &quot;Student Readiness&quot; unit" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="When I select the &quot;−∞&quot; value for list question &quot;0&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I use &quot;Next&quot; button to navigate to &quot;Question 2&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="And I use &quot;Back&quot; button to navigate to &quot;Question 1&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="Then I see the &quot;−∞&quot; value is selected for list question &quot;0&quot;" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="When I submit the assignment" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="Then my score 0 out of 1 (0 %) is shown in a grade report" classname="| −∞ | 0 | 0 |" time="0.0"/>
+  <testcase name="classMethod" classname="| −∞ | 0 | 0 |" time="25.002"/>
+  <system-out><![CDATA[
+  Scenario Outline: Answer a select list drop down with different values                                         ?[90m# question/QuestionTypes.feature:58?[0m
+    # Create List Drop-down on an assignment
+    ?[32mWhen ?[0m?[32mI enter valid information for the assignment "?[0m?[32m?[1mDifferent Types of Questions Test?[0m?[32m"?[0m                        ?[90m# AssignmentEditorDetailsSteps.enterAssignmentNameAndDescription(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on the questions tab?[0m                                                                             ?[90m# AssignmentEditorDetailsSteps.clickQuestionsTab()?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button?[0m                                                                          ?[90m# AssignmentEditorQuestionSteps.createQuestion()?[0m
+    ?[32mAnd ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mTest List Question?[0m?[32m"?[0m                                  ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI see the ckeditor?[0m                                                                                       ?[90m# AddSlideshowSteps.assertCKEditorVisible()?[0m
+    ?[32mAnd ?[0m?[32mI click inside the question text editor?[0m                                                                  ?[90m# QuestionDesignerSteps.clickInsideQuestionTextEditor()?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mAnd ?[0m?[32mI choose "?[0m?[32m?[1mList?[0m?[32m" link from the dialog?[0m                                                                     ?[90m# QuestionDesignerSteps.chooseQuestionType(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the drop down menu radio button for a list question?[0m                                              ?[90m# ListResponseQuestionSteps.clickRadioDropDownButton()?[0m
+    ?[32mAnd ?[0m?[32mI set the value to "?[0m?[32m?[1m0?[0m?[32m" for list response "?[0m?[32m?[1m1?[0m?[32m"?[0m                                                             ?[90m# ListResponseQuestionSteps.setValue(String,int)?[0m
+    ?[32mAnd ?[0m?[32mI set the weight to "?[0m?[32m?[1m1.0?[0m?[32m" for list response "?[0m?[32m?[1m1?[0m?[32m"?[0m                                                          ?[90m# ListResponseQuestionSteps.setWeight(String,int)?[0m
+    ?[32mAnd ?[0m?[32mI set the value to "?[0m?[32m?[1m@?[0m?[32m" for list response "?[0m?[32m?[1m2?[0m?[32m"?[0m                                                             ?[90m# ListResponseQuestionSteps.setValue(String,int)?[0m
+    ?[32mAnd ?[0m?[32mI set the weight to "?[0m?[32m?[1m0.0?[0m?[32m" for list response "?[0m?[32m?[1m2?[0m?[32m"?[0m                                                          ?[90m# ListResponseQuestionSteps.setWeight(String,int)?[0m
+    ?[32mAnd ?[0m?[32mI set the value to "?[0m?[32m?[1m−∞?[0m?[32m" for list response "?[0m?[32m?[1m3?[0m?[32m"?[0m                                                            ?[90m# ListResponseQuestionSteps.setValue(String,int)?[0m
+    ?[32mAnd ?[0m?[32mI set the weight to "?[0m?[32m?[1m0.0?[0m?[32m" for list response "?[0m?[32m?[1m3?[0m?[32m"?[0m                                                          ?[90m# ListResponseQuestionSteps.setWeight(String,int)?[0m
+    ?[32mAnd ?[0m?[32mI click OK?[0m                                                                                               ?[90m# QuestionDesignerSteps.clickResponseDialogOkButton()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                                 ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    # Add another question so can click next button
+    ?[32mAnd ?[0m?[32mI choose to create a new question from the Add dropdown button?[0m                                           ?[90m# AssignmentEditorQuestionSteps.newQuestionFromAddDropdownButton()?[0m
+    ?[32mAnd ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mTest Random Question?[0m?[32m"?[0m                                ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI see the ckeditor?[0m                                                                                       ?[90m# AddSlideshowSteps.assertCKEditorVisible()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                                 ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    # save the assignment
+    ?[32mAnd ?[0m?[32mI save & close the assignment on the questions page?[0m                                                      ?[90m# AssignmentEditorQuestionSteps.saveAndCloseAssignment()?[0m
+    ?[32mAnd ?[0m?[32mI see summary of the assignment?[0m                                                                          ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mAnd ?[0m?[32mI save and close the assignment summary details?[0m                                                          ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mThen ?[0m?[32mthe new assignment "?[0m?[32m?[1mDifferent Types of Questions Test?[0m?[32m" is visible in its own expanded column?[0m            ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    # start the assignment
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                                       ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                             ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI launch the "?[0m?[32m?[1mDifferent Types of Questions Test?[0m?[32m" assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m                  ?[90m# ClassHomepageSteps.reopenAssignment(String,String)?[0m
+    # select different values and make sure that are stored correctly
+    ?[32mWhen ?[0m?[32mI select the "?[0m?[32m?[1m@?[0m?[32m" value for list question "?[0m?[32m?[1m0?[0m?[32m"?[0m                                                            ?[90m# ListQuestionsSteps.setSelectValue(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI use "?[0m?[32m?[1mNext?[0m?[32m" button to navigate to "?[0m?[32m?[1mQuestion 2?[0m?[32m"?[0m                                                          ?[90m# MapleTAAssignmentSteps.navigateToQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI use "?[0m?[32m?[1mBack?[0m?[32m" button to navigate to "?[0m?[32m?[1mQuestion 1?[0m?[32m"?[0m                                                          ?[90m# MapleTAAssignmentSteps.navigateToQuestion(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1m@?[0m?[32m" value is selected for list question "?[0m?[32m?[1m0?[0m?[32m"?[0m                                                   ?[90m# ListQuestionsSteps.assertSelectValue(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI submit the assignment?[0m                                                                                 ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mmy score ?[0m?[32m?[1m0?[0m?[32m out of ?[0m?[32m?[1m1?[0m?[32m (?[0m?[32m?[1m0?[0m?[32m %) is shown in a grade report?[0m                                                    ?[90m# MapleTAAssignmentSteps.assertScore(String,String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

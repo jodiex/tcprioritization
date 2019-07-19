@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Delete the test roles" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:25:23" hostname="mo-acceptance-test-driver-182622c" time="2.798">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="And I go to the Role Manager page" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="When I click to delete the &quot;Test - clone&quot; role" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="Then I am on the Role Manager page" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="And I do not see the &quot;Test - clone&quot; role in the list" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="When I click to delete the &quot;Test&quot; role" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="Then I am on the Role Manager page" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="And I do not see the &quot;Test&quot; role in the list" classname="Scenario: Delete the test roles" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Delete the test roles" time="3.891"/>
+  <system-out><![CDATA[
+  Scenario: Clone a role                          ?[90m# usermanager/ManageRole.feature:28?[0m
+    ?[32mWhen ?[0m?[32mI click to clone the "?[0m?[32m?[1mTest?[0m?[32m" role?[0m         ?[90m# RoleManagerSteps.clickCloneLink(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Editor page?[0m             ?[90m# RoleEditorSteps.assertOnRoleEditorPage()?[0m
+    ?[32mWhen ?[0m?[32mI click Submit?[0m                           ?[90m# RoleEditorSteps.clickSubmit()?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Manager page?[0m            ?[90m# RoleManagerSteps.assertOnRoleManagerPage()?[0m
+    ?[32mAnd ?[0m?[32mI see the "?[0m?[32m?[1mTest - clone?[0m?[32m" role in the list?[0m ?[90m# RoleManagerSteps.assertRoleInList(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

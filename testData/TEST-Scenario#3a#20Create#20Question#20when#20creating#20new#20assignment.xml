@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create Question when creating new assignment" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:31:00" hostname="mo-acceptance-test-driver-182622c" time="9.273">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="Given I am on the Content Repository page of Demonstration Class" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="When I enter valid information for the assignment &quot;Physics&quot;" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="And I click the new question button" classname="Scenario: Create Question when creating new assignment" time="0.001"/>
+  <testcase name="And I create question &quot;Light Speed&quot; with label &quot;Light Speed Label&quot;" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Create Question when creating new assignment" time="0.001"/>
+  <testcase name="Then verify the question caption text is &quot;Light Speed Label&quot;" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Create Question when creating new assignment" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create Question when creating new assignment" time="10.315"/>
+  <system-out><![CDATA[
+  #We would like to use he first 4 steps as precondition for other scenarios in this feature
+  @Question @Assignment @AssignmentEditor
+  Scenario: Import Question when creating new assignment                                            ?[90m# ManageQuestionsInAssignment.feature:9?[0m
+    ?[32mGiven ?[0m?[32mI am on the Content Repository page of ?[0m?[32m?[1mDemonstration Class?[0m                                ?[90m# ContentRepositorySteps.navigateToContentRepositoryOfClass(String)?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit from the main dropdown button?[0m ?[90m# ContentRepositorySteps.chooseCreatingNewAssignmentFromMainDropdownButton(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the assignment "?[0m?[32m?[1mImport Question?[0m?[32m"?[0m                             ?[90m# AssignmentEditorDetailsSteps.enterAssignmentNameAndDescription(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on the questions tab?[0m                                                                ?[90m# AssignmentEditorDetailsSteps.clickQuestionsTab()?[0m
+    ?[32mAnd ?[0m?[32mI click the import question button?[0m                                                          ?[90m# AssignmentEditorQuestionSteps.importQuestion()?[0m
+    ?[32mThen ?[0m?[32mThe import questions dialog appears?[0m                                                        ?[90m# AssignmentEditorQuestionSteps.assertImportQuestionsVisible()?[0m
+    ?[32mWhen ?[0m?[32mI click on "Questions"?[0m                                                                     ?[90m# ContentRepositorySteps.clickOnQuestions()?[0m
+    ?[32mAnd ?[0m?[32mI click on "All Questions"?[0m                                                                  ?[90m# ContentRepositorySteps.clickOnAllQuestions()?[0m
+    ?[32mAnd ?[0m?[32mI select the question "?[0m?[32m?[1mLast Question?[0m?[32m"?[0m                                                       ?[90m# AssignmentEditorQuestionSteps.selectQuestion(String)?[0m
+    ?[32mAnd ?[0m?[32mI click Import Questions in the Import Questions dialog?[0m                                     ?[90m# AssignmentEditorQuestionSteps.doImportQuestions()?[0m
+    ?[32mThen ?[0m?[32mverify the question caption text is "?[0m?[32m?[1mLast Question?[0m?[32m"?[0m                                        ?[90m# AssignmentEditorQuestionSteps.assertSavedQuestionName(String)?[0m
+    ?[32mWhen ?[0m?[32mI save & close the assignment on the questions page?[0m                                        ?[90m# AssignmentEditorQuestionSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                            ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mAnd ?[0m?[32mI save and close the assignment summary details?[0m                                             ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

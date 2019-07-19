@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test the timeline component renders properly and basic functionality" tests="42" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:17:49" hostname="mo-acceptance-test-driver-182622c" time="422.445">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists a class called &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 1&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 2&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As1&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As2&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex1&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex2&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="When I change the assignment &quot;As1&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class to start &quot;today&quot; and end &quot;tomorrow&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I change the assignment &quot;As2&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class to start &quot;tomorrow&quot; and end &quot;2 days from today&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I change the assignment &quot;Ex1&quot; in the unit &quot;Unit 2&quot; part of the &quot;TimelineClass&quot; class to start &quot;3 days from today&quot; and end &quot;5 days from today&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I change the assignment &quot;Ex2&quot; in the unit &quot;Unit 2&quot; part of the &quot;TimelineClass&quot; class to start &quot;10 days from today&quot; and end &quot;12 days from today&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;TimelineClass&quot; class" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I go to the Edit Class Schedule page" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see a timeline is rendered" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the module &quot;Ex1&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="When I move the module &quot;Ex1&quot; 10 to the right" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the undo button" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the redo button" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the unit &quot;Unit 1&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see the following modules &quot;As1, As2&quot; are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the unit &quot;Unit 2&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see the following modules &quot;Ex1, Ex2&quot; are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the unit &quot;Default Unit&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see no modules are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I click the unit &quot;Unit 1&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see the following modules &quot;As1, As2&quot; are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I CTRL-click the unit &quot;Unit 2&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see the following modules &quot;As1, As2, Ex1, Ex2&quot; are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.001"/>
+  <testcase name="Then I click the unit &quot;Default Unit&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see no modules are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.001"/>
+  <testcase name="Then I see no modules are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="When I click the Select All button" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see the following modules &quot;As1, As2, Ex1, Ex2&quot; are selected on the timeline" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test the timeline component renders properly and basic functionality" time="106.664"/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I go to the Edit Class Schedule page" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="And I see a timeline is rendered" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="When I use the jump to button to jump to &quot;365 days ago&quot;" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="Then I see the timeline is viewing the last year" classname="Scenario: Test the timeline component renders properly and basic functionality" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test the timeline component renders properly and basic functionality" time="11.577"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

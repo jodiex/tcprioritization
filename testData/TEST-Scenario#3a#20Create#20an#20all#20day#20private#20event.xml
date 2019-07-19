@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create an all day private event" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:43:47" hostname="mo-acceptance-test-driver-182622c" time="4.169">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create an all day private event" time="0.0"/>
+  <testcase name="And I wait until the calendar has been loaded" classname="Scenario: Create an all day private event" time="0.0"/>
+  <testcase name="And I clicked the calendar &quot;month&quot; view button" classname="Scenario: Create an all day private event" time="0.0"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Create an all day private event" time="0.0"/>
+  <testcase name="When I create an all day private calendar event &quot;TestAllDayPrivateEvent&quot; that starts &quot;7 days from today&quot;" classname="Scenario: Create an all day private event" time="0.0"/>
+  <testcase name="Then I see a calendar event &quot;TestAllDayPrivateEvent&quot;" classname="Scenario: Create an all day private event" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create an all day private event" time="5.142"/>
+  <system-out><![CDATA[
+  Scenario: Create and Update School Private Event                                                                           ?[90m# calendar/Calendar.feature:16?[0m
+    ?[32mWhen ?[0m?[32mI create a school calendar event "?[0m?[32m?[1mTestUpdateClassEvent?[0m?[32m" that starts "?[0m?[32m?[1mtomorrow at 2:00?[0m?[32m" and ends "?[0m?[32m?[1m6 days from today?[0m?[32m"?[0m ?[90m# CalendarSteps.createSchoolCalendarEvent(String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mTestUpdateClassEvent?[0m?[32m"?[0m                                                                       ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI see the organizer of the calendar event "?[0m?[32m?[1mTestUpdateClassEvent?[0m?[32m" is "?[0m?[32m?[1mSystem?[0m?[32m"?[0m                                         ?[90m# CalendarSteps.assertCalendarEventOrganizer(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI edit the calendar event "?[0m?[32m?[1mTestUpdateClassEvent?[0m?[32m" and set the description to "?[0m?[32m?[1mUpdated?[0m?[32m"?[0m                               ?[90m# CalendarSteps.updateCalendarEventDescription(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mTestUpdateClassEvent?[0m?[32m"?[0m                                                                       ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI see the description of the calendar event "?[0m?[32m?[1mTestUpdateClassEvent?[0m?[32m" is "?[0m?[32m?[1mUpdated?[0m?[32m"?[0m                                      ?[90m# CalendarSteps.assertDescriptionEventOrganizer(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

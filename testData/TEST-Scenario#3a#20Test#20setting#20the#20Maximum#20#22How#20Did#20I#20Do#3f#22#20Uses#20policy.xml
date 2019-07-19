@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" tests="42" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:15:38" hostname="mo-acceptance-test-driver-182622c" time="25.481">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.001"/>
+  <testcase name="When enter Assignment name &quot;How Did I Do Max Attempts Test Assignment&quot;" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I click on the set policies tab" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I set How Did I Do check box to true" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I set the maximum How Did I Do uses to &quot;2&quot;" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I click on the questions tab" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I click the new question button" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the assignment question editor" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.001"/>
+  <testcase name="Then verify the question caption text is &quot;Formula Question Label&quot;" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I click on the set policies tab" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.001"/>
+  <testcase name="Then I verify the maximum How Did I Do uses is set to &quot;2&quot;" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the policies page" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then the new assignment &quot;How Did I Do Max Attempts Test Assignment&quot; is visible in its own expanded column" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I edit the &quot;How Did I Do Max Attempts Test Assignment&quot; assignment" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I click on the set policies tab" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I verify the maximum How Did I Do uses is set to &quot;2&quot;" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.001"/>
+  <testcase name="When I save &amp; close the assignment on the policies page" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.001"/>
+  <testcase name="And I launch the &quot;How Did I Do Max Attempts Test Assignment&quot; assignment in &quot;Student Readiness&quot; unit" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I enter &quot;2x&quot; in Mathematical Formula input" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="And I click How Did I Do in the assignment page" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I assert that the Mathematical Formula answer is correct" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I assert that there is &quot;1/2&quot; uses of How Did I Do remaining" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I click within the How Did I Do response area to clear it" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I click How Did I Do in the assignment page" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I assert that the Mathematical Formula answer is correct" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I assert that there is &quot;0/2&quot; uses of How Did I Do remaining" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I click within the How Did I Do response area to clear it" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I assert that the How Did I Do link has been removed" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="When I save and quit assignment to clear assignment state" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test setting the Maximum &quot;How Did I Do?&quot; Uses policy" time="26.464"/>
+  <system-out><![CDATA[
+  Scenario: Test How Did I Do? when taking a assignment                                             ?[90m# CreateAssignment.feature:71?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit from the main dropdown button?[0m ?[90m# ContentRepositorySteps.chooseCreatingNewAssignmentFromMainDropdownButton(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32menter Assignment name "?[0m?[32m?[1mHow Did I Do ? Test Assignment?[0m?[32m"?[0m                                     ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click on the set policies tab?[0m                                                            ?[90m# AssignmentEditorPropertiesSteps.clickSetPoliciesTab()?[0m
+    ?[32mAnd ?[0m?[32mI set How Did I Do check box to ?[0m?[32m?[1mtrue?[0m                                                        ?[90m# AssignmentEditorPropertiesSteps.setHowDidIDoCheckBox(boolean)?[0m
+    ?[32mWhen ?[0m?[32mI click on the questions tab?[0m                                                               ?[90m# AssignmentEditorDetailsSteps.clickQuestionsTab()?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button?[0m                                                             ?[90m# AssignmentEditorQuestionSteps.createQuestion()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mFormula Question?[0m?[32m" with label "?[0m?[32m?[1mFormula Question Label?[0m?[32m"?[0m                    ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI create a Mathematical Formula response area in the assignment question editor?[0m             ?[90m# AssignmentEditorQuestionSteps.createFormulaQuestionInQuestionEditor()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                    ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mThen ?[0m?[32mverify the question caption text is "?[0m?[32m?[1mFormula Question Label?[0m?[32m"?[0m                               ?[90m# AssignmentEditorQuestionSteps.assertSavedQuestionName(String)?[0m
+    ?[32mWhen ?[0m?[32mI save & close the assignment on the questions page?[0m                                        ?[90m# AssignmentEditorQuestionSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                            ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mWhen ?[0m?[32mI save and close the assignment summary details?[0m                                            ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mThen ?[0m?[32mthe new assignment "?[0m?[32m?[1mHow Did I Do ? Test Assignment?[0m?[32m" is visible in its own expanded column?[0m  ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                          ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI launch the "?[0m?[32m?[1mHow Did I Do ? Test Assignment?[0m?[32m" assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m        ?[90m# ClassHomepageSteps.reopenAssignment(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI enter "?[0m?[32m?[1m2x?[0m?[32m" in Mathematical Formula input?[0m                                                 ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI click How Did I Do in the assignment page?[0m                                                 ?[90m# MapleTAAssignmentSteps.clickHowDidIDoLink()?[0m
+    ?[32mThen ?[0m?[32mI assert that the Mathematical Formula answer is correct?[0m                                   ?[90m# MathmeticalFormulaElementSteps.assertSlideMathFormulaCorrect()?[0m
+    ?[32mWhen ?[0m?[32mI save and quit assignment to clear assignment state?[0m                                       ?[90m# MapleTAAssignmentSteps.clearAssignmentState()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                 ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

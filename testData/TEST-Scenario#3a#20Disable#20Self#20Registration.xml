@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Disable Self Registration" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:36:03" hostname="mo-acceptance-test-driver-182622c" time="2.078">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Disable Self Registration" time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Disable Self Registration" time="0.0"/>
+  <testcase name="When I set Allow Self Registration checkbox to unchecked" classname="Scenario: Disable Self Registration" time="0.0"/>
+  <testcase name="When I submit the changes to System Settings" classname="Scenario: Disable Self Registration" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Disable Self Registration" time="0.0"/>
+  <testcase name="Then The Allow Self Registration checkbox is unchecked" classname="Scenario: Disable Self Registration" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Disable Self Registration" time="3.032"/>
+  <system-out><![CDATA[
+  Scenario: Visit Self Registration Page and Check User Details   ?[90m# SelfRegistration.feature:12?[0m
+    ?[32mGiven ?[0m?[32mI navigate to the Maple TA login page?[0m                   ?[90m# LoginSteps.navigateToLoginPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the Create an Account link?[0m                       ?[90m# LoginSteps.clickCreateAnAccount()?[0m
+    ?[32mThen ?[0m?[32mI am on the Register page?[0m                                ?[90m# RegisterSteps.assertRegisterPage()?[0m
+    ?[32mGiven ?[0m?[32mI fill out the Register form for user ?[0m?[32m?[1mmario?[0m             ?[90m# RegisterSteps.enterUserDetails(String)?[0m
+    ?[32mAnd ?[0m?[32mI submit the register form?[0m                                ?[90m# RegisterSteps.clickSubmit()?[0m
+    ?[32mThen ?[0m?[32mI am on the Maple TA login page?[0m                          ?[90m# LoginSteps.assertLoginPage()?[0m
+    ?[32mAnd ?[0m?[32mThe successful registration message is shown?[0m              ?[90m# LoginSteps.assertRegistrationMessageShown()?[0m
+    ?[32mWhen ?[0m?[32mI click the Login button?[0m                                 ?[90m# LoginSteps.clickLoginButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the System Homepage?[0m                              ?[90m# SystemHomepageSteps.assertSystemHomepage()?[0m
+    ?[32mWhen ?[0m?[32mI click on the View Profile link?[0m                         ?[90m# SystemHomepageSteps.navigateToUserProfilePage()?[0m
+    ?[32mThen ?[0m?[32mI check that the user details for user ?[0m?[32m?[1mmario?[0m?[32m are correct?[0m ?[90m# UserDetailsSteps.assertUserDetailsAreCorrect(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Access a regular page when the privacy policy is required." tests="34" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:10:31" hostname="mo-acceptance-test-driver-182622c" time="13.77">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And I enable Privacy Policy Required with the dummy URL" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Given I refresh the System Settings page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And I accept the privacy policy if necessary" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Given I open the Create User page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I enter the valid information for the user bowman" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then the user bowman is created" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I click the Register Users menu item" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And I search for user bowman" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And I select the user &quot;bowman&quot; in the list of users to add" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And I click the Register button on the Register Users page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then The users were successfully registered in the class" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Given I log out" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I navigate to the Maple TA login page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the Maple TA login page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I enter valid credentials for user bowman" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I navigate to the Privacy Policy page with redirect to /1/gradebook" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And The Accept Privacy Policy button is visible" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I reject the Privacy Policy" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the Maple TA login page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I enter valid credentials for user bowman" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And The Accept Privacy Policy button is visible" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I accept the Privacy Policy" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="When I navigate to the Privacy Policy page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="And The Accept Privacy Policy button is not visible" classname="Scenario: Access a regular page when the privacy policy is required." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Access a regular page when the privacy policy is required." time="14.709"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

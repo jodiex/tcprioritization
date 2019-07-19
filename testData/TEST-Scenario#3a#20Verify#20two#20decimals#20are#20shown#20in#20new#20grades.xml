@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify two decimals are shown in new grades" tests="47" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:01:03" hostname="mo-acceptance-test-driver-182622c" time="25.696">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I click the 'New Class' mapping button" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on a New Class page" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I create new class with random name" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I click the 'Class Homepage' mapping button" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Content Repository&quot; of current class" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I choose creating new assignment in &quot;Default Unit&quot; unit from the main dropdown button" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Assignment 1&quot;" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I click on the questions tab" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I click the new question button" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I create question &quot;Regrading&quot; with label &quot;Regrading&quot;" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I choose &quot;Maple-graded&quot; link from the dialog" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I change the Maple Graded answer to &quot;5&quot;" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I set the Maple grading code to &quot;if ($RESPONSE=99) then 0.75 else evalb(($ANSWER)-($RESPONSE)=0); end if;&quot;" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I see the &quot;Maple&quot; Question Widget in the question text section" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Verify two decimals are shown in new grades" time="0.001"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I start the &quot;Assignment 1&quot; assignment in &quot;Default Unit&quot; unit" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I enter &quot;99&quot; in Mathematical Formula input" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I submit the assignment" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then my score 0.75 out of 1 (75 %) is shown in a grade report" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And quit and save the assignment" classname="Scenario: Verify two decimals are shown in new grades" time="0.001"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I select &quot;Assignment 1 - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I click the Search button" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I click the grade for the selected assignment" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I see the test record details of &quot;Assignment 1&quot; for the current user" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I click the Regrade Question button" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I am on the Regrading page" classname="Scenario: Verify two decimals are shown in new grades" time="0.001"/>
+  <testcase name="And I see the regrading in progress spinner" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="And I wait until regrading is complete" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="When I wait until 1 attempts have been regraded" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="Then I see that attempt 1 has a grade of 0.75" classname="Scenario: Verify two decimals are shown in new grades" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify two decimals are shown in new grades" time="25.806"/>
+  <system-out><![CDATA[
+  Scenario: Verify clicked attempt has grade filled in first                                                                           ?[90m# gradebook/ManageRegrading.feature:852?[0m
+    ?[32mWhen ?[0m?[32mI launch random "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mInstructor?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m ?[90m# TestHarnessSteps.runLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                  ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the 'New Class' mapping button?[0m                                                                                        ?[90m# LTIMappingSteps.clickNewClassButton()?[0m
+    ?[32mThen ?[0m?[32mI am on a New Class page?[0m                                                                                                      ?[90m# AddMapleTAClassSteps.verifyNewClassPage()?[0m
+    ?[32mWhen ?[0m?[32mI create new class with random name?[0m                                                                                           ?[90m# AddMapleTAClassSteps.createNewClassWithRandomName()?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                  ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    ?[32mWhen ?[0m?[32mI click the 'Class Homepage' mapping button?[0m                                                                                   ?[90m# LTIMappingSteps.clickClassHomepageButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    # Create an assignment
+    ?[32mWhen ?[0m?[32mI navigate to the "?[0m?[32m?[1mContent Repository?[0m?[32m" of current class?[0m                                                                       ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI choose creating new assignment in "?[0m?[32m?[1mDefault Unit?[0m?[32m" unit from the main dropdown button?[0m                                          ?[90m# ContentRepositorySteps.chooseCreatingNewAssignmentFromMainDropdownButton(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                                                   ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32menter Assignment name "?[0m?[32m?[1mAssignment 1?[0m?[32m"?[0m                                                                                          ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click on the questions tab?[0m                                                                                                  ?[90m# AssignmentEditorDetailsSteps.clickQuestionsTab()?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button?[0m                                                                                                ?[90m# AssignmentEditorQuestionSteps.createQuestion()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mRegrading?[0m?[32m" with label "?[0m?[32m?[1mRegrading?[0m?[32m"?[0m                                                                           ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m                       ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mWhen ?[0m?[32mI choose "?[0m?[32m?[1mMaple-graded?[0m?[32m" link from the dialog?[0m                                                                                  ?[90m# QuestionDesignerSteps.chooseQuestionType(String)?[0m
+    ?[32mAnd ?[0m?[32mI change the Maple Graded answer to "?[0m?[32m?[1m5?[0m?[32m"?[0m                                                                                        ?[90m# MapleGradedQuestionSteps.setCorrectAnswer(String)?[0m
+    ?[32mAnd ?[0m?[32mI set the Maple grading code to "?[0m?[32m?[1mwith(Threads): Sleep(2); evalb(($ANSWER)-($RESPONSE)=0);?[0m?[32m"?[0m                                     ?[90m# MapleGradedQuestionSteps.setGradingCode(String)?[0m
+    ?[32mAnd ?[0m?[32mI click OK?[0m                                                                                                                     ?[90m# QuestionDesignerSteps.clickResponseDialogOkButton()?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mMaple?[0m?[32m" Question Widget in the question text section?[0m                                                                ?[90m# QuestionDesignerSteps.assertQuestionWidgetIsInserted(String)?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                                                       ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mWhen ?[0m?[32mI save & close the assignment on the questions page?[0m                                                                           ?[90m# AssignmentEditorQuestionSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                                                               ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mWhen ?[0m?[32mI save and close the assignment summary details?[0m                                                                               ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    # Take the assignment twice
+    ?[32mWhen ?[0m?[32mI start the "?[0m?[32m?[1mAssignment 1?[0m?[32m" assignment in "?[0m?[32m?[1mDefault Unit?[0m?[32m" unit?[0m                                                                  ?[90m# ClassHomepageSteps.openAssignment(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI enter "?[0m?[32m?[1m5?[0m?[32m" in Mathematical Formula input?[0m                                                                                      ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI submit the assignment?[0m                                                                                                        ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mmy score ?[0m?[32m?[1m1?[0m?[32m out of ?[0m?[32m?[1m1?[0m?[32m (?[0m?[32m?[1m100?[0m?[32m %) is shown in a grade report?[0m                                                                        ?[90m# MapleTAAssignmentSteps.assertScore(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mquit and save the assignment?[0m                                                                                                   ?[90m# MapleTAAssignmentSteps.quitAndSaveAssignment()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Class Homepage?[0m                                                                                                     ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mWhen ?[0m?[32mI start the "?[0m?[32m?[1mAssignment 1?[0m?[32m" assignment in "?[0m?[32m?[1mDefault Unit?[0m?[32m" unit?[0m                                                                  ?[90m# ClassHomepageSteps.openAssignment(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI enter "?[0m?[32m?[1m5?[0m?[32m" in Mathematical Formula input?[0m                                                                                      ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI submit the assignment?[0m                                                                                                        ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mmy score ?[0m?[32m?[1m1?[0m?[32m out of ?[0m?[32m?[1m1?[0m?[32m (?[0m?[32m?[1m100?[0m?[32m %) is shown in a grade report?[0m                                                                        ?[90m# MapleTAAssignmentSteps.assertScore(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mquit and save the assignment?[0m                                                                                                   ?[90m# MapleTAAssignmentSteps.quitAndSaveAssignment()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Class Homepage?[0m                                                                                                     ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    # Go to regrading page
+    ?[32mWhen ?[0m?[32mI navigate to the "?[0m?[32m?[1mClass Grades?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m                                                              ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Grades page?[0m                                                                                                 ?[90m# GradebookClassGradesSteps.waitForClassGradesPage()?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mAssignment 1 - Homework/Quiz?[0m?[32m" in "Assignments" selection list?[0m                                                        ?[90m# GradebookClassGradesSteps.selectAssignment(String)?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mOther users with grades?[0m?[32m" in "List" selection list?[0m                                                                    ?[90m# GradebookClassGradesSteps.selectUser(String)?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mEarliest?[0m?[32m" in "Results" selection list?[0m                                                                                ?[90m# GradebookClassGradesSteps.selectResult(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Search button?[0m                                                                                                      ?[90m# GradebookClassGradesSteps.clickSearch()?[0m
+    ?[32mWhen ?[0m?[32mI click the grade for the selected assignment?[0m                                                                                 ?[90m# GradebookClassGradesSteps.clickGrade()?[0m
+    ?[32mThen ?[0m?[32mI see the test record details of "?[0m?[32m?[1mAssignment 1?[0m?[32m" for the current user?[0m                                                          ?[90m# GradebookDetailsSteps.assertAssignmentTitleAndCurrentUserVisible(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Regrade Question button?[0m                                                                                           ?[90m# GradebookDetailsSteps.clickRegradeQuestionButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Regrading page?[0m                                                                                                    ?[90m# GradebookRegradingSteps.waitForRegradingPage()?[0m
+    ?[32mAnd ?[0m?[32mI see the regrading in progress spinner?[0m                                                                                        ?[90m# GradebookRegradingSteps.assertSpinnerIsVisible()?[0m
+    ?[32mWhen ?[0m?[32mI wait until ?[0m?[32m?[1m1?[0m?[32m attempts have been regraded?[0m                                                                                    ?[90m# GradebookRegradingSteps.waitUntilNumberRegraded(int)?[0m
+    ?[32mThen ?[0m?[32mI see that the highlighted attempt has a grade of ?[0m?[32m?[1m1.0?[0m                                                                         ?[90m# GradebookRegradingSteps.assertHighlightedAttemptHasGrade(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" tests="33" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:39:53" hostname="mo-acceptance-test-driver-182622c" time="51.615">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I enter valid information for the question name as &quot;Set pageFullyLoaded to false for 45 seconds&quot;" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When I click the Source button" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click inside the Source editor" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I add a script tag that sets pageFullyLoaded to false for &quot;45&quot; seconds" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Slow Loading Assignment&quot;" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I click the import question button" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="Then The import questions dialog appears" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I select the question &quot;Set pageFullyLoaded to false for 45 seconds&quot;" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.001"/>
+  <testcase name="And I click Import Questions in the Import Questions dialog" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I save &amp; close the assignment on the questions page" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I save and close the assignment summary details" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When I click the breadcrumb to return to the class homepage" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And &quot;Slow Loading Assignment&quot; assignment in &quot;Student Readiness&quot; unit is opened" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="And I wait for &quot;6&quot; seconds" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="Then the loading overlay is displayed" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="When I wait for &quot;24&quot; seconds" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="Then the slow loading page dialog is visible" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create assignment with a question that loads slowly, ensure LoadingOverlay and ConfirmDialog shown on taking assignment" time="52.602"/>
+  <system-out><![CDATA[
+  Scenario: Navigate between questions, see LoadingOverlay while leaving current page ?[90m# assignment/PageLoading.feature:4?[0m
+    ?[32mGiven ?[0m?[32mI am logged in as the default administrator?[0m                                 ?[90m# LoginSteps.logInAsAdministrator()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                  ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32m"?[0m?[32m?[1mStudent Readiness Test?[0m?[32m" assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit is opened?[0m     ?[90m# ClassHomepageSteps.openAssignment(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI disable form submission and click the Next button?[0m                          ?[90m# PageLoadingSteps.disableFormSubmissionAndClickNext()?[0m
+    ?[32mThen ?[0m?[32mthe loading overlay is displayed?[0m                                             ?[90m# PageLoadingSteps.assertLoadingOverlayDisplayed()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

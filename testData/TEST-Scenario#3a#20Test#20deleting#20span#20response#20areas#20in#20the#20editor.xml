@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test deleting span response areas in the editor" tests="17" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:14:04" hostname="mo-acceptance-test-driver-182622c" time="10.301">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test deleting span response areas in the editor" time="0.001"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Test deleting span response areas in the editor" time="0.001"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="When I choose &quot;Essay&quot; link from the dialog and complete the correct answer" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Test deleting span response areas in the editor" time="0.001"/>
+  <testcase name="Then I see the &quot;Essay&quot; Question Widget in the question text section" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="When I click on the &quot;Essay&quot; Question Widget and delete it in the question editor" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="Then I don't see the &quot;Essay&quot; Question Widget in the question text section" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="When I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Test deleting span response areas in the editor" time="0.001"/>
+  <testcase name="When I choose &quot;Essay&quot; link from the dialog and complete the correct answer" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Test deleting span response areas in the editor" time="0.001"/>
+  <testcase name="Then I see the &quot;Essay&quot; Question Widget in the question text section" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="When I move the cursor after the &quot;Essay&quot; Question Widget and delete it in the question editor" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="Then I don't see the &quot;Essay&quot; Question Widget in the question text section" classname="Scenario: Test deleting span response areas in the editor" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test deleting span response areas in the editor" time="11.321"/>
+  <system-out><![CDATA[
+  Scenario: Test that icon tags do not get deleted when toggling between editor modes ?[90m# CKEditorDialog.feature:20?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new question/Text from the main dropdown button?[0m            ?[90m# ContentRepositorySteps.chooseCreatingNewQuestionFromMainDropdownButton()?[0m
+    ?[32mAnd ?[0m?[32mQuestion Designer is opened?[0m                                                   ?[90m# QuestionDesignerSteps.assertQuestionDesignerPageIsOpened()?[0m
+    ?[32mAnd ?[0m?[32mI click the Source button?[0m                                                     ?[90m# QuestionDesignerSteps.clickSourceButton()?[0m
+    ?[32mAnd ?[0m?[32mI click inside the Source editor?[0m                                              ?[90m# QuestionDesignerSteps.clickInsideSourceEditor()?[0m
+    ?[32mAnd ?[0m?[32mI enter '?[0m?[32m?[1m<p><i class="fa fa-hashtag"></i></p>?[0m?[32m' inside the Source editor?[0m       ?[90m# QuestionDesignerSteps.enterTextInSourceEditor(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Source button?[0m                                                    ?[90m# QuestionDesignerSteps.clickSourceButton()?[0m
+    ?[32mThen ?[0m?[32mI see the Font Awesome icon in the question text editor?[0m                      ?[90m# QuestionDesignerSteps.checkIconInEditor()?[0m
+    ?[32mAnd ?[0m?[32mI click the Source button?[0m                                                     ?[90m# QuestionDesignerSteps.clickSourceButton()?[0m
+    ?[32mAnd ?[0m?[32mI see the icon tag in the Source editor?[0m                                       ?[90m# QuestionDesignerSteps.checkIconTagInSourceEditor()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

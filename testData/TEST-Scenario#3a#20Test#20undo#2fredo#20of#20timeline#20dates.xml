@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test undo/redo of timeline dates" tests="36" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:19:36" hostname="mo-acceptance-test-driver-182622c" time="81.976">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists a class called &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 1&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists a unit called &quot;Unit 2&quot; for class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As1&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;As2&quot; in unit &quot;Unit 1&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex1&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And There exists an assignment called &quot;Ex2&quot; in unit &quot;Unit 2&quot; part of class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="When I change the assignment &quot;As2&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class to start &quot;tomorrow&quot; and end &quot;2 days from today&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I navigate to the assignment editor for &quot;As1&quot; in unit &quot;Unit 1&quot; of class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I change the &quot;Start Date&quot; date to &quot;today&quot; in the policy editor" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I change the &quot;End Date&quot; date to &quot;tomorrow&quot; in the policy editor" classname="Scenario: Test undo/redo of timeline dates" time="0.001"/>
+  <testcase name="And I change the &quot;Restrict Feedback Until&quot; date to &quot;3 days from today&quot; in the policy editor" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I save the assignment on the policies page and return to content repository" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I navigate to the System Homepage" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;TimelineClass&quot; class" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I go to the Edit Class Schedule page" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see a timeline is rendered" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see the following modules &quot;As1,As2&quot; on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I click the unit &quot;Unit 1&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="When I move the selected modules &quot;forward&quot; one day on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I move the selected modules &quot;forward&quot; one day on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I move the selected modules &quot;forward&quot; one day on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see the undo button is enabled on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I click the undo button" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see the redo button is enabled on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I click the undo button" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see the redo button is enabled on the timeline" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I click the redo button" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I navigate to the assignment editor for &quot;As1&quot; in unit &quot;Unit 1&quot; of class &quot;TimelineClass&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="Then I see &quot;Start Date&quot; date is set to &quot;2 days from today&quot; in the policy editor" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see &quot;End Date&quot; date is set to &quot;3 days from today&quot; in the policy editor" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see &quot;Restrict Feedback Until&quot; date is set to &quot;5 days from today&quot; in the policy editor" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I save the assignment on the policies page and return to content repository" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="And I see the assignment &quot;As2&quot; in the unit &quot;Unit 1&quot; part of the &quot;TimelineClass&quot; class starts &quot;3 days from today&quot; and ends &quot;4 days from today&quot;" classname="Scenario: Test undo/redo of timeline dates" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test undo/redo of timeline dates" time="83.026"/>
+  <system-out><![CDATA[
+  Scenario: Test the timeline component renders properly and basic functionality                                                                        ?[90m# timeline/Timeline.feature:14?[0m
+    # set the dates of the various assignments
+    ?[32mWhen ?[0m?[32mI change the assignment "?[0m?[32m?[1mAs1?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 1?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1mtoday?[0m?[32m" and end "?[0m?[32m?[1mtomorrow?[0m?[32m"?[0m                       ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the assignment "?[0m?[32m?[1mAs2?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 1?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1mtomorrow?[0m?[32m" and end "?[0m?[32m?[1m2 days from today?[0m?[32m"?[0m            ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the assignment "?[0m?[32m?[1mEx1?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 2?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1m3 days from today?[0m?[32m" and end "?[0m?[32m?[1m5 days from today?[0m?[32m"?[0m   ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI change the assignment "?[0m?[32m?[1mEx2?[0m?[32m" in the unit "?[0m?[32m?[1mUnit 2?[0m?[32m" part of the "?[0m?[32m?[1mTimelineClass?[0m?[32m" class to start "?[0m?[32m?[1m10 days from today?[0m?[32m" and end "?[0m?[32m?[1m12 days from today?[0m?[32m"?[0m ?[90m# AssignmentEditorPropertiesSteps.changeAssignmentStartAndEndDateStep(String,String,String,String,String)?[0m
+    # proceed with test, make sure timeline is rendered
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mTimelineClass?[0m?[32m" class?[0m                                                                                          ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI go to the Edit Class Schedule page?[0m                                                                                                            ?[90m# ClassHomepageSteps.navigateToEditClassSchedulePage()?[0m
+    ?[32mThen ?[0m?[32mI see a timeline is rendered?[0m                                                                                                                   ?[90m# TimelineSteps.assertTimelineRendered()?[0m
+    # move elements and test undo/redo buttons
+    ?[32mThen ?[0m?[32mI click the module "?[0m?[32m?[1mEx1?[0m?[32m"?[0m                                                                                                                       ?[90m# TimelineSteps.clickModule(String)?[0m
+    ?[32mWhen ?[0m?[32mI move the module "?[0m?[32m?[1mEx1?[0m?[32m" ?[0m?[32m?[1m10?[0m?[32m to the right?[0m                                                                                                        ?[90m# TimelineSteps.dragModuleToTheRight(String,int)?[0m
+    ?[32mThen ?[0m?[32mI click the undo button?[0m                                                                                                                        ?[90m# TimelineSteps.clickUndoButton()?[0m
+    ?[32mThen ?[0m?[32mI click the redo button?[0m                                                                                                                        ?[90m# TimelineSteps.clickRedoButton()?[0m
+    # Click a unit and make sure modules are selected.
+    ?[32mThen ?[0m?[32mI click the unit "?[0m?[32m?[1mUnit 1?[0m?[32m"?[0m                                                                                                                      ?[90m# TimelineSteps.clickUnit(String)?[0m
+    ?[32mThen ?[0m?[32mI see the following modules "?[0m?[32m?[1mAs1, As2?[0m?[32m" are selected on the timeline?[0m                                                                            ?[90m# TimelineSteps.assertSelectItems(String)?[0m
+    ?[32mThen ?[0m?[32mI click the unit "?[0m?[32m?[1mUnit 2?[0m?[32m"?[0m                                                                                                                      ?[90m# TimelineSteps.clickUnit(String)?[0m
+    ?[32mThen ?[0m?[32mI see the following modules "?[0m?[32m?[1mEx1, Ex2?[0m?[32m" are selected on the timeline?[0m                                                                            ?[90m# TimelineSteps.assertSelectItems(String)?[0m
+    ?[32mThen ?[0m?[32mI click the unit "?[0m?[32m?[1mDefault Unit?[0m?[32m"?[0m                                                                                                                ?[90m# TimelineSteps.clickUnit(String)?[0m
+    ?[32mThen ?[0m?[32mI see no modules are selected on the timeline?[0m                                                                                                  ?[90m# TimelineSteps.assertNoSelectedItems()?[0m
+    ?[32mThen ?[0m?[32mI click the unit "?[0m?[32m?[1mUnit 1?[0m?[32m"?[0m                                                                                                                      ?[90m# TimelineSteps.clickUnit(String)?[0m
+    ?[32mThen ?[0m?[32mI see the following modules "?[0m?[32m?[1mAs1, As2?[0m?[32m" are selected on the timeline?[0m                                                                            ?[90m# TimelineSteps.assertSelectItems(String)?[0m
+    ?[32mThen ?[0m?[32mI CTRL-click the unit "?[0m?[32m?[1mUnit 2?[0m?[32m"?[0m                                                                                                                 ?[90m# TimelineSteps.ctrlClickUnit(String)?[0m
+    ?[32mThen ?[0m?[32mI see the following modules "?[0m?[32m?[1mAs1, As2, Ex1, Ex2?[0m?[32m" are selected on the timeline?[0m                                                                  ?[90m# TimelineSteps.assertSelectItems(String)?[0m
+    ?[32mThen ?[0m?[32mI click the unit "?[0m?[32m?[1mDefault Unit?[0m?[32m"?[0m                                                                                                                ?[90m# TimelineSteps.clickUnit(String)?[0m
+    ?[32mThen ?[0m?[32mI see no modules are selected on the timeline?[0m                                                                                                  ?[90m# TimelineSteps.assertNoSelectedItems()?[0m
+    # Click Select All button
+    ?[32mThen ?[0m?[32mI see no modules are selected on the timeline?[0m                                                                                                  ?[90m# TimelineSteps.assertNoSelectedItems()?[0m
+    ?[32mWhen ?[0m?[32mI click the Select All button?[0m                                                                                                                  ?[90m# TimelineSteps.clickSelectAllButton()?[0m
+    ?[32mThen ?[0m?[32mI see the following modules "?[0m?[32m?[1mAs1, As2, Ex1, Ex2?[0m?[32m" are selected on the timeline?[0m                                                                  ?[90m# TimelineSteps.assertSelectItems(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Fail to create student due to missing email" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:24:47" hostname="mo-acceptance-test-driver-182622c" time="2.201">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Fail to create student due to missing email" time="0.0"/>
+  <testcase name="And I open the Create User page" classname="Scenario: Fail to create student due to missing email" time="0.0"/>
+  <testcase name="When I enter valid information for user &quot;linus&quot; except his email" classname="Scenario: Fail to create student due to missing email" time="0.0"/>
+  <testcase name="Then I should see an error message indicating the missing email" classname="Scenario: Fail to create student due to missing email" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Fail to create student due to missing email" time="3.196"/>
+  <system-out><![CDATA[
+  Scenario: Fail to create student due to missing student id               ?[90m# CreateUser.feature:28?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for user "?[0m?[32m?[1mviolet?[0m?[32m" except her student id?[0m ?[90m# AddUserSteps.enterValidUserDetailsExceptStudentId(String)?[0m
+    ?[32mThen ?[0m?[32mI should see an error message indicating the missing id?[0m           ?[90m# AddUserSteps.assertIdMissingErrorMessageIsDisplayed()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

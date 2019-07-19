@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Fail to create student due to missing student id" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:24:44" hostname="mo-acceptance-test-driver-182622c" time="1.989">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Fail to create student due to missing student id" time="0.0"/>
+  <testcase name="And I open the Create User page" classname="Scenario: Fail to create student due to missing student id" time="0.001"/>
+  <testcase name="When I enter valid information for user &quot;violet&quot; except her student id" classname="Scenario: Fail to create student due to missing student id" time="0.0"/>
+  <testcase name="Then I should see an error message indicating the missing id" classname="Scenario: Fail to create student due to missing student id" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Fail to create student due to missing student id" time="2.937"/>
+  <system-out><![CDATA[
+  Scenario: Fail to create student due to missing last name               ?[90m# CreateUser.feature:24?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for user "?[0m?[32m?[1mviolet?[0m?[32m" except her last name?[0m ?[90m# AddUserSteps.enterValidUserDetailsExceptLastName(String)?[0m
+    ?[32mThen ?[0m?[32mI should see an error message indicating the missing last name?[0m   ?[90m# AddUserSteps.assertLastNameMissingErrorMessageIsDisplayed()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

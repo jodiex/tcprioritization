@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Ensure that a snapshot can be created and loaded" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:16:36" hostname="mo-acceptance-test-driver-182622c" time="7.457">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Grade Reports&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I click the new snapshot button" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I click the &quot;Add Group&quot; button in the snapshot editor" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I set the &quot;Group Name&quot; textbox input to &quot;Group&quot;" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I set the &quot;Weight&quot; textbox input to &quot;100&quot;" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I check assignment &quot;Student Readiness Test&quot;" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="Then I click the save group button" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="When I set the snapshot name to &quot;Test GR&quot;" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I set the visibility checkbox of the snapshot to checked" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I click the &quot;Save&quot; button in the snapshot editor" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="Then I am on the Snapshot Homepage" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="And I see &quot;Test GR&quot; in the list of snapshots" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="When I load the snapshot &quot;Test GR&quot;" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="Then I see the snapshot &quot;Test GR&quot;" classname="Scenario: Ensure that a snapshot can be created and loaded" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Ensure that a snapshot can be created and loaded" time="8.44"/>
+  <system-out><![CDATA[
+  Scenario: Ensure that a snapshot total weight must be 100%                        ?[90m# snapshot/SnapshotEditor.feature:14?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the "?[0m?[32m?[1mGrade Reports?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m          ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click the new snapshot button?[0m                                             ?[90m# SnapshotHomepageSteps.clickNewButton()?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mAdd Group?[0m?[32m" button in the snapshot editor?[0m                       ?[90m# SnapshotEditorSteps.clickButton(String)?[0m
+    ?[32mAnd ?[0m?[32mI set the "?[0m?[32m?[1mGroup Name?[0m?[32m" textbox input to "?[0m?[32m?[1mTest GR Weight?[0m?[32m"?[0m                    ?[90m# SnapshotGroupSteps.setTextbox(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI set the "?[0m?[32m?[1mWeight?[0m?[32m" textbox input to "?[0m?[32m?[1m99?[0m?[32m"?[0m                                    ?[90m# SnapshotGroupSteps.setTextbox(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI ?[0m?[32m?[1mcheck?[0m?[32m assignment "?[0m?[32m?[1mStudent Readiness Test?[0m?[32m"?[0m                                 ?[90m# SnapshotGroupSteps.selectAssignment(String,String)?[0m
+    ?[32mThen ?[0m?[32mI click the save group button?[0m                                              ?[90m# SnapshotGroupSteps.clickSaveGroup()?[0m
+    ?[32mWhen ?[0m?[32mI set the snapshot name to "?[0m?[32m?[1mTest GR Weight?[0m?[32m"?[0m                                ?[90m# SnapshotEditorSteps.setSnapshotName(String)?[0m
+    ?[32mAnd ?[0m?[32mI set the visibility checkbox of the snapshot to ?[0m?[32m?[1mchecked?[0m                    ?[90m# SnapshotEditorSteps.setSnapshotVisibility(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mSave?[0m?[32m" button in the snapshot editor?[0m                            ?[90m# SnapshotEditorSteps.clickButton(String)?[0m
+    ?[32mThen ?[0m?[32mI see the following error message displayed "?[0m?[32m?[1mTotal weight must equal 100%?[0m?[32m"?[0m ?[90m# SnapshotEditorSteps.assertErrorMessage(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

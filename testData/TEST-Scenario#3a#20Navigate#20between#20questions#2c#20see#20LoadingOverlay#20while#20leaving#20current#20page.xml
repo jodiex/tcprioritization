@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:39:48" hostname="mo-acceptance-test-driver-182622c" time="3.769">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" time="0.0"/>
+  <testcase name="And &quot;Student Readiness Test&quot; assignment in &quot;Student Readiness&quot; unit is opened" classname="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" time="0.0"/>
+  <testcase name="When I disable form submission and click the Next button" classname="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" time="0.0"/>
+  <testcase name="Then the loading overlay is displayed" classname="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Navigate between questions, see LoadingOverlay while leaving current page" time="4.87"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

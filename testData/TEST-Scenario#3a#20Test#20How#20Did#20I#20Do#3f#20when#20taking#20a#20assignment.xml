@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test How Did I Do? when taking a assignment" tests="26" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:15:17" hostname="mo-acceptance-test-driver-182622c" time="19.908">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;How Did I Do ? Test Assignment&quot;" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I click on the set policies tab" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I set How Did I Do check box to true" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I click on the questions tab" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I click the new question button" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the assignment question editor" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="Then verify the question caption text is &quot;Formula Question Label&quot;" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="Then the new assignment &quot;How Did I Do ? Test Assignment&quot; is visible in its own expanded column" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I launch the &quot;How Did I Do ? Test Assignment&quot; assignment in &quot;Student Readiness&quot; unit" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I enter &quot;2x&quot; in Mathematical Formula input" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="And I click How Did I Do in the assignment page" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="Then I assert that the Mathematical Formula answer is correct" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="When I save and quit assignment to clear assignment state" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Test How Did I Do? when taking a assignment" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test How Did I Do? when taking a assignment" time="20.833"/>
+  <system-out><![CDATA[
+  Scenario: Successfully create a new adaptive assignment with minimum data from dropdown button in the unit column ?[90m# CreateAssignment.feature:60?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new adaptive assignment from dropdown button in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" column?[0m               ?[90m# ContentRepositorySteps.chooseCreatingNewAdaptiveAssignmentFromDropdownButtonInUnit(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                                ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the assignment "?[0m?[32m?[1mMathematics?[0m?[32m"?[0m                                                 ?[90m# AssignmentEditorDetailsSteps.enterAssignmentNameAndDescription(String)?[0m
+    ?[32mAnd ?[0m?[32menter short name "?[0m?[32m?[1mmath?[0m?[32m"?[0m                                                                                     ?[90m# AssignmentEditorDetailsSteps.enterShortName(String)?[0m
+    ?[32mAnd ?[0m?[32mI save & close the assignment on the name page?[0m                                                              ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment with warning text "?[0m?[32m?[1mWARNING: No questions chosen for the assignment?[0m?[32m"?[0m        ?[90m# AssignmentEditorDetailsSteps.assertNoQuestionsInAssignmentWarningMessageIsDisplayed(String)?[0m
+    ?[32mWhen ?[0m?[32mI save it anyway?[0m                                                                                           ?[90m# AssignmentEditorDetailsSteps.saveAssignmentAnyway()?[0m
+    ?[32mThen ?[0m?[32mthe new assignment "?[0m?[32m?[1mMathematics?[0m?[32m" is visible in its own expanded column?[0m                                     ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mAnd ?[0m?[32mit is named as "?[0m?[32m?[1mMathematics?[0m?[32m" in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" column?[0m                                                  ?[90m# ContentRepositorySteps.assertAssignmentIsCreated(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

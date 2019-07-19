@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Import Question when creating new assignment" tests="17" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:30:48" hostname="mo-acceptance-test-driver-182622c" time="11.265">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="Given I am on the Content Repository page of Demonstration Class" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="When I enter valid information for the assignment &quot;Import Question&quot;" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="And I click the import question button" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="Then The import questions dialog appears" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="And I click on &quot;All Questions&quot;" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="And I select the question &quot;Last Question&quot;" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="And I click Import Questions in the Import Questions dialog" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="Then verify the question caption text is &quot;Last Question&quot;" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="And I save and close the assignment summary details" classname="Scenario: Import Question when creating new assignment" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Import Question when creating new assignment" time="12.256"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

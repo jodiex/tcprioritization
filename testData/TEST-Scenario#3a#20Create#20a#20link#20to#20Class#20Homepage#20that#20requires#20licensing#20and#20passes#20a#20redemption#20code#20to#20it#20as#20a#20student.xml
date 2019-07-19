@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" tests="39" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:09:47" hostname="mo-acceptance-test-driver-182622c" time="15.972">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I set Enable Student Licensing to true" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I go to the Role Manager page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I click to clone the &quot;Administrator&quot; role" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I fill in the role name &quot;Administrator + Student Licensing&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I set the Edit Student License privilege to &quot;true&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I click Submit" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on the Role Manager page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.001"/>
+  <testcase name="When I go to the Edit LTI Role Mappings page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I click to edit the &quot;Administrator&quot; role mapping" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I set the Möbius Role to &quot;Administrator + Student Licensing&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.001"/>
+  <testcase name="And I click Submit" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then the &quot;Administrator&quot; role is mapped to &quot;Administrator + Student Licensing&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Administrator&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I click the 'New Class' mapping button" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on a New Class page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I set the Require Student Class License checkbox to &quot;true&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I create new class with random name" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I click the 'Class Homepage' mapping button" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I close the LTI Test Harness leftover windows" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="When I go to the LTI Test Harness page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I restore the launched LTI Test Harness form" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I update LTI user fields" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I toggle the visibility of the optional fields" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I set the &quot;custom_custom_redemption_code&quot; field to &quot;TEST&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I launch prepared &quot;basic-lti-launch-request&quot; LTI request with role &quot;Student&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I am on the User License Required page" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="And I see the redemption code &quot;TEST&quot; in the URL" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="Then I close the LTI Test Harness leftover windows" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a link to Class Homepage that requires licensing and passes a redemption code to it as a student" time="16.081"/>
+  <system-out><![CDATA[
+  Scenario: Missing resource_link_id                                                                                                              ?[90m# lti/LTIMapping.feature:209?[0m
+    ?[32mWhen ?[0m?[32mI go to the LTI Test Harness page?[0m                                                                                                        ?[90m# TestHarnessSteps.navigateToTestHarnessPage()?[0m
+    ?[32mAnd ?[0m?[32mI clear the LTI Test Harness form?[0m                                                                                                         ?[90m# TestHarnessSteps.clearTestHarnessForm()?[0m
+    ?[32mAnd ?[0m?[32mI fill the LTI Test Harness form with random data?[0m                                                                                         ?[90m# TestHarnessSteps.fillTheFormWithRandomData()?[0m
+    ?[32mAnd ?[0m?[32mI clear the "?[0m?[32m?[1mresource_link_id?[0m?[32m" LTI field?[0m                                                                                                  ?[90m# TestHarnessSteps.clearField(String)?[0m
+    ?[32mAnd ?[0m?[32mI launch prepared "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mAdministrator?[0m?[32m" and outcome URL "?[0m?[32m?[1mdefault?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m ?[90m# TestHarnessSteps.submitLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Test Harness Error page?[0m                                                                                                  ?[90m# TestHarnessErrorSteps.assertLtiTestHarnessErrorPage()?[0m
+    ?[32mAnd ?[0m?[32mI see the LTI test harness error "?[0m?[32m?[1mParameter resource_link_id is not set. Please contact your system administrator.?[0m?[32m"?[0m                       ?[90m# TestHarnessErrorSteps.assertLtiErrorExists(String)?[0m
+    ?[32mThen ?[0m?[32mI close the LTI Test Harness leftover windows?[0m                                                                                            ?[90m# TestHarnessSteps.closeLeftoverWindows()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

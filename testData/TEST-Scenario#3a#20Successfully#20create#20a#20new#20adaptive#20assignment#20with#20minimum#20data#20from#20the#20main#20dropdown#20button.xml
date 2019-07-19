@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:15:00" hostname="mo-acceptance-test-driver-182622c" time="6.906">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="When I choose creating new adaptive assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="When I enter valid information for the assignment &quot;Engineering&quot;" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="And I save &amp; close the assignment on the name page" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="Then I see summary of the assignment with warning text &quot;WARNING: No questions chosen for the assignment&quot;" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="When I save it anyway" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="Then the new assignment &quot;Engineering&quot; is visible in its own expanded column" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="And it is named as &quot;Engineering&quot; in &quot;Student Readiness&quot; column" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Successfully create a new adaptive assignment with minimum data from the main dropdown button" time="7.906"/>
+  <system-out><![CDATA[
+  Scenario: Successfully create a new assignment with minimum data from dropdown button in the unit column   ?[90m# CreateAssignment.feature:38?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new assignment from dropdown button in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" column?[0m                 ?[90m# ContentRepositorySteps.chooseCreatingNewAssignmentFromDropdownButtonInUnit(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                         ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the assignment "?[0m?[32m?[1mTechnology?[0m?[32m"?[0m                                           ?[90m# AssignmentEditorDetailsSteps.enterAssignmentNameAndDescription(String)?[0m
+    ?[32mAnd ?[0m?[32menter short name "?[0m?[32m?[1mtech?[0m?[32m"?[0m                                                                              ?[90m# AssignmentEditorDetailsSteps.enterShortName(String)?[0m
+    ?[32mAnd ?[0m?[32mI save & close the assignment on the name page?[0m                                                       ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment with warning text "?[0m?[32m?[1mWARNING: No questions chosen for the assignment?[0m?[32m"?[0m ?[90m# AssignmentEditorDetailsSteps.assertNoQuestionsInAssignmentWarningMessageIsDisplayed(String)?[0m
+    ?[32mWhen ?[0m?[32mI save it anyway?[0m                                                                                    ?[90m# AssignmentEditorDetailsSteps.saveAssignmentAnyway()?[0m
+    ?[32mThen ?[0m?[32mthe new assignment "?[0m?[32m?[1mTechnology?[0m?[32m" is visible in its own expanded column?[0m                               ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mAnd ?[0m?[32mit is named as "?[0m?[32m?[1mTechnology?[0m?[32m" in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" column?[0m                                            ?[90m# ContentRepositorySteps.assertAssignmentIsCreated(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

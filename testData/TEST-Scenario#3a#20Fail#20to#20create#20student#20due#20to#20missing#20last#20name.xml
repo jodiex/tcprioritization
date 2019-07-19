@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Fail to create student due to missing last name" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:24:41" hostname="mo-acceptance-test-driver-182622c" time="2.086">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Fail to create student due to missing last name" time="0.0"/>
+  <testcase name="And I open the Create User page" classname="Scenario: Fail to create student due to missing last name" time="0.0"/>
+  <testcase name="When I enter valid information for user &quot;violet&quot; except her last name" classname="Scenario: Fail to create student due to missing last name" time="0.001"/>
+  <testcase name="Then I should see an error message indicating the missing last name" classname="Scenario: Fail to create student due to missing last name" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Fail to create student due to missing last name" time="3.065"/>
+  <system-out><![CDATA[
+  Scenario: Fail to create student due to missing first name               ?[90m# CreateUser.feature:20?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for user "?[0m?[32m?[1mviolet?[0m?[32m" except her first name?[0m ?[90m# AddUserSteps.enterValidUserDetailsExceptFirstName(String)?[0m
+    ?[32mThen ?[0m?[32mI should see an error message indicating the missing first name?[0m   ?[90m# AddUserSteps.assertFirstNameMissingErrorMessageIsDisplayed()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="|  | qapatty | User login is required. |" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:28:33" hostname="mo-acceptance-test-driver-182622c" time="1.383">
+  <properties/>
+  <testcase name="Given I go to the system login page" classname="|  | qapatty | User login is required. |" time="0.0"/>
+  <testcase name="When I log in as the user  and password qapatty" classname="|  | qapatty | User login is required. |" time="0.0"/>
+  <testcase name="Then I see an error message User login is required. on the login page" classname="|  | qapatty | User login is required. |" time="0.0"/>
+  <testcase name="classMethod" classname="|  | qapatty | User login is required. |" time="1.407"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

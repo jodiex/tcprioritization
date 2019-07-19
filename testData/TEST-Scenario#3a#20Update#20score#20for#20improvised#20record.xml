@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Update score for improvised record" tests="52" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:46:17" hostname="mo-acceptance-test-driver-182622c" time="27.607">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I check if user &quot;sam&quot; exists, if not, I create the user" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the Register Users menu item" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the Advanced Search link on the Register Users page" classname="Scenario: Update score for improvised record" time="0.001"/>
+  <testcase name="And I enter &quot;sam&quot; into the User Login textbox on the Register Users page" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the Search button on the Register Users page" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I select the user &quot;sam&quot; in the list of users to add" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the Register button on the Register Users page" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then The users were successfully registered in the class" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I am on the Content Repository page of Demonstration Class" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Improvised A1&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I click on the questions tab" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the new question button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then the new assignment &quot;Improvised A1&quot; is visible in its own expanded column" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I select &quot;Improvised A1 - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I put &quot;sam&quot; in the &quot;User&quot; input box" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the Search button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I click the grade for the selected assignment" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I see the test record details of &quot;Improvised A1&quot; for user &quot;sam&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I see my total score &quot;0/1.0&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I see the Delete Record button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I click the edit total score button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I enter &quot;1&quot; into the total score edit text box" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I save the total score" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I see my total score &quot;1.00/1.00&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I select the question &quot;Q1&quot; on the gradebook details page" classname="Scenario: Update score for improvised record" time="0.001"/>
+  <testcase name="And I choose to update grade for question &quot;Q1&quot; to &quot;0.5&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I click the &quot;Save Question Grades&quot; button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I see my total score &quot;0.50/1.00&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="When I click the edit total score button" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I enter &quot;0.75&quot; into the total score edit text box" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="And I save the total score" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="Then I see my total score &quot;0.75/1.00&quot;" classname="Scenario: Update score for improvised record" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Update score for improvised record" time="28.67"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

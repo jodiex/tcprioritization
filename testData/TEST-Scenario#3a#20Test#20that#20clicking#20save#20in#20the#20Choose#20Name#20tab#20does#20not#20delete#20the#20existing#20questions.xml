@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" tests="20" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:16:04" hostname="mo-acceptance-test-driver-182622c" time="15.57">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="When I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;Choose Name Questions&quot;" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.001"/>
+  <testcase name="And I click the new question button" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I create question &quot;Formula Question&quot; with label &quot;Formula Question Label&quot;" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I create a Mathematical Formula response area in the assignment question editor" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="Then verify the question caption text is &quot;Formula Question Label&quot;" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="Then the new assignment &quot;Choose Name Questions&quot; is visible in its own expanded column" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="When I edit the &quot;Choose Name Questions&quot; assignment" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I save the assignment on the name page" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="And I click on the questions tab" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="Then I see questions on the assignment question editor page" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test that clicking save in the Choose Name tab does not delete the existing questions" time="16.569"/>
+  <system-out><![CDATA[
+  Scenario: Test setting the Maximum "How Did I Do?" Uses policy                                              ?[90m# CreateAssignment.feature:96?[0m
+    # Create an assignment, set the Maximum "How Did I Do?" Uses policy:
+    ?[32mWhen ?[0m?[32mI choose creating new assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit from the main dropdown button?[0m           ?[90m# ContentRepositorySteps.chooseCreatingNewAssignmentFromMainDropdownButton(String)?[0m
+    ?[32mThen ?[0m?[32mAssignment Editor is opened?[0m                                                                          ?[90m# AssignmentEditorDetailsSteps.assertAssignmentEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32menter Assignment name "?[0m?[32m?[1mHow Did I Do Max Attempts Test Assignment?[0m?[32m"?[0m                                    ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click on the set policies tab?[0m                                                                      ?[90m# AssignmentEditorPropertiesSteps.clickSetPoliciesTab()?[0m
+    ?[32mThen ?[0m?[32mI set How Did I Do check box to ?[0m?[32m?[1mtrue?[0m                                                                 ?[90m# AssignmentEditorPropertiesSteps.setHowDidIDoCheckBox(boolean)?[0m
+    ?[32mThen ?[0m?[32mI set the maximum How Did I Do uses to "?[0m?[32m?[1m2?[0m?[32m"?[0m                                                           ?[90m# AssignmentEditorPropertiesSteps.setMaximumHowDidIDoUses(String)?[0m
+    # Add a question and return to the policies, check that the policy is as we left it:
+    ?[32mWhen ?[0m?[32mI click on the questions tab?[0m                                                                         ?[90m# AssignmentEditorDetailsSteps.clickQuestionsTab()?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button?[0m                                                                       ?[90m# AssignmentEditorQuestionSteps.createQuestion()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mFormula Question?[0m?[32m" with label "?[0m?[32m?[1mFormula Question Label?[0m?[32m"?[0m                              ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI create a Mathematical Formula response area in the assignment question editor?[0m                       ?[90m# AssignmentEditorQuestionSteps.createFormulaQuestionInQuestionEditor()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                              ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mThen ?[0m?[32mverify the question caption text is "?[0m?[32m?[1mFormula Question Label?[0m?[32m"?[0m                                         ?[90m# AssignmentEditorQuestionSteps.assertSavedQuestionName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click on the set policies tab?[0m                                                                      ?[90m# AssignmentEditorPropertiesSteps.clickSetPoliciesTab()?[0m
+    ?[32mThen ?[0m?[32mI verify the maximum How Did I Do uses is set to "?[0m?[32m?[1m2?[0m?[32m"?[0m                                                 ?[90m# AssignmentEditorPropertiesSteps.asertMaximumHowDidIDoUses(String)?[0m
+    # Save and close the new assignment:
+    ?[32mWhen ?[0m?[32mI save & close the assignment on the policies page?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                                      ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mWhen ?[0m?[32mI save and close the assignment summary details?[0m                                                      ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    # Open assignment again, check that the policy was persisted:
+    ?[32mThen ?[0m?[32mthe new assignment "?[0m?[32m?[1mHow Did I Do Max Attempts Test Assignment?[0m?[32m" is visible in its own expanded column?[0m ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mWhen ?[0m?[32mI edit the "?[0m?[32m?[1mHow Did I Do Max Attempts Test Assignment?[0m?[32m" assignment?[0m                                    ?[90m# ContentRepositorySteps.editModule(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on the set policies tab?[0m                                                                       ?[90m# AssignmentEditorPropertiesSteps.clickSetPoliciesTab()?[0m
+    ?[32mThen ?[0m?[32mI verify the maximum How Did I Do uses is set to "?[0m?[32m?[1m2?[0m?[32m"?[0m                                                 ?[90m# AssignmentEditorPropertiesSteps.asertMaximumHowDidIDoUses(String)?[0m
+    # Verify max uses works when taking an Assignment
+    ?[32mWhen ?[0m?[32mI save & close the assignment on the policies page?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.saveAndCloseAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                                      ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mWhen ?[0m?[32mI save and close the assignment summary details?[0m                                                      ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                                    ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                          ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI launch the "?[0m?[32m?[1mHow Did I Do Max Attempts Test Assignment?[0m?[32m" assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m       ?[90m# ClassHomepageSteps.reopenAssignment(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI enter "?[0m?[32m?[1m2x?[0m?[32m" in Mathematical Formula input?[0m                                                           ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI click How Did I Do in the assignment page?[0m                                                           ?[90m# MapleTAAssignmentSteps.clickHowDidIDoLink()?[0m
+    ?[32mThen ?[0m?[32mI assert that the Mathematical Formula answer is correct?[0m                                             ?[90m# MathmeticalFormulaElementSteps.assertSlideMathFormulaCorrect()?[0m
+    ?[32mThen ?[0m?[32mI assert that there is "?[0m?[32m?[1m1/2?[0m?[32m" uses of How Did I Do remaining?[0m                                          ?[90m# MapleTAAssignmentSteps.assertRemainingUsesCorrect(String)?[0m
+    ?[32mWhen ?[0m?[32mI click within the How Did I Do response area to clear it?[0m                                            ?[90m# MapleTAAssignmentSteps.clickToRemoveFeedback()?[0m
+    ?[32mWhen ?[0m?[32mI click How Did I Do in the assignment page?[0m                                                          ?[90m# MapleTAAssignmentSteps.clickHowDidIDoLink()?[0m
+    ?[32mThen ?[0m?[32mI assert that the Mathematical Formula answer is correct?[0m                                             ?[90m# MathmeticalFormulaElementSteps.assertSlideMathFormulaCorrect()?[0m
+    ?[32mThen ?[0m?[32mI assert that there is "?[0m?[32m?[1m0/2?[0m?[32m" uses of How Did I Do remaining?[0m                                          ?[90m# MapleTAAssignmentSteps.assertRemainingUsesCorrect(String)?[0m
+    ?[32mWhen ?[0m?[32mI click within the How Did I Do response area to clear it?[0m                                            ?[90m# MapleTAAssignmentSteps.clickToRemoveFeedback()?[0m
+    ?[32mThen ?[0m?[32mI assert that the How Did I Do link has been removed?[0m                                                 ?[90m# MapleTAAssignmentSteps.assertHowDidIDoLinkNotVisible()?[0m
+    ?[32mWhen ?[0m?[32mI save and quit assignment to clear assignment state?[0m                                                 ?[90m# MapleTAAssignmentSteps.clearAssignmentState()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                           ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

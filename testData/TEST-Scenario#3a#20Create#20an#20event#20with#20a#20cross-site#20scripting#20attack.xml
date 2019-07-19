@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create an event with a cross-site scripting attack" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:44:07" hostname="mo-acceptance-test-driver-182622c" time="4.626">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create an event with a cross-site scripting attack" time="0.0"/>
+  <testcase name="And I wait until the calendar has been loaded" classname="Scenario: Create an event with a cross-site scripting attack" time="0.001"/>
+  <testcase name="And I clicked the calendar &quot;month&quot; view button" classname="Scenario: Create an event with a cross-site scripting attack" time="0.0"/>
+  <testcase name="Then I assert the calendar displays the &quot;month&quot; view" classname="Scenario: Create an event with a cross-site scripting attack" time="0.0"/>
+  <testcase name="Given I create an all day private calendar event &quot;chvoy&lt;script&gt;alert(1)&lt;/script&gt;umjrce2psz3&quot; with a description &quot;chvoy&lt;script&gt;alert(1)&lt;/script&gt;umjrce2psz3&quot;" classname="Scenario: Create an event with a cross-site scripting attack" time="0.0"/>
+  <testcase name="When I hover over a calendar event &quot;chvoy&quot;" classname="Scenario: Create an event with a cross-site scripting attack" time="0.0"/>
+  <testcase name="Then I do not see an alert with message &quot;1&quot;" classname="Scenario: Create an event with a cross-site scripting attack" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create an event with a cross-site scripting attack" time="5.631"/>
+  <system-out><![CDATA[
+  Scenario: Multiple class calendars opened                                                                         ?[90m# calendar/Calendar.feature:28?[0m
+    ?[32mWhen ?[0m?[32mI create a "?[0m?[32m?[1mMaster Class?[0m?[32m" event "?[0m?[32m?[1mMaster Class Event?[0m?[32m" that starts "?[0m?[32m?[1mtoday?[0m?[32m" and ends "?[0m?[32m?[1mtomorrow?[0m?[32m"?[0m               ?[90m# CalendarSteps.createClassCalendarEvent(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mMaster Class Event?[0m?[32m"?[0m                                                                ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mWhen ?[0m?[32mI create a "?[0m?[32m?[1mDemonstration Class?[0m?[32m" event "?[0m?[32m?[1mDemonstration Class Event?[0m?[32m" that starts "?[0m?[32m?[1mtoday?[0m?[32m" and ends "?[0m?[32m?[1mtomorrow?[0m?[32m"?[0m ?[90m# CalendarSteps.createClassCalendarEvent(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mDemonstration Class?[0m?[32m"?[0m                                                               ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mWhen ?[0m?[32mI open a new tab on "Class Homepage" page of "?[0m?[32m?[1mDemonstration?[0m?[32m"?[0m                                               ?[90m# ClassHomepageSteps.openClassHomepageNewTab(String)?[0m
+    ?[32mAnd ?[0m?[32mI wait until the calendar has been loaded?[0m                                                                   ?[90m# CalendarSteps.waitUntilCalendarIsLoaded()?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mDemonstration Class Event?[0m?[32m"?[0m                                                         ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI see no calendar event "?[0m?[32m?[1mMaster Class Event?[0m?[32m"?[0m                                                                ?[90m# CalendarSteps.assertNoCalendarEvent(String)?[0m
+    ?[32mWhen ?[0m?[32mI open a new tab on "Class Homepage" page of "?[0m?[32m?[1mMaster Class?[0m?[32m"?[0m                                                ?[90m# ClassHomepageSteps.openClassHomepageNewTab(String)?[0m
+    ?[32mAnd ?[0m?[32mI wait until the calendar has been loaded?[0m                                                                   ?[90m# CalendarSteps.waitUntilCalendarIsLoaded()?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mMaster Class Event?[0m?[32m"?[0m                                                                ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI see no calendar event "?[0m?[32m?[1mDemonstration Class Event?[0m?[32m"?[0m                                                         ?[90m# CalendarSteps.assertNoCalendarEvent(String)?[0m
+    ?[32mWhen ?[0m?[32mI switch back to "?[0m?[32m?[1mDemonstration Class?[0m?[32m" window?[0m                                                              ?[90m# CalendarSteps.switchClassWindow(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the next button on the calendar?[0m                                                                     ?[90m# CalendarSteps.clickNextButtonCalendar()?[0m
+    ?[32mAnd ?[0m?[32mI click the previous button on the calendar?[0m                                                                 ?[90m# CalendarSteps.clickPreviousButtonCalendar()?[0m
+    ?[32mAnd ?[0m?[32mI clicked the calendar "?[0m?[32m?[1mmonth?[0m?[32m" view button?[0m                                                                  ?[90m# CalendarSteps.clickCalendarViewButton(String)?[0m
+    ?[32mThen ?[0m?[32mI assert the calendar displays the "?[0m?[32m?[1mmonth?[0m?[32m" view?[0m                                                            ?[90m# CalendarSteps.assertCalendarViewIsVisible(String)?[0m
+    ?[32mThen ?[0m?[32mI see a calendar event "?[0m?[32m?[1mDemonstration Class Event?[0m?[32m"?[0m                                                         ?[90m# CalendarSteps.assertCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI see no calendar event "?[0m?[32m?[1mMaster Class Event?[0m?[32m"?[0m                                                                ?[90m# CalendarSteps.assertNoCalendarEvent(String)?[0m
+    ?[32mAnd ?[0m?[32mI close all the extra windows?[0m                                                                               ?[90m# SystemHomepageSteps.closeAllWindows()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test STUDENT_ID mapping." tests="28" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:07:51" hostname="mo-acceptance-test-driver-182622c" time="22.556">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I create custom field mappings" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Administrator&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I click the 'System Homepage' mapping button" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I search for and validate LTI user" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I verify and close the LTI Page window" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I am on the Test Harness page" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I restore the launched LTI Test Harness form" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I update LTI user fields" classname="Scenario: Test STUDENT_ID mapping." time="0.001"/>
+  <testcase name="And I set random value for &quot;custom_mapped_login&quot; field" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I set random value for &quot;custom_mapped_email&quot; email field" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I launch prepared &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I search for and validate LTI user" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I verify and close the LTI Page window" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I am on the Test Harness page" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="When I close the LTI Test Harness leftover windows" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="And I am on the Field Mapping page" classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="Then I delete all LTI field mappings." classname="Scenario: Test STUDENT_ID mapping." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test STUDENT_ID mapping." time="22.667"/>
+  <system-out><![CDATA[
+  Scenario: Test EMAIL mapping.                                                                                                          ?[90m# lti/FieldMapping.feature:42?[0m
+    # Change mapped user information but keep the custom email
+    ?[32mWhen ?[0m?[32mI restore the launched LTI Test Harness form?[0m                                                                                    ?[90m# TestHarnessSteps.restoreLaunchedTestHarnessForm()?[0m
+    ?[32mAnd ?[0m?[32mI update LTI user fields?[0m                                                                                                         ?[90m# TestHarnessSteps.updateUserFields()?[0m
+    ?[32mAnd ?[0m?[32mI set random value for "?[0m?[32m?[1mcustom_mapped_login?[0m?[32m" field?[0m                                                                               ?[90m# TestHarnessSteps.setRandomValueForTextField(String)?[0m
+    ?[32mAnd ?[0m?[32mI set random value for "?[0m?[32m?[1mcustom_mapped_student_id?[0m?[32m" field?[0m                                                                          ?[90m# TestHarnessSteps.setRandomValueForTextField(String)?[0m
+    ?[32mWhen ?[0m?[32mI launch prepared "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mInstructor?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m ?[90m# TestHarnessSteps.submitLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the System Homepage?[0m                                                                                                     ?[90m# SystemHomepageSteps.assertSystemHomepage()?[0m
+    ?[32mWhen ?[0m?[32mI open the Search User page?[0m                                                                                                     ?[90m# SearchUserSteps.navigateToSearchUserPage()?[0m
+    ?[32mThen ?[0m?[32mI search for and validate LTI user?[0m                                                                                              ?[90m# TestHarnessSteps.searchForUser()?[0m
+    ?[32mAnd ?[0m?[32mI verify and close the LTI Page window?[0m                                                                                           ?[90m# LTIPageSteps.verifyAndCloseWindow()?[0m
+    ?[32mThen ?[0m?[32mI am on the Test Harness page?[0m                                                                                                   ?[90m# TestHarnessSteps.verifyTestHarnessPage()?[0m
+    # Cleanup. Normal post-test logout doesn't work for LTI users, so we have to do it here.
+    ?[32mWhen ?[0m?[32mI close the LTI Test Harness leftover windows?[0m                                                                                   ?[90m# TestHarnessSteps.closeLeftoverWindows()?[0m
+    ?[32mAnd ?[0m?[32mI directly log out?[0m                                                                                                               ?[90m# LoginSteps.directlyLogOut()?[0m
+    ?[32mAnd ?[0m?[32mI am logged in as the default administrator?[0m                                                                                      ?[90m# LoginSteps.logInAsAdministrator()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Field Mapping page?[0m                                                                                                   ?[90m# FieldMappingSteps.navigateToFieldMappingPage()?[0m
+    ?[32mThen ?[0m?[32mI delete all LTI field mappings.?[0m                                                                                                ?[90m# FieldMappingSteps.deleteAllMappings()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

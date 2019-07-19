@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Add content to a group" tests="21" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:35:13" hostname="mo-acceptance-test-driver-182622c" time="12.302">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="And I choose creating new Group from the Create New button in the &quot;Questions&quot; column" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Add Group&quot; dialog open" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="When I enter a group name of &quot;Test Add&quot;" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="And I click the &quot;Add Group&quot; dialog button" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Questions&quot; column open" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="Then Question Designer is opened" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;Add Content&quot;" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="Then I see that I am on the Content Repository page" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="When I expand the &quot;Text&quot; column" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="And I select the question by name &quot;Add Content&quot;" classname="Scenario: Add content to a group" time="0.001"/>
+  <testcase name="And I click the &quot;Add to&quot; button in the bulk row" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Add to&quot; dialog open" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="When I select the &quot;Test Add&quot; group in the dialog" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="And I click the &quot;Add to&quot; dialog button" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Add to complete&quot; dialog open" classname="Scenario: Add content to a group" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Add content to a group" time="13.367"/>
+  <system-out><![CDATA[
+  Scenario: Successfully remove content from a group                                               ?[90m# QuestionInRepository.feature:79?[0m
+    ?[32mWhen ?[0m?[32mI click on "Questions"?[0m                                                                    ?[90m# ContentRepositorySteps.clickOnQuestions()?[0m
+    ?[32mAnd ?[0m?[32mI choose creating new Group from the Create New button in the "?[0m?[32m?[1mQuestions?[0m?[32m" column?[0m           ?[90m# ContentRepositorySteps.createNewGroupInColumn(String)?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mAdd Group?[0m?[32m" dialog open?[0m                                                         ?[90m# ContentRepositorySteps.assertDialogOpen(String)?[0m
+    ?[32mWhen ?[0m?[32mI enter a group name of "?[0m?[32m?[1mTest Remove?[0m?[32m"?[0m                                                     ?[90m# ContentRepositorySteps.enterGroupName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mAdd Group?[0m?[32m" dialog button?[0m                                                      ?[90m# ContentRepositorySteps.clickDialogButton(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Content Repository page with the "?[0m?[32m?[1mQuestions?[0m?[32m" column open?[0m                      ?[90m# ContentRepositorySteps.assertContentRepository(String)?[0m
+    ?[32mWhen ?[0m?[32mI click on "?[0m?[32m?[1mTest Remove?[0m?[32m" in the "?[0m?[32m?[1mQuestions?[0m?[32m" column?[0m                                        ?[90m# ContentRepositorySteps.clickOnAssignmQuestionGroupInQuestionsColumn(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI choose creating new Question/Text from the Create New button in the "?[0m?[32m?[1mTest Remove?[0m?[32m" column?[0m ?[90m# ContentRepositorySteps.createNewQuestionOrTextInColumn(String)?[0m
+    ?[32mThen ?[0m?[32mQuestion Designer is opened?[0m                                                               ?[90m# QuestionDesignerSteps.assertQuestionDesignerPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mRemove Content 3?[0m?[32m"?[0m                     ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the question designer Save & Close button?[0m                                          ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Content Repository page with the "?[0m?[32m?[1mText?[0m?[32m" column open?[0m                           ?[90m# ContentRepositorySteps.assertContentRepository(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on "?[0m?[32m?[1mTest Remove?[0m?[32m" in the "?[0m?[32m?[1mText?[0m?[32m" column?[0m                                              ?[90m# ContentRepositorySteps.clickOnAssignmQuestionGroupInQuestionsColumn(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI select the question by name "?[0m?[32m?[1mRemove Content 3?[0m?[32m"?[0m                                           ?[90m# ContentRepositorySteps.selectQuestion(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mRemove?[0m?[32m" button in the bulk row?[0m                                                ?[90m# ContentRepositorySteps.clickBulkRowButton(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the ?[0m?[32m?[1mConfirm?[0m?[32m option?[0m                                                                 ?[90m# ContentRepositorySteps.clickConfirm(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Content Repository page with the "?[0m?[32m?[1mTest Remove?[0m?[32m" column open?[0m                    ?[90m# ContentRepositorySteps.assertContentRepository(String)?[0m
+    ?[32mAnd ?[0m?[32mI do not see the question "?[0m?[32m?[1mRemove Content 3?[0m?[32m" in the "?[0m?[32m?[1mTest Remove?[0m?[32m" column?[0m                   ?[90m# ContentRepositorySteps.assertQuestionNotInList(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

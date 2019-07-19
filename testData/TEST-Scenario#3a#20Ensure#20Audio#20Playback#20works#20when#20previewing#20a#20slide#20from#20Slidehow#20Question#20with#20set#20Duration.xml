@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:14:38" hostname="mo-acceptance-test-driver-182622c" time="8.365">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="And I choose creating new Slideshow from the main dropdown button" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="And Slideshow Designer is opened" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;New Question 3&quot;" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="Then I set the duration to &quot;10&quot; seconds" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="When I click to Preview the Slide" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="Then I am previewing the Slideshow" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="When I begin playback of the Slideshow" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="And I pause playback of the Slideshow" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="When current playback time is greater than 0" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.0"/>
+  <testcase name="Then I close the question preview window" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: Ensure Audio Playback works when previewing a slide from Slidehow Question with set Duration" time="9.355"/>
+  <system-out><![CDATA[
+  Scenario: Ensure Audio works when previewing a Slidehow Question with mp3  ?[90m# question/slideshow/TestAudioPlayback.feature:20?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mNew Question 2?[0m?[32m"?[0m ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the Slideshow Audio File Manager button?[0m                     ?[90m# AddSlideshowSteps.clickAudioFileManagerButton()?[0m
+    ?[32mThen ?[0m?[32mI click the audio file named "?[0m?[32m?[1mAudio_Test.mp3?[0m?[32m"?[0m                       ?[90m# AddSlideshowSteps.clickOnAudioFile(String)?[0m
+    ?[32mWhen ?[0m?[32mI click to Preview the Slideshow?[0m                                    ?[90m# AddSlideshowSteps.clickPreviewButton()?[0m
+    ?[32mThen ?[0m?[32mI am previewing the Slideshow?[0m                                       ?[90m# AddSlideshowSteps.assertSlideshowPreviewPage()?[0m
+    ?[32mWhen ?[0m?[32mI begin playback of the Slideshow?[0m                                   ?[90m# AddSlideshowSteps.beginPlayback()?[0m
+    ?[32mAnd ?[0m?[32mI pause playback of the Slideshow?[0m                                    ?[90m# AddSlideshowSteps.pauseSlideshow()?[0m
+    ?[32mWhen ?[0m?[32mcurrent playback time is greater than 0?[0m                             ?[90m# AddSlideshowSteps.assertSlideshowPlayed()?[0m
+    ?[32mThen ?[0m?[32mI close the question preview window?[0m                                 ?[90m# QuestionPreviewSteps.closeQuestionPreviewWindow()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

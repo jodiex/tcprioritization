@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Perform a document upload search with good form values." tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:25:00" hostname="mo-acceptance-test-driver-182622c" time="3.478">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Perform a document upload search with good form values." time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Perform a document upload search with good form values." time="0.0"/>
+  <testcase name="And I navigate to the &quot;Document Upload&quot; in &quot;External&quot; of current class" classname="Scenario: Perform a document upload search with good form values." time="0.0"/>
+  <testcase name="When I am on the Document Upload page" classname="Scenario: Perform a document upload search with good form values." time="0.001"/>
+  <testcase name="And I enter &quot;REDFFGFDSERFRF&quot; as the document code" classname="Scenario: Perform a document upload search with good form values." time="0.0"/>
+  <testcase name="And I click the Search button on the Document Upload page" classname="Scenario: Perform a document upload search with good form values." time="0.0"/>
+  <testcase name="Then I am on the Document Upload page" classname="Scenario: Perform a document upload search with good form values." time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: Perform a document upload search with good form values." time="4.441"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

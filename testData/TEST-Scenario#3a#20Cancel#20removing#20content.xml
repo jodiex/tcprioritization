@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Cancel removing content" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:34:51" hostname="mo-acceptance-test-driver-182622c" time="8.1">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="Then Question Designer is opened" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;Remove Content 2&quot;" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="Then I see that I am on the Content Repository page" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="When I expand the &quot;Text&quot; column" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="And I select the question by name &quot;Remove Content 2&quot;" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="And I click the &quot;Remove&quot; button in the bulk row" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="And I click the Cancel option" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Text&quot; column open" classname="Scenario: Cancel removing content" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Cancel removing content" time="9.128"/>
+  <system-out><![CDATA[
+  Scenario: Attempt to remove content from root group                          ?[90m# QuestionInRepository.feature:55?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new question/Text from the main dropdown button?[0m     ?[90m# ContentRepositorySteps.chooseCreatingNewQuestionFromMainDropdownButton()?[0m
+    ?[32mThen ?[0m?[32mQuestion Designer is opened?[0m                                           ?[90m# QuestionDesignerSteps.assertQuestionDesignerPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mRemove Content 1?[0m?[32m"?[0m ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the question designer Save & Close button?[0m                      ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+    ?[32mThen ?[0m?[32mI see that I am on the Content Repository page?[0m                        ?[90m# ContentRepositorySteps.assertOnRepositoryPage()?[0m
+    ?[32mWhen ?[0m?[32mI expand the "?[0m?[32m?[1mText?[0m?[32m" column?[0m                                            ?[90m# ContentRepositorySteps.expandColumn(String)?[0m
+    ?[32mAnd ?[0m?[32mI select the question by name "?[0m?[32m?[1mRemove Content 1?[0m?[32m"?[0m                       ?[90m# ContentRepositorySteps.selectQuestion(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mRemove?[0m?[32m" button in the bulk row?[0m                            ?[90m# ContentRepositorySteps.clickBulkRowButton(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the ?[0m?[32m?[1mConfirm?[0m?[32m option?[0m                                             ?[90m# ContentRepositorySteps.clickConfirm(String)?[0m
+    ?[32mThen ?[0m?[32mI see an error message stating that the content cannot be removed?[0m     ?[90m# ContentRepositorySteps.assertCannotRemoveError()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

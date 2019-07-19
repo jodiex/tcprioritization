@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create lesson with one gradable and one non-gradable area" tests="55" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:26:54" hostname="mo-acceptance-test-driver-182622c" time="35.252">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then Lesson Editor is opened" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When enter Lesson name &quot;Partially gradable lesson&quot;" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click the new question button on the lesson design page" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I create question &quot;Gradable&quot; with label &quot;Gradable&quot;" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I open the dropdown menu for the current Lesson page" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click the new question item in the Lesson page dropdown menu" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I create question &quot;Nongradable&quot; with label &quot;Nongradable&quot;" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see the question editor" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I save &amp; close the new question in the assignment editor" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I save &amp; close the lesson on the design page" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then the new lesson &quot;Partially gradable lesson&quot; is visible in its own expanded column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click on the &quot;Partially gradable lesson&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then the module &quot;Partially gradable lesson&quot; is opened without launch page" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I save and quit the lesson" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I navigate to the &quot;Content Repository&quot; of current class" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click &quot;Student Readiness&quot; in the &quot;Lessons &amp; Assignments&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click &quot;Partially gradable lesson&quot; in the &quot;Student Readiness&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see a &quot;Force Grade&quot; button in the &quot;Partially gradable lesson&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click the &quot;Force Grade&quot; button in the &quot;Partially gradable lesson&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see the &quot;Force Grade&quot; dialog open" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click the &quot;Force Grade&quot; dialog button" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Partially gradable lesson&quot; column open" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see a score of &quot;0.0 / 1.0&quot; for the &quot;Partially gradable lesson&quot; lesson in &quot;Student Readiness&quot; unit" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click on the &quot;Partially gradable lesson&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then the module &quot;Partially gradable lesson&quot; is opened without launch page" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I enter &quot;2x&quot; in Mathematical Formula input" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I save and quit the lesson" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I navigate to the &quot;Content Repository&quot; of current class" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click &quot;Student Readiness&quot; in the &quot;Lessons &amp; Assignments&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I click &quot;Partially gradable lesson&quot; in the &quot;Student Readiness&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see a &quot;Force Grade&quot; button in the &quot;Partially gradable lesson&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click the &quot;Force Grade&quot; button in the &quot;Partially gradable lesson&quot; column" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see the &quot;Force Grade&quot; dialog open" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I click the &quot;Force Grade&quot; dialog button" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Partially gradable lesson&quot; column open" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="Then I see a score of &quot;1.0 / 1.0&quot; for the &quot;Partially gradable lesson&quot; lesson in &quot;Student Readiness&quot; unit" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create lesson with one gradable and one non-gradable area" time="36.267"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create lesson with questions in a group" tests="56" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:27:30" hostname="mo-acceptance-test-driver-182622c" time="38.199">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I choose creating new lesson in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then Lesson Editor is opened" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When enter Lesson name &quot;Lesson with groups&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I open the dropdown menu for the current Lesson page" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click the new question group item in the Lesson page dropdown menu" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I switch to the group named &quot;Group&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click the new question button on the lesson design page" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I create question &quot;q1&quot; with label &quot;q1&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I open the dropdown menu for the current Lesson page" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click the new question item in the Lesson page dropdown menu" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I create question &quot;q2&quot; with label &quot;q2&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I save &amp; close the lesson on the design page" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see summary of the assignment" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then the new lesson &quot;Lesson with groups&quot; is visible in its own expanded column" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click on the &quot;Lesson with groups&quot; module in the &quot;Student Readiness&quot; unit" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then the module &quot;Lesson with groups&quot; is opened without launch page" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I save and quit the lesson" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I navigate to the &quot;Content Repository&quot; of current class" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I click &quot;Student Readiness&quot; in the &quot;Lessons &amp; Assignments&quot; column" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I click &quot;Lesson with groups&quot; in the &quot;Student Readiness&quot; column" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see a &quot;Force Grade&quot; button in the &quot;Lesson with groups&quot; column" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I click the &quot;Force Grade&quot; button in the &quot;Lesson with groups&quot; column" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Force Grade&quot; dialog open" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I click the &quot;Force Grade&quot; dialog button" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Lesson with groups&quot; column open" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see a score of &quot;0.0 / 2.0&quot; for the &quot;Lesson with groups&quot; lesson in &quot;Student Readiness&quot; unit" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I am on the Class Grades page" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I select &quot;Lesson with groups - Lesson&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I put &quot;qa&quot; in the &quot;User&quot; input box" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I click the Search button" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="When I click the grade for the selected assignment" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="Then I see the test record details of &quot;Lesson with groups&quot; for user &quot;qa&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I see my total score &quot;0/2.0&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I see the question grade of &quot;Q1&quot; is &quot;0/1.0&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="And I see the question grade of &quot;Q2&quot; is &quot;0/1.0&quot;" classname="Scenario: Create lesson with questions in a group" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create lesson with questions in a group" time="39.232"/>
+  <system-out><![CDATA[
+  Scenario: Create lesson with one gradable and one non-gradable area                                            ?[90m# LessonGrading.feature:8?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new lesson in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit from the main dropdown button?[0m                  ?[90m# ContentRepositorySteps.chooseCreatingNewLessonFromMainDropdownButton(String)?[0m
+    ?[32mThen ?[0m?[32mLesson Editor is opened?[0m                                                                                 ?[90m# LessonEditorSteps.assertLessonEditorPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32menter Lesson name "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m"?[0m                                                           ?[90m# AssignmentEditorDetailsSteps.enterAssignmentName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the new question button on the lesson design page?[0m                                                ?[90m# LessonEditorSteps.clickNewQuestionButton()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mGradable?[0m?[32m" with label "?[0m?[32m?[1mGradable?[0m?[32m"?[0m                                                       ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mWhen ?[0m?[32mI choose "?[0m?[32m?[1mMathematical Formula?[0m?[32m" link from the dialog and complete the correct answer?[0m                    ?[90m# QuestionDesignerSteps.chooseTypeAndCompleteCorrectAnswer(String)?[0m
+    ?[32mAnd ?[0m?[32mI click OK?[0m                                                                                               ?[90m# QuestionDesignerSteps.clickResponseDialogOkButton()?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mMathematical Formula?[0m?[32m" Question Widget in the question text section?[0m                           ?[90m# QuestionDesignerSteps.assertQuestionWidgetIsInserted(String)?[0m
+    ?[32mAnd ?[0m?[32mI save & close the new question in the assignment editor?[0m                                                 ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mWhen ?[0m?[32mI open the dropdown menu for the current Lesson page?[0m                                                    ?[90m# LessonEditorSteps.clickOpenDropdownMenu()?[0m
+    ?[32mAnd ?[0m?[32mI click the new question item in the Lesson page dropdown menu?[0m                                           ?[90m# LessonEditorSteps.clickNewQuestionDropdownItem()?[0m
+    ?[32mAnd ?[0m?[32mI create question "?[0m?[32m?[1mNongradable?[0m?[32m" with label "?[0m?[32m?[1mNongradable?[0m?[32m"?[0m                                                 ?[90m# AssignmentEditorQuestionSteps.createQuestion(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see the question editor?[0m                                                                               ?[90m# AssignmentEditorQuestionSteps.assertQuestionEditorVisible()?[0m
+    ?[32mWhen ?[0m?[32mI save & close the new question in the assignment editor?[0m                                                ?[90m# AssignmentEditorQuestionSteps.saveAndCloseNewQuestion()?[0m
+    ?[32mAnd ?[0m?[32mI save & close the lesson on the design page?[0m                                                             ?[90m# LessonEditorSteps.saveAndCloseLesson()?[0m
+    ?[32mThen ?[0m?[32mI see summary of the assignment?[0m                                                                         ?[90m# AssignmentEditorDetailsSteps.assertAssignmentSummaryShown()?[0m
+    ?[32mWhen ?[0m?[32mI save and close the assignment summary details?[0m                                                         ?[90m# AssignmentEditorDetailsSteps.saveAndCloseAssignmentSummary()?[0m
+    ?[32mThen ?[0m?[32mthe new lesson "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" is visible in its own expanded column?[0m                        ?[90m# ContentRepositorySteps.assertNamedAssignmentColumnIsExpanded(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                                       ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                             ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI click on the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" module in the "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m                        ?[90m# ClassHomepageSteps.clickOnModuleLink(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe module "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" is opened without launch page?[0m                                    ?[90m# ClassHomepageSteps.switchToModulePage(String)?[0m
+    ?[32mWhen ?[0m?[32mI save and quit the lesson?[0m                                                                              ?[90m# LessonSteps.submitLesson()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                              ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI navigate to the "?[0m?[32m?[1mContent Repository?[0m?[32m" of current class?[0m                                                  ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI click "?[0m?[32m?[1mStudent Readiness?[0m?[32m" in the "?[0m?[32m?[1mLessons & Assignments?[0m?[32m" column?[0m                                       ?[90m# ContentRepositorySteps.clickLinkInParentColumn(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" in the "?[0m?[32m?[1mStudent Readiness?[0m?[32m" column?[0m                                    ?[90m# ContentRepositorySteps.clickLinkInParentColumn(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a "?[0m?[32m?[1mForce Grade?[0m?[32m" button in the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" column?[0m                                  ?[90m# ContentRepositorySteps.assertButtonVisible(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI click the "?[0m?[32m?[1mForce Grade?[0m?[32m" button in the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" column?[0m                              ?[90m# ContentRepositorySteps.clickColumnButton(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mForce Grade?[0m?[32m" dialog open?[0m                                                                     ?[90m# ContentRepositorySteps.assertDialogOpen(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the "?[0m?[32m?[1mForce Grade?[0m?[32m" dialog button?[0m                                                                 ?[90m# ContentRepositorySteps.clickDialogButton(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Content Repository page with the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" column open?[0m                    ?[90m# ContentRepositorySteps.assertContentRepository(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                                       ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                             ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mThen ?[0m?[32mI see a score of "?[0m?[32m?[1m0.0 / 1.0?[0m?[32m" for the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" lesson in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m     ?[90m# ClassHomepageSteps.assertScoreIsVisible(String,String,String)?[0m
+    ?[32mWhen ?[0m?[32mI click on the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" module in the "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m                       ?[90m# ClassHomepageSteps.clickOnModuleLink(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe module "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" is opened without launch page?[0m                                    ?[90m# ClassHomepageSteps.switchToModulePage(String)?[0m
+    ?[32mWhen ?[0m?[32mI enter "?[0m?[32m?[1m2x?[0m?[32m" in Mathematical Formula input?[0m                                                              ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI save and quit the lesson?[0m                                                                               ?[90m# LessonSteps.submitLesson()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Class Homepage?[0m                                                                               ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI navigate to the "?[0m?[32m?[1mContent Repository?[0m?[32m" of current class?[0m                                                  ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI click "?[0m?[32m?[1mStudent Readiness?[0m?[32m" in the "?[0m?[32m?[1mLessons & Assignments?[0m?[32m" column?[0m                                       ?[90m# ContentRepositorySteps.clickLinkInParentColumn(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI click "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" in the "?[0m?[32m?[1mStudent Readiness?[0m?[32m" column?[0m                                    ?[90m# ContentRepositorySteps.clickLinkInParentColumn(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see a "?[0m?[32m?[1mForce Grade?[0m?[32m" button in the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" column?[0m                                  ?[90m# ContentRepositorySteps.assertButtonVisible(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI click the "?[0m?[32m?[1mForce Grade?[0m?[32m" button in the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" column?[0m                              ?[90m# ContentRepositorySteps.clickColumnButton(String,String)?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mForce Grade?[0m?[32m" dialog open?[0m                                                                     ?[90m# ContentRepositorySteps.assertDialogOpen(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the "?[0m?[32m?[1mForce Grade?[0m?[32m" dialog button?[0m                                                                 ?[90m# ContentRepositorySteps.clickDialogButton(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Content Repository page with the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" column open?[0m                    ?[90m# ContentRepositorySteps.assertContentRepository(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the System Homepage?[0m                                                                       ?[90m# SystemHomepageSteps.navigateToSystemHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                             ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mThen ?[0m?[32mI see a score of "?[0m?[32m?[1m1.0 / 1.0?[0m?[32m" for the "?[0m?[32m?[1mPartially gradable lesson?[0m?[32m" lesson in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m     ?[90m# ClassHomepageSteps.assertScoreIsVisible(String,String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

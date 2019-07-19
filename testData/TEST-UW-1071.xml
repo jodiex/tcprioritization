@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UW-1071" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:15:29" hostname="mo-acceptance-test-driver-182622c" time="21.1">
+  <properties/>
+  <testcase name="Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071" time="21.1"/>
+  <system-out><![CDATA[
+  Scenario: Test clicking How Did I Do button on slide.                                                          ?[90m# question/slideshow/TestSlideButtons.feature:10?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mNew Question 1?[0m?[32m"?[0m                                     ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click inside the slideshow content in the editor?[0m                                                       ?[90m# AddSlideshowSteps.clickSlideshowContentArea()?[0m
+    ?[32mAnd ?[0m?[32mI click Response Area button to open the dialog and assert that the Choose Question Type page is visible?[0m ?[90m# QuestionDesignerSteps.clickInsertResponseAreaButton()?[0m
+    ?[32mWhen ?[0m?[32mI choose "?[0m?[32m?[1mMathematical Formula?[0m?[32m" link from the dialog and complete the correct answer?[0m                    ?[90m# QuestionDesignerSteps.chooseTypeAndCompleteCorrectAnswer(String)?[0m
+    ?[32mAnd ?[0m?[32mI click OK?[0m                                                                                               ?[90m# QuestionDesignerSteps.clickResponseDialogOkButton()?[0m
+    ?[32mThen ?[0m?[32mI see the "?[0m?[32m?[1mMathematical Formula?[0m?[32m" Question Widget in the question text section?[0m                           ?[90m# QuestionDesignerSteps.assertQuestionWidgetIsInserted(String)?[0m
+    ?[32mWhen ?[0m?[32mI click to Preview the Slideshow?[0m                                                                        ?[90m# AddSlideshowSteps.clickPreviewButton()?[0m
+    ?[32mThen ?[0m?[32mI am previewing the Slideshow?[0m                                                                           ?[90m# AddSlideshowSteps.assertSlideshowPreviewPage()?[0m
+    ?[32mWhen ?[0m?[32mI begin playback of the Slideshow?[0m                                                                       ?[90m# AddSlideshowSteps.beginPlayback()?[0m
+    ?[32mAnd ?[0m?[32mI enter "?[0m?[32m?[1m2x?[0m?[32m" in Mathematical Formula input?[0m                                                               ?[90m# MathmeticalFormulaElementSteps.enterMathFormulaInput(String)?[0m
+    ?[32mAnd ?[0m?[32mI click How Did I Do in the Slide?[0m                                                                        ?[90m# QuestionPreviewSteps.clickSlideHowDidIDo()?[0m
+    ?[32mThen ?[0m?[32mI assert that the Mathematical Formula answer is correct?[0m                                                ?[90m# MathmeticalFormulaElementSteps.assertSlideMathFormulaCorrect()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Empty grades should not be clickable for external assignments" tests="19" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:47:12" hostname="mo-acceptance-test-driver-182622c" time="6.98">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="Then I check if user &quot;sam&quot; exists, if not, I create the user" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="And I navigate to the &quot;External &amp; Rubrics&quot; in &quot;External&quot; of current class" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="Then I am on the External &amp; Rubrics page" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="When I put &quot;External Assignment 1&quot; in the &quot;Assignment Name&quot; input box" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.001"/>
+  <testcase name="And I click the Save button" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="Then I assert that the message &quot;External Assignment was saved successfully.&quot; appears" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="When I select &quot;External Assignment 1 - External&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="And I put &quot;sam&quot; in the &quot;User&quot; input box" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="And I click the Search button" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.001"/>
+  <testcase name="Then I assert that the grade is &quot;-&quot; for the selected assignment" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="And I assert that the grade is not clickable for the selected assignment" classname="Scenario: Empty grades should not be clickable for external assignments" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Empty grades should not be clickable for external assignments" time="8.08"/>
+  <system-out><![CDATA[
+  #MO-2114
+  Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error ?[90m# gradebook/ManageImprovisedTestRecords.feature:121?[0m
+    ?[32mWhen ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                                                     ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI navigate to the "?[0m?[32m?[1mClass Grades?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m                                                                  ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Grades page?[0m                                                                                                    ?[90m# GradebookClassGradesSteps.waitForClassGradesPage()?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mImprovised A1 - Homework/Quiz?[0m?[32m" in "Assignments" selection list?[0m                                                          ?[90m# GradebookClassGradesSteps.selectAssignment(String)?[0m
+    ?[32mAnd ?[0m?[32mI put "?[0m?[32m?[1msam?[0m?[32m" in the "User" input box?[0m                                                                                               ?[90m# GradebookClassGradesSteps.inputUserLogin(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the date-from box?[0m                                                                                                         ?[90m# GradebookClassGradesSteps.clickDateFromBox()?[0m
+    ?[32mAnd ?[0m?[32mI select next year on the calendar?[0m                                                                                                ?[90m# GradebookClassGradesSteps.selectNextYearOnCalendar()?[0m
+    ?[32mAnd ?[0m?[32mI click the Search button?[0m                                                                                                         ?[90m# GradebookClassGradesSteps.clickSearch()?[0m
+    ?[32mThen ?[0m?[32mI assert that the grade is "?[0m?[32m?[1m-?[0m?[32m" for the selected assignment?[0m                                                                       ?[90m# GradebookClassGradesSteps.assertTotalGrade(String)?[0m
+    ?[32mWhen ?[0m?[32mI click the grade for the selected assignment?[0m                                                                                    ?[90m# GradebookClassGradesSteps.clickGrade()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Grades page?[0m                                                                                                    ?[90m# GradebookClassGradesSteps.waitForClassGradesPage()?[0m
+    ?[32mAnd ?[0m?[32mI see an error message stating that a test record already exists?[0m                                                                  ?[90m# GradebookClassGradesSteps.assertTestRecordExistsMessageVisible()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Load EQE from local resources" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:17:01" hostname="mo-acceptance-test-driver-182622c" time="8.572">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="And I set Use CDN to false" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="And The Use CDN checkbox is false" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="Then I navigate to the System Homepage" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page of Demonstration Class" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="When I choose creating new question/Text from the main dropdown button" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="And I click Equation Editor button to open the Math Editor dialog and assert that the Math Editor dialog is visible" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="Then I click Done in the Math Editor dialog" classname="Scenario: Load EQE from local resources" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Load EQE from local resources" time="9.625"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

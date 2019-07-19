@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:36:58" hostname="mo-acceptance-test-driver-182622c" time="6.06">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.001"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="And I choose creating new assignment in &quot;Student Readiness&quot; unit from the main dropdown button" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="And Assignment Editor is opened" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="When I click on the set policies tab" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="And I set the show launch page checkbox to false" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.001"/>
+  <testcase name="And I set the Require Proctored Browser checkbox to true" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="Then I see an alert message stating that the launch page will be enabled" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="And I see that the show launch page checkbox is set to true" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctored Browser is required" time="7.176"/>
+  <system-out><![CDATA[
+  Scenario: Verify that the unchecked Show Launch Page policy gets checked when Proctor Authorization is required ?[90m# assignment/AssignmentPolicies.feature:59?[0m
+    ?[32mWhen ?[0m?[32mI click on the set policies tab?[0m                                                                          ?[90m# AssignmentEditorPropertiesSteps.clickSetPoliciesTab()?[0m
+    ?[32mAnd ?[0m?[32mI set the show launch page checkbox to ?[0m?[32m?[1mfalse?[0m                                                              ?[90m# AssignmentEditorPropertiesSteps.setShowLaunchPageState(boolean)?[0m
+    ?[32mAnd ?[0m?[32mI set the proctor sign-in checkbox to ?[0m?[32m?[1mtrue?[0m                                                                ?[90m# AssignmentEditorPropertiesSteps.setProctorSignInState(boolean)?[0m
+    ?[32mThen ?[0m?[32mI see an alert message stating that the launch page will be enabled?[0m                                      ?[90m# AssignmentEditorPropertiesSteps.assertShowLaunchPageAlertVisible()?[0m
+    ?[32mAnd ?[0m?[32mI see that the show launch page checkbox is set to ?[0m?[32m?[1mtrue?[0m                                                   ?[90m# AssignmentEditorPropertiesSteps.assertShowLaunchPageState(boolean)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

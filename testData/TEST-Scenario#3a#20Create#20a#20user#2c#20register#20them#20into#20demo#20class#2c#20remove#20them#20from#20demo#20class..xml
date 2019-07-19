@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a user, register them into demo class, remove them from demo class." tests="35" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:35:42" hostname="mo-acceptance-test-driver-182622c" time="12.251">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I open the Create User page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I enter the valid information for the user luigi" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then the user luigi is created" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I click the Register Users menu item" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I click the Advanced Search link on the Register Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I enter &quot;luigi&quot; into the User Login textbox on the Register Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I click the Search button on the Register Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I select the user &quot;luigi&quot; in the list of users to add" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I click the Register button on the Register Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then The users were successfully registered in the class" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I am on the Register Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.001"/>
+  <testcase name="Then I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I click the Remove Users menu item" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I click the Advanced Search link on the Remove Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.001"/>
+  <testcase name="And I enter &quot;luigi&quot; into the User Login textbox on the Remove Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.001"/>
+  <testcase name="And I click the Search button on the Remove Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I select the user &quot;luigi&quot; in the list of users to remove" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I click the Remove button on the Remove Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.001"/>
+  <testcase name="Then The users were successfully removed from the class" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I am on the Remove Users page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I click the Search for Users menu item" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then I am on the Class User Search page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="When I enter search criteria for luigi on Class User Search page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="And I click the Search button on the Class User Search page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="Then User luigi isn't found on Class User Search page" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a user, register them into demo class, remove them from demo class." time="13.256"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

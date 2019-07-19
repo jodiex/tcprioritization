@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: State of the questions is saved when the user is switching between them" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:42:21" hostname="mo-acceptance-test-driver-182622c" time="15.949">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="And &quot;Student Readiness Test&quot; assignment in &quot;Student Readiness&quot; unit is opened" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="And the content of &quot;Question 1&quot; with title &quot;Assignment Navigation&quot; is displayed" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="When I give the right responses to questions 6-8" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="Then the right responses are saved" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="When I modify the given responses to be wrong" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="Then the wrong responses are saved" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="Then I save and quit assignment to clear assignment state" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: State of the questions is saved when the user is switching between them" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: State of the questions is saved when the user is switching between them" time="16.993"/>
+  <system-out><![CDATA[
+  @Navigation @Button
+  Scenario: User is navigating between questions,                                     ?[90m# assignment/StudentReadinessTest.feature:43?[0m
+    but he is not permitted to move after the last question
+
+    ?[32mWhen ?[0m?[32mI use "?[0m?[32m?[1mQuestion Menu?[0m?[32m" button to navigate to "?[0m?[32m?[1mQuestion 9?[0m?[32m"?[0m                     ?[90m# MapleTAAssignmentSteps.navigateToQuestion(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe content of "?[0m?[32m?[1mQuestion 9?[0m?[32m" with title "?[0m?[32m?[1mStudent Help?[0m?[32m" is displayed?[0m           ?[90m# MapleTAAssignmentSteps.assertQuestionTitle(String,String)?[0m
+    ?[32mBut ?[0m?[32m"?[0m?[32m?[1mQuestion 9?[0m?[32m" item in the question menu is disabled?[0m                            ?[90m# MapleTAAssignmentSteps.assertQuestionItemInQuestionMenuIsDisabled(String)?[0m
+    ?[32mAnd ?[0m?[32m"Back" button is ?[0m?[32m?[1menabled?[0m                                                      ?[90m# MapleTAAssignmentSteps.assertBackButtonState(String)?[0m
+    ?[32mAnd ?[0m?[32m"Next" button is ?[0m?[32m?[1menabled?[0m                                                      ?[90m# MapleTAAssignmentSteps.assertNextButtonState(String)?[0m
+    ?[32mWhen ?[0m?[32mI use "?[0m?[32m?[1mNext?[0m?[32m" button to navigate to "?[0m?[32m?[1mQuestion 10?[0m?[32m"?[0m                             ?[90m# MapleTAAssignmentSteps.navigateToQuestion(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe content of "?[0m?[32m?[1mQuestion 10?[0m?[32m" with first line "?[0m?[32m?[1mCongratulations!?[0m?[32m" is displayed?[0m ?[90m# MapleTAAssignmentSteps.assertQuestionTitle(String,String)?[0m
+    ?[32mBut ?[0m?[32m"?[0m?[32m?[1mQuestion 10?[0m?[32m" item in the question menu is disabled?[0m                           ?[90m# MapleTAAssignmentSteps.assertQuestionItemInQuestionMenuIsDisabled(String)?[0m
+    ?[32mAnd ?[0m?[32m"Back" button is ?[0m?[32m?[1menabled?[0m                                                      ?[90m# MapleTAAssignmentSteps.assertBackButtonState(String)?[0m
+    ?[32mAnd ?[0m?[32m"Next" button is ?[0m?[32m?[1mdisabled?[0m                                                     ?[90m# MapleTAAssignmentSteps.assertNextButtonState(String)?[0m
+    ?[32mThen ?[0m?[32mI save and quit assignment to clear assignment state?[0m                         ?[90m# MapleTAAssignmentSteps.clearAssignmentState()?[0m
+    ?[32mAnd ?[0m?[32mI am on the Class Homepage?[0m                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

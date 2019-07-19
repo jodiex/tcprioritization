@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:13:11" hostname="mo-acceptance-test-driver-182622c" time="2.207">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" time="0.0"/>
+  <testcase name="And I open the New Class page" classname="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" time="0.0"/>
+  <testcase name="When I enter the valid information for class advancedMathClass and change the time zone selection to Asia/Kolkata" classname="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" time="0.0"/>
+  <testcase name="Then the class is created" classname="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" time="0.0"/>
+  <testcase name="And I see the time zone Asia/Kolkata on the page" classname="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" time="0.0"/>
+  <testcase name="classMethod" classname="| advancedMathClass | Asia/Kolkata | Asia/Kolkata |" time="3.27"/>
+  <system-out><![CDATA[
+  @addClass
+  Scenario Outline: Create a new class                                                                        ?[90m# AddMapleTAClass.feature:19?[0m
+    ?[32mWhen ?[0m?[32mI enter the valid information for class ?[0m?[32m?[1mintermediateMathClass?[0m?[32m and change the time zone selection to ?[0m?[32m?[1m?[0m ?[90m# AddMapleTAClassSteps.enterMinimumClassDetails(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe class is created?[0m                                                                                 ?[90m# AddMapleTAClassSteps.assertMapleTAClassIsAddedCorrectly()?[0m
+    ?[32mAnd ?[0m?[32mI see the time zone ?[0m?[32m?[1mDefault?[0m?[32m on the page?[0m                                                               ?[90m# AddMapleTAClassSteps.assertTimeZoneIsCorrect(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

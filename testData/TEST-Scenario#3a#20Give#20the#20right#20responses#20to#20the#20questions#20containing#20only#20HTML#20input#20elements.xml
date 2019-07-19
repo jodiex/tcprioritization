@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Give the right responses to the questions containing only HTML input elements" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:41:48" hostname="mo-acceptance-test-driver-182622c" time="15.093">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And &quot;Student Readiness Test&quot; assignment in &quot;Student Readiness&quot; unit is opened" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And the content of &quot;Question 1&quot; with title &quot;Assignment Navigation&quot; is displayed" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="When I give the right responses to all the questions except MathML questions 2-4" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And I submit the assignment" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="Then I see the submission report with warning text &quot;Warning: There appears to be errors in one or more of your answers.&quot;" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And a table with the question problems" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="When I submit the assignment again" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="Then my score 7 out of 10 (70 %) is shown in a grade report" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And I save and quit assignment to clear assignment state" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="And I am on the Class Homepage" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Give the right responses to the questions containing only HTML input elements" time="16.112"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." tests="17" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:32:38" hostname="mo-acceptance-test-driver-182622c" time="9.159">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="When I open the Create User page" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I enter the valid information for the user peach" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="Then the user peach is created" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I open the Search User page" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I search for user peach" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I find and click on peach's user details link on Search User page" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I enter purchase code 1234567890123456 into the textbox" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I click the purchase code button" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I close the purchase code dialog box" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="Then the purchase code 1234567890123456 is registered" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="When I log out" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="When I enter valid credentials for user peach" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="And I click on the View Profile link" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="Then the purchase code 1234567890123456 is registered" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a student, administrator adds purchase code for student, check student has purchase code." time="10.281"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

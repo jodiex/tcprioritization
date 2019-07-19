@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Privacy policy with System Homepage LTI launch." tests="24" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:11:21" hostname="mo-acceptance-test-driver-182622c" time="12.558">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I enable Privacy Policy Required with the dummy URL" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I navigate to the Shared Secret page" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I check if Consumer Key and Shared Secret exist, if not, I create them" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.001"/>
+  <testcase name="And The Accept Privacy Policy button is visible" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="When I accept the Privacy Policy" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="When I click the 'System Homepage' mapping button" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I close the LTI Test Harness leftover windows" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="When I go to the LTI Test Harness page" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I restore the launched LTI Test Harness form" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I update LTI user fields" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I launch prepared &quot;basic-lti-launch-request&quot; LTI request with role &quot;Student&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the Privacy Policy page" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And The Accept Privacy Policy button is visible" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="When I accept the Privacy Policy" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="And I close the LTI Test Harness leftover windows" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="Then I directly log out" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.001"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Privacy policy with System Homepage LTI launch." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Privacy policy with System Homepage LTI launch." time="13.535"/>
+  <system-out><![CDATA[
+  # ---------------------------------------------------------------------------------------------
+  Scenario: Privacy policy with Class Homepage LTI launch.                                                                             ?[90m# privacyPolicy/PrivacyPolicyLTI.feature:11?[0m
+    ?[32mWhen ?[0m?[32mI launch random "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mInstructor?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m ?[90m# TestHarnessSteps.runLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Privacy Policy page?[0m                                                                                               ?[90m# PrivacyPolicySteps.assertPrivacyPolicyPage()?[0m
+    ?[32mAnd ?[0m?[32mThe Accept Privacy Policy button is visible?[0m                                                                                    ?[90m# PrivacyPolicySteps.assertAcceptButtonVisible()?[0m
+    ?[32mWhen ?[0m?[32mI accept the Privacy Policy?[0m                                                                                                   ?[90m# PrivacyPolicySteps.clickAcceptButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                  ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    # Create new class
+    ?[32mWhen ?[0m?[32mI click the 'New Class' mapping button?[0m                                                                                        ?[90m# LTIMappingSteps.clickNewClassButton()?[0m
+    ?[32mAnd ?[0m?[32mI create new class with random name?[0m                                                                                            ?[90m# AddMapleTAClassSteps.createNewClassWithRandomName()?[0m
+    ?[32mThen ?[0m?[32mI am on the LTI Mapping Page?[0m                                                                                                  ?[90m# LTIMappingSteps.assertLtiMappingPage()?[0m
+    # Map to the Class Homepage
+    ?[32mWhen ?[0m?[32mI click the 'Class Homepage' mapping button?[0m                                                                                   ?[90m# LTIMappingSteps.clickClassHomepageButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI close the LTI Test Harness leftover windows?[0m                                                                                  ?[90m# TestHarnessSteps.closeLeftoverWindows()?[0m
+    ?[32mWhen ?[0m?[32mI go to the LTI Test Harness page?[0m                                                                                             ?[90m# TestHarnessSteps.navigateToTestHarnessPage()?[0m
+    ?[32mAnd ?[0m?[32mI restore the launched LTI Test Harness form?[0m                                                                                   ?[90m# TestHarnessSteps.restoreLaunchedTestHarnessForm()?[0m
+    ?[32mAnd ?[0m?[32mI update LTI user fields?[0m                                                                                                       ?[90m# TestHarnessSteps.updateUserFields()?[0m
+    ?[32mAnd ?[0m?[32mI launch prepared "?[0m?[32m?[1mbasic-lti-launch-request?[0m?[32m" LTI request with role "?[0m?[32m?[1mStudent?[0m?[32m" and outcome URL "?[0m?[32m?[1m?[0m?[32m" and document target "?[0m?[32m?[1mwindow?[0m?[32m"?[0m   ?[90m# TestHarnessSteps.submitLtiRequest(String,String,String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Privacy Policy page?[0m                                                                                               ?[90m# PrivacyPolicySteps.assertPrivacyPolicyPage()?[0m
+    ?[32mAnd ?[0m?[32mThe Accept Privacy Policy button is visible?[0m                                                                                    ?[90m# PrivacyPolicySteps.assertAcceptButtonVisible()?[0m
+    ?[32mWhen ?[0m?[32mI accept the Privacy Policy?[0m                                                                                                   ?[90m# PrivacyPolicySteps.clickAcceptButton()?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Homepage?[0m                                                                                                    ?[90m# ClassHomepageSteps.assertClassHomepage()?[0m
+    ?[32mAnd ?[0m?[32mI close the LTI Test Harness leftover windows?[0m                                                                                  ?[90m# TestHarnessSteps.closeLeftoverWindows()?[0m
+    ?[32mThen ?[0m?[32mI directly log out?[0m                                                                                                            ?[90m# LoginSteps.directlyLogOut()?[0m
+    ?[32mAnd ?[0m?[32mI am logged in as the default administrator?[0m                                                                                    ?[90m# LoginSteps.logInAsAdministrator()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

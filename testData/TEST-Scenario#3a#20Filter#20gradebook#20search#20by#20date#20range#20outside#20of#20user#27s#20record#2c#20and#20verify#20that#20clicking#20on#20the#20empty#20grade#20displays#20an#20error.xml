@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:47:05" hostname="mo-acceptance-test-driver-182622c" time="6.277">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="Then I check if user &quot;sam&quot; exists, if not, I create the user" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I select &quot;Improvised A1 - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I put &quot;sam&quot; in the &quot;User&quot; input box" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I click the date-from box" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I select next year on the calendar" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I click the Search button" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="Then I assert that the grade is &quot;-&quot; for the selected assignment" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="When I click the grade for the selected assignment" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="And I see an error message stating that a test record already exists" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Filter gradebook search by date range outside of user's record, and verify that clicking on the empty grade displays an error" time="7.26"/>
+  <system-out><![CDATA[
+  #MO-2117
+  Scenario: Verify score for improvised record is decorated                      ?[90m# gradebook/ManageImprovisedTestRecords.feature:111?[0m
+    ?[32mWhen ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m            ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mAnd ?[0m?[32mI navigate to the "?[0m?[32m?[1mClass Grades?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m         ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Grades page?[0m                                           ?[90m# GradebookClassGradesSteps.waitForClassGradesPage()?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mImprovised A1 - Homework/Quiz?[0m?[32m" in "Assignments" selection list?[0m ?[90m# GradebookClassGradesSteps.selectAssignment(String)?[0m
+    ?[32mAnd ?[0m?[32mI put "?[0m?[32m?[1msam?[0m?[32m" in the "User" input box?[0m                                      ?[90m# GradebookClassGradesSteps.inputUserLogin(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Search button?[0m                                                ?[90m# GradebookClassGradesSteps.clickSearch()?[0m
+    ?[32mAnd ?[0m?[32mI assert that the grade is "?[0m?[32m?[1m0.75 *?[0m?[32m" for the assignment question item?[0m     ?[90m# GradebookClassGradesSteps.assertItemGrade(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

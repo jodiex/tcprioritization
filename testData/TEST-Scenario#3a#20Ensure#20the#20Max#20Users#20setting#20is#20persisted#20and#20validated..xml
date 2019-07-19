@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Ensure the Max Users setting is persisted and validated." tests="26" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:17:36" hostname="mo-acceptance-test-driver-182622c" time="5.586">
+  <properties/>
+  <testcase name="When I am logged in as the default administrator" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I navigate to the System Settings page" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The Max Users setting is default" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I set the Max Users value to 0" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And The Max Users setting is 0" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I set the Max Users value to 200" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The changes to System Settings were successfully saved." classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And The Max Users setting is 200" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I clear the Max Users field" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The following System Settings error is visible: Max Users is required." classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I set the Max Users value to user" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The following System Settings error is visible: Max Users must be an integer." classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I set the Max Users value to -5" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The following System Settings error is visible: Must be integer &gt;= 0" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I set the Max Users value to 5.5" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="And I submit the changes to System Settings" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The following System Settings error is visible: Max Users must be an integer." classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="When I navigate to the System Settings page" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="Then The Max Users setting is 200" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Ensure the Max Users setting is persisted and validated." time="6.63"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

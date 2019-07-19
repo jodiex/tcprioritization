@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify score for improvised record is decorated" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:46:59" hostname="mo-acceptance-test-driver-182622c" time="5.187">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="Then I check if user &quot;sam&quot; exists, if not, I create the user" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="When I navigate to the System Homepage" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="When I am on &quot;Class Homepage&quot; page of &quot;Demonstration Class&quot; class" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="And I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="And I select &quot;Improvised A1 - Homework/Quiz&quot; in &quot;Assignments&quot; selection list" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="And I put &quot;sam&quot; in the &quot;User&quot; input box" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="And I click the Search button" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="And I assert that the grade is &quot;0.75 *&quot; for the assignment question item" classname="Scenario: Verify score for improvised record is decorated" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Verify score for improvised record is decorated" time="6.25"/>
+  <system-out><![CDATA[
+  #MO-2115
+  Scenario: Complete assignment normally, check that edit and delete buttons are not visible                                 ?[90m# gradebook/ManageImprovisedTestRecords.feature:85?[0m
+    ?[32mWhen ?[0m?[32mI am on "Class Homepage" page of "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class?[0m                                                        ?[90m# ClassHomepageSteps.navigateToClassHomepage(String)?[0m
+    ?[32mThen ?[0m?[32mI launch the "?[0m?[32m?[1mImprovised A1?[0m?[32m" assignment in "?[0m?[32m?[1mStudent Readiness?[0m?[32m" unit?[0m                                                 ?[90m# ClassHomepageSteps.reopenAssignment(String,String)?[0m
+    ?[32mWhen ?[0m?[32mI submit the assignment?[0m                                                                                             ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mI see the submission report with warning text "?[0m?[32m?[1mWarning: There appears to be errors in one or more of your answers.?[0m?[32m"?[0m ?[90m# MapleTAAssignmentSteps.assertSubmissionReportWarningMessage(String)?[0m
+    ?[32mWhen ?[0m?[32mI submit the assignment again?[0m                                                                                       ?[90m# MapleTAAssignmentSteps.submitAssignment()?[0m
+    ?[32mThen ?[0m?[32mmy score ?[0m?[32m?[1m0?[0m?[32m out of ?[0m?[32m?[1m1?[0m?[32m (?[0m?[32m?[1m0?[0m?[32m %) is shown in a grade report?[0m                                                                ?[90m# MapleTAAssignmentSteps.assertScore(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32mI save and quit assignment to clear assignment state?[0m                                                                 ?[90m# MapleTAAssignmentSteps.clearAssignmentState()?[0m
+    ?[32mAnd ?[0m?[32mI am back on the "?[0m?[32m?[1mDemonstration Class?[0m?[32m" class homepage window?[0m                                                         ?[90m# ClassHomepageSteps.switchToClassHomepageWindow(String)?[0m
+    ?[32mWhen ?[0m?[32mI navigate to the "?[0m?[32m?[1mClass Grades?[0m?[32m" in "?[0m?[32m?[1mGradebook?[0m?[32m" of current class?[0m                                                    ?[90m# ClassHomepageSteps.navigateInClass(String,String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Class Grades page?[0m                                                                                       ?[90m# GradebookClassGradesSteps.waitForClassGradesPage()?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mImprovised A1 - Homework/Quiz?[0m?[32m" in "Assignments" selection list?[0m                                             ?[90m# GradebookClassGradesSteps.selectAssignment(String)?[0m
+    ?[32mAnd ?[0m?[32mI select "?[0m?[32m?[1mOther users with grades?[0m?[32m" in "List" selection list?[0m                                                          ?[90m# GradebookClassGradesSteps.selectUser(String)?[0m
+    ?[32mAnd ?[0m?[32mI put "?[0m?[32m?[1mqa?[0m?[32m" in the "User" input box?[0m                                                                                   ?[90m# GradebookClassGradesSteps.inputUserLogin(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the Search button?[0m                                                                                            ?[90m# GradebookClassGradesSteps.clickSearch()?[0m
+    ?[32mWhen ?[0m?[32mI click the grade for the selected assignment?[0m                                                                       ?[90m# GradebookClassGradesSteps.clickGrade()?[0m
+    ?[32mThen ?[0m?[32mI see the test record details of "?[0m?[32m?[1mImprovised A1?[0m?[32m" for user "?[0m?[32m?[1mqa?[0m?[32m"?[0m                                                      ?[90m# GradebookDetailsSteps.assertAssignmentTitleAndLoginVisible(String,String)?[0m
+    ?[32mAnd ?[0m?[32mI see my total score "?[0m?[32m?[1m0/1.0?[0m?[32m"?[0m                                                                                         ?[90m# GradebookDetailsSteps.assertTotalScore(String)?[0m
+    ?[32mAnd ?[0m?[32mI do not see the edit total score button?[0m                                                                             ?[90m# GradebookDetailsSteps.assertEditTotalButtonNotVisible()?[0m
+    ?[32mAnd ?[0m?[32mI do not see the Delete Record button?[0m                                                                                ?[90m# GradebookDetailsSteps.assertDeleteRecordButtonNotVisible()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

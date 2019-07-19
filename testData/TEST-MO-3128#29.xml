@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MO-3128)" tests="57" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:02:36" hostname="mo-acceptance-test-driver-182622c" time="31.87">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I click the 'New Class' mapping button(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on a New Class page(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I create new class with random name(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I click the 'Class Homepage' mapping button(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Content Repository&quot; of current class(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I choose creating new assignment in &quot;Default Unit&quot; unit from the main dropdown button(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then Assignment Editor is opened(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When enter Assignment name &quot;MO-3128 Assignment&quot;(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I click on the questions tab(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I click the new question button(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I create question &quot;Regrading&quot; with label &quot;Regrading&quot;(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I click OK(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I choose to create a new question from the Add dropdown button(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I create question &quot;Regrading 2&quot; with label &quot;Regrading 2&quot;(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.001"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I click OK(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I save &amp; close the new question in the assignment editor(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I save &amp; close the assignment on the questions page(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I see summary of the assignment(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I save and close the assignment summary details(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on the Class Homepage(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I start the &quot;MO-3128 Assignment&quot; assignment in &quot;Default Unit&quot; unit(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.001"/>
+  <testcase name="And I use &quot;Next&quot; button to navigate to &quot;Question 2&quot;(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I submit the assignment(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I see the submission report with warning text &quot;Warning: There appears to be errors in one or more of your answers.&quot;(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I submit the assignment again(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then my score 0 out of 2 (0 %) is shown in a grade report(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.001"/>
+  <testcase name="And quit and save the assignment(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I navigate to the &quot;Class Grades&quot; in &quot;Gradebook&quot; of current class(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on the Class Grades page(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I select &quot;MO-3128 Assignment - Homework/Quiz&quot; in &quot;Assignments&quot; selection list(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I select &quot;Other users with grades&quot; in &quot;List&quot; selection list(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I select &quot;Earliest&quot; in &quot;Results&quot; selection list(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I click the Search button(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I click the grade for the selected assignment(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I see the test record details of &quot;MO-3128 Assignment&quot; for the current user(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I see that the regrade button for question 1 is enabled(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I see that the regrade button for question 2 is enabled(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.001"/>
+  <testcase name="When I click the Regrade Question button for question 2(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I am on the Regrading page(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I verify the timestamps are in the correct format(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I see the regrading in progress spinner(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I wait until regrading is complete(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="When I select revision number 1(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="And I submit all selected grades(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <testcase name="Then I see the test record details of &quot;MO-3128 Assignment&quot; for the current user(Scenario: Verify that an assignment question beyond the first position can be regraded " classname="MO-3128)" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

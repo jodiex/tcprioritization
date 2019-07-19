@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UW-1071)" tests="33" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:15:30" hostname="mo-acceptance-test-driver-182622c" time="19.49">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I choose creating new Slideshow from the main dropdown button(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And Slideshow Designer is opened(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;New Question 2&quot;(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When I click the Slideshow Audio File Manager button(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I click the audio file named &quot;Audio_Test.mp3&quot;(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I click the New Pause button(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I drag the new Pause marker 200 pixels right(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I click the New Pause button(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I drag the new Pause marker 600 pixels right(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I click inside the slideshow content in the editor(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When I choose &quot;Mathematical Formula&quot; link from the dialog and complete the correct answer(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I click OK(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I see the &quot;Mathematical Formula&quot; Question Widget in the question text section(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I click on the &quot;Mathematical Formula&quot; Question Widget in the question editor(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I drag the Element-In marker 400 pixels right(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When I click to Preview the Slideshow(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I resize the slideshow preview window to the default size(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I am previewing the Slideshow(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When I begin playback of the Slideshow(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When the Slideshow pause bar appears(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I don't see the Mathematical Formula response area(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I don't see How Did I Do on the slide pause bar(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When I click the Continue button on the slide pause bar(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="When the Slideshow pause bar appears(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I see the Mathematical Formula response area(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I see How Did I Do on the slide pause bar(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I enter &quot;2x&quot; in Mathematical Formula input(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="And I click How Did I Do in the Slide(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I assert that the Mathematical Formula answer is correct(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <testcase name="Then I close the question preview window(Scenario: Ensure How Did I Do doesn't appear when slideshow pauses with no response area visible " classname="UW-1071)" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

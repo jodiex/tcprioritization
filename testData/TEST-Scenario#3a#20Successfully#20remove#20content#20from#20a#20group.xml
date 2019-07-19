@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Successfully remove content from a group" tests="21" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:35:00" hostname="mo-acceptance-test-driver-182622c" time="12.379">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="When I click on &quot;Questions&quot;" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I choose creating new Group from the Create New button in the &quot;Questions&quot; column" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="Then I see the &quot;Add Group&quot; dialog open" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="When I enter a group name of &quot;Test Remove&quot;" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I click the &quot;Add Group&quot; dialog button" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Questions&quot; column open" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="When I click on &quot;Test Remove&quot; in the &quot;Questions&quot; column" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I choose creating new Question/Text from the Create New button in the &quot;Test Remove&quot; column" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="Then Question Designer is opened" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;Remove Content 3&quot;" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I click the question designer Save &amp; Close button" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Text&quot; column open" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I click on &quot;Test Remove&quot; in the &quot;Text&quot; column" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I select the question by name &quot;Remove Content 3&quot;" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I click the &quot;Remove&quot; button in the bulk row" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I click the Confirm option" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="Then I am on the Content Repository page with the &quot;Test Remove&quot; column open" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="And I do not see the question &quot;Remove Content 3&quot; in the &quot;Test Remove&quot; column" classname="Scenario: Successfully remove content from a group" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Successfully remove content from a group" time="13.411"/>
+  <system-out><![CDATA[
+  Scenario: Cancel removing content                                            ?[90m# QuestionInRepository.feature:67?[0m
+    ?[32mWhen ?[0m?[32mI choose creating new question/Text from the main dropdown button?[0m     ?[90m# ContentRepositorySteps.chooseCreatingNewQuestionFromMainDropdownButton()?[0m
+    ?[32mThen ?[0m?[32mQuestion Designer is opened?[0m                                           ?[90m# QuestionDesignerSteps.assertQuestionDesignerPageIsOpened()?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mRemove Content 2?[0m?[32m"?[0m ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the question designer Save & Close button?[0m                      ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+    ?[32mThen ?[0m?[32mI see that I am on the Content Repository page?[0m                        ?[90m# ContentRepositorySteps.assertOnRepositoryPage()?[0m
+    ?[32mWhen ?[0m?[32mI expand the "?[0m?[32m?[1mText?[0m?[32m" column?[0m                                            ?[90m# ContentRepositorySteps.expandColumn(String)?[0m
+    ?[32mAnd ?[0m?[32mI select the question by name "?[0m?[32m?[1mRemove Content 2?[0m?[32m"?[0m                       ?[90m# ContentRepositorySteps.selectQuestion(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the "?[0m?[32m?[1mRemove?[0m?[32m" button in the bulk row?[0m                            ?[90m# ContentRepositorySteps.clickBulkRowButton(String)?[0m
+    ?[32mAnd ?[0m?[32mI click the ?[0m?[32m?[1mCancel?[0m?[32m option?[0m                                              ?[90m# ContentRepositorySteps.clickConfirm(String)?[0m
+    ?[32mThen ?[0m?[32mI am on the Content Repository page with the "?[0m?[32m?[1mText?[0m?[32m" column open?[0m       ?[90m# ContentRepositorySteps.assertContentRepository(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" tests="20" skipped="0" failures="0" errors="0" timestamp="2019-07-19T16:24:12" hostname="mo-acceptance-test-driver-182622c" time="10.585">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I choose creating new question/Text from the main dropdown button" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And Question Designer is opened" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="When I enter valid information for the question name as &quot;CSS Question&quot;" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I click inside the question text editor" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I click Response Area button to open the dialog and assert that the Choose Question Type page is visible" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I choose &quot;True/False&quot; link from the dialog and complete the correct answer" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I click OK" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="Then I see the &quot;True or False&quot; Question Widget in the question text section" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="When I expand the &quot;Custom CSS&quot; section" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I enter &quot;body { background-color: red; }&quot; in the CSS editor" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="When I expand the &quot;Feedback&quot; section" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I enter &quot;Feedback&quot; in the feedback editor in the question designer" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="When I click the Preview button" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I click the Grade button in question preview window" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="Then I see that the question background color is &quot;rgba(255, 0, 0, 1)&quot;" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I see that the feedback background color is &quot;rgba(255, 0, 0, 1)&quot;" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="And I do not see that the response background color is &quot;rgba(255, 0, 0, 1)&quot;" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Create a new question with Custom CSS and verify the style is applied to the grade report" time="11.604"/>
+  <system-out><![CDATA[
+  Scenario: Create a new question with a theme                               ?[90m# CreateQuestion.feature:378?[0m
+    ?[32mWhen ?[0m?[32mI enter valid information for the question name as "?[0m?[32m?[1mTheme Question?[0m?[32m"?[0m ?[90m# QuestionDesignerSteps.enterQuestionName(String)?[0m
+    ?[32mAnd ?[0m?[32mI expand the "?[0m?[32m?[1mCustom CSS?[0m?[32m" section?[0m                                    ?[90m# QuestionDesignerSteps.expandSection(String)?[0m
+    ?[32mAnd ?[0m?[32mI click Theme?[0m                                                        ?[90m# QuestionDesignerSteps.clickThemeButton()?[0m
+    ?[32mThen ?[0m?[32mI see the Choose Theme dialog?[0m                                       ?[90m# QuestionDesignerSteps.assertThemeDialog()?[0m
+    ?[32mWhen ?[0m?[32mI drag the "?[0m?[32m?[1mJellybean?[0m?[32m" theme to the Applied Themes column?[0m           ?[90m# QuestionDesignerSteps.dragThemeToApply(String)?[0m
+    ?[32mAnd ?[0m?[32mI click Apply?[0m                                                        ?[90m# QuestionDesignerSteps.clickApplyTheme()?[0m
+    ?[32mThen ?[0m?[32mI see the theme applied to the question editor?[0m                      ?[90m# QuestionDesignerSteps.assertThemeInEditor()?[0m
+    ?[32mWhen ?[0m?[32mI click the Preview button?[0m                                          ?[90m# QuestionDesignerSteps.clickPreviewButton()?[0m
+    ?[32mThen ?[0m?[32mI see the theme applied to the Question Preview page?[0m                ?[90m# QuestionPreviewSteps.assertThemeApplied()?[0m
+    ?[32mThen ?[0m?[32mI close the question preview window?[0m                                 ?[90m# QuestionPreviewSteps.closeQuestionPreviewWindow()?[0m
+    ?[32mThen ?[0m?[32mI click the question designer Save & Close button?[0m                   ?[90m# QuestionDesignerSteps.clickSaveAndCloseButton()?[0m
+    ?[32mThen ?[0m?[32mI see that I am on the Content Repository page?[0m                      ?[90m# ContentRepositorySteps.assertOnRepositoryPage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

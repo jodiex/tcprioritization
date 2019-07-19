@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test that the Slideshow Audio Record Page Opens Up" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:15:12" hostname="mo-acceptance-test-driver-182622c" time="5.697">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="0.0"/>
+  <testcase name="And I am on the Content Repository page of Demonstration Class" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="0.0"/>
+  <testcase name="And I choose creating new Slideshow from the main dropdown button" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="0.0"/>
+  <testcase name="And Slideshow Designer is opened" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="0.0"/>
+  <testcase name="When I click slideshow audio record button" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="0.0"/>
+  <testcase name="Then Slideshow Audio Record Page is opened" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test that the Slideshow Audio Record Page Opens Up" time="6.68"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

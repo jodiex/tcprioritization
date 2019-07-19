@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Test USER_NAME mapping." tests="28" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:07:05" hostname="mo-acceptance-test-driver-182622c" time="22.767">
+  <properties/>
+  <testcase name="Given I set up the LTI consumer key and shared secret if not already done" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I create custom field mappings" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I launch random &quot;basic-lti-launch-request&quot; LTI request with role &quot;Administrator&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I am on the LTI Mapping Page" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I click the 'System Homepage' mapping button" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I search for and validate LTI user" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I verify and close the LTI Page window" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I am on the Test Harness page" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I restore the launched LTI Test Harness form" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I update LTI user fields" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I set random value for &quot;custom_mapped_email&quot; email field" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I set random value for &quot;custom_mapped_student_id&quot; field" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I launch prepared &quot;basic-lti-launch-request&quot; LTI request with role &quot;Instructor&quot; and outcome URL &quot;&quot; and document target &quot;window&quot;" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I am on the System Homepage" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I open the Search User page" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I search for and validate LTI user" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I verify and close the LTI Page window" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I am on the Test Harness page" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="When I close the LTI Test Harness leftover windows" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I directly log out" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="And I am logged in as the default administrator" classname="Scenario: Test USER_NAME mapping." time="0.001"/>
+  <testcase name="And I am on the Field Mapping page" classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="Then I delete all LTI field mappings." classname="Scenario: Test USER_NAME mapping." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Test USER_NAME mapping." time="22.877"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

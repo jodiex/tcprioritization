@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: A standard CSRF attack is foiled." tests="4" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:16:20" hostname="mo-acceptance-test-driver-182622c" time="0.592">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: A standard CSRF attack is foiled." time="0.0"/>
+  <testcase name="When I attempt a CSRF attack" classname="Scenario: A standard CSRF attack is foiled." time="0.0"/>
+  <testcase name="Then I get a 403 error" classname="Scenario: A standard CSRF attack is foiled." time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: A standard CSRF attack is foiled." time="1.541"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

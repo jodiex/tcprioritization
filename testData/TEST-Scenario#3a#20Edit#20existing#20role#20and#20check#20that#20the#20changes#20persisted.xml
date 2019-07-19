@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Edit existing role and check that the changes persisted" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-07-19T17:25:14" hostname="mo-acceptance-test-driver-182622c" time="3.982">
+  <properties/>
+  <testcase name="Given I am logged in as the default administrator" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="And I go to the Role Manager page" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="When I click to edit the &quot;test&quot; role" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="When I fill in the role name &quot;Test&quot;" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="And I set the Edit Student License privilege to &quot;true&quot;" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="And I click Submit" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="Then I am on the Role Manager page" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="And I see the &quot;Test&quot; role in the list" classname="Scenario: Edit existing role and check that the changes persisted" time="0.001"/>
+  <testcase name="And I do not see the &quot;test&quot; role in the list" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="When I click to edit the &quot;Test&quot; role" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="Then I am on the Role Editor page" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="And I see the Edit Student License privilege checked" classname="Scenario: Edit existing role and check that the changes persisted" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Edit existing role and check that the changes persisted" time="5.074"/>
+  <system-out><![CDATA[
+  Scenario: Create new role               ?[90m# usermanager/ManageRole.feature:7?[0m
+    ?[32mWhen ?[0m?[32mI click to create a class role?[0m   ?[90m# RoleManagerSteps.clickCreateClassRole()?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Editor page?[0m     ?[90m# RoleEditorSteps.assertOnRoleEditorPage()?[0m
+    ?[32mWhen ?[0m?[32mI fill in the role name "?[0m?[32m?[1mtest?[0m?[32m"?[0m   ?[90m# RoleEditorSteps.enterRoleName(String)?[0m
+    ?[32mAnd ?[0m?[32mI click Submit?[0m                    ?[90m# RoleEditorSteps.clickSubmit()?[0m
+    ?[32mThen ?[0m?[32mI am on the Role Manager page?[0m    ?[90m# RoleManagerSteps.assertOnRoleManagerPage()?[0m
+    ?[32mAnd ?[0m?[32mI see the "?[0m?[32m?[1mtest?[0m?[32m" role in the list?[0m ?[90m# RoleManagerSteps.assertRoleInList(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
