@@ -1,21 +1,24 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-
-import NavbarComponent from './components/navbar/navbar-component';
-import LineGraphComponent from './components/linegraph/linegraph-component';
 
 function App() {
   return (
     <div className="App">
-      <NavbarComponent/>
-      <div className="App-body">
-        <LineGraphComponent/>
-      </div>
-      <div className="App-footer">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Made by <a className="App-link" href="www.adamwong.me">Adam Wong</a> and <a className="App-link" href="www.google.com">Alex Bakker</a> in Waterloo, Ontario
+          Edit <code>src/App.js</code> and save to reload.
         </p>
-      </div>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
