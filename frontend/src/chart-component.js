@@ -26,10 +26,10 @@ const data = [
   { name: 20, impression: 100 }
 ];
 
-export default class Example extends PureComponent {
+export default class ChartComponent extends PureComponent {
   render() {
     return (
-      <div style={{ margin: '17% auto', width: '50%', height: 400 }}>
+      <div style={{ margin: '5% auto', width: '50%', height: 400}}>
         <ResponsiveContainer style>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
