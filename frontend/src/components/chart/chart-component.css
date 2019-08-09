@@ -10,3 +10,7 @@
     stroke: rgb(236, 53, 67);
     stroke-width: 5;
 }
+
+.line circle  {
+    fill: rgb(236, 53, 67) !important;
+}
