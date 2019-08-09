@@ -29,7 +29,7 @@ const data = [
 export default class ChartComponent extends PureComponent {
   render() {
     return (
-      <div style={{ margin: '5% auto', width: '50%', height: 400}}>
+      <div style={{ borderRadius: '30px', backgroundColor: 'rgb(20, 20, 30)', margin: '5% auto', width: '50%', height: 400}}>
         <ResponsiveContainer style>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
