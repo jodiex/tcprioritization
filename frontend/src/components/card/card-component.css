@@ -1,0 +1,9 @@
+.card {
+    margin: 15px;
+    background-color: rgb(45, 48, 51);
+    display: inline-block;
+    border-radius: .5rem;
+    -webkit-box-shadow: -7px 2px 41px -10px rgba(0,0,0,0.63);
+    -moz-box-shadow: -7px 2px 41px -10px rgba(0,0,0,0.63);
+    box-shadow: -7px 2px 41px -10px rgba(0,0,0,0.63);
+}

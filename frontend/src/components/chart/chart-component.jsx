@@ -1,4 +1,6 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
+import './chart-component.css';
+
 import {
   ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip
 } from 'recharts';
@@ -26,10 +28,10 @@ const data = [
   { name: 20, impression: 100 }
 ];
 
-export default class ChartComponent extends PureComponent {
+export default class ChartComponent extends React.PureComponent {
   render() {
     return (
-      <div style={{ borderRadius: '30px', backgroundColor: 'rgb(20, 20, 30)', margin: '5% auto', width: '50%', height: 400}}>
+      <div className="chart" style={{ width: '50vw', minWidth: '500px', height: 400}}>
         <ResponsiveContainer style>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
