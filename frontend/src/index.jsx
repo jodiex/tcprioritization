@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ChartComponent from './chart-component';
+import ChartComponent from './components/chart/chart-component';
 
 import * as serviceWorker from './serviceWorker';
 
