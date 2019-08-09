@@ -14,9 +14,6 @@ export default class HomePage extends React.PureComponent {
                 <CardComponent>
                     <ChartComponent/>
                 </CardComponent>
-                <CardComponent>
-                    <ChartComponent/>
-                </CardComponent>
             </div>
         );
     }
