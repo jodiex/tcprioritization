@@ -27,17 +27,15 @@ export default class ChartComponent extends React.PureComponent {
           (() => {
             if (this.state.data) {
               return (
-                <div className="chart">
-                  <ResponsiveContainer style>
-                    <LineChart data={this.state.data}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="name" />
-                      <YAxis dataKey="impression" />
-                      <Line className="line" dataKey="impression" />
-                      <Tooltip />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </div>
+                <ResponsiveContainer style>
+                  <LineChart data={this.state.data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis dataKey="impression" />
+                    <Line className="line" dataKey="impression" />
+                    <Tooltip />
+                  </LineChart>
+                </ResponsiveContainer>
               );
             } else {
               return (
