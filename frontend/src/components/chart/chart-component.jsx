@@ -31,13 +31,13 @@ const data = [
 export default class ChartComponent extends React.PureComponent {
   render() {
     return (
-      <div className="chart" style={{ width: '50vw', minWidth: '500px', height: 400}}>
+      <div className="chart">
         <ResponsiveContainer style>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis dataKey="impression" />
-            <Line dataKey="impression" />
+            <Line className="line" dataKey="impression" />
             <Tooltip />
           </LineChart>
         </ResponsiveContainer>
