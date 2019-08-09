@@ -8,7 +8,7 @@
 
 .line path, .line circle{
     stroke: rgb(236, 53, 67);
-    stroke-width: 5;
+    stroke-width: 3;
 }
 
 .line circle  {
