@@ -2,10 +2,11 @@ import os
 import xml.etree.ElementTree as ET
 import glob
 import json
+from math import pow, exp, sqrt, pi
 
-#todo Do we need this?
+# Todo Do we need this?
 def isDirectoryValid(resultdirectory):
-    """check if resultdirectory is valid"""
+    # Check if resultdirectory is valid.
     if (os.path.isdir(resultdirectory)):
         if not os.listdir(resultdirectory):
             print ("Empty directory.")
@@ -16,24 +17,32 @@ def isDirectoryValid(resultdirectory):
         print ("Directory is invalid.")
         return False
 
-# todo need to consider how to take care of a modified test case
+# Todo need to consider how to take care of a modified test case.
 
 class testPriority(object):
-    """This is a class representing the priority data of a test case result"""
+    # This is a class representing the priority data of a test case result.
     a = 0.7 
     b = 0.3
     c = 0.0
-    name = None
-    filename = None
-    prevPriority = 10000
-    priority = 10000
-    totalExecutions = 0
-    totalFailures = 0
-    totalPasses = 0
+    failSpike = 5000
+    # Guassian distribution variables.
+    # See "Testing Priority" spreadsheet on google drive in the "Coop Playground" folder for more details
+    gauissianMean = 0.35
+    standardDeviation = 0.1
+    attenuationRamp = 1
+    # historyLength is the value that test cases are considered "recent" and will be taken into account for the gaussian curve
+    historyLength = 100
 
-    def __init__(self, priority_dict=None):
-        if priority_dict:
-            self._set_proirity(priority_dict)
+    def __init__(self):
+        name = None
+        filename = None
+        prevPriority = 10000
+        priority = 10000
+        totalExecutions = 0
+        totalFailures = 0
+        totalPasses = 0
+        # Number of failures in the last 'historyLength' runs
+        recentFailure = 0
 
     def _set_proirity(self, priority_dict):
         self.name = priority_dict['name']
@@ -42,6 +51,7 @@ class testPriority(object):
         self.totalExecutions = priority_dict['totalExecutions']
         self.totalFailures = priority_dict['totalFailures']
         self.totalPasses = priority_dict['totalPasses']
+        self.recentFailure = priority_dict['recentFailure']
 
     def process_priority(self, test_case, priority_file_directory):
         self.update_priority_from_file(test_case, priority_file_directory)
@@ -49,12 +59,12 @@ class testPriority(object):
         self.update_priority()
 
     def update_priority_from_file(self, test_case, priority_file_directory):
-        # find matching JSON file and get JSON data
-        priority_file_name = priority_file_directory + test_case.filename + '.json'
+        # Find matching JSON file and get JSON data.
+        priority_file_name = priority_file_directory + "/" + test_case.filename + ".json"
 
-        if os.path.exists(priority_file_name): # check for an existing JSON file
-            json_file = open(priority_file_name, "r") # Open the JSON file for reading
-            priority_dict = json.load(json_file) # Read the JSON into the buffer
+        if os.path.exists(priority_file_name): # Check for an existing JSON file.
+            json_file = open(priority_file_name, "r") # Open the JSON file for reading.
+            priority_dict = json.load(json_file) # Read the JSON into the buffer.
             json_file.close()
             self._set_proirity(priority_dict)
         print("test cases {}".format(test_case.name))
@@ -63,37 +73,40 @@ class testPriority(object):
         self.filename = priority_file_name
 
     def calculate_priority(self, test_case):
-        # check if testCase and testPriority are valid
-        # priority_value = 1000
-        if test_case:
-            self.totalExecutions = self.totalExecutions + test_case.tests
-            self.totalFailures = self.totalFailures + test_case.failures
+        # Currently tests under "skipped" and "errors" are not taken into account.
+        self.totalExecutions = self.totalExecutions + 1
+        if((test_case.failures > 0) or (test_case.skipped > 0) or (test_case.errors > 0)):
+            self.totalFailures = self.totalFailures + 1
+            spike = self.failSpike
+        else:
+            self.totalPasses = self.totalPasses + 1
+            spike = 0
 
-            if test_case.failures > 0:
-                recentFail = 5000
-            else:
-                recentFail = 0
+        self.prevPriority = self.priority
+        print("\nprev value {}".format(self.prevPriority))
+        # if test fails on first run, prevent division by zero
+        if self.totalPasses == 0:
+            failRatio = 0
+        else:
+            failRatio = self.totalFailures / self.totalPasses
 
-            # take error into account
-            tcPasses = test_case.tests - test_case.failures
-            if tcPasses < 0:
-                tcPasses = 0
-            self.totalPasses = self.totalPasses + tcPasses
-            # prevPrioritytemp = self.prevPriority
-            self.prevPriority = self.priority
-            print("\nprev value {}".format(self.prevPriority))
-            # if test fails on first run, prevent division by zero
-            if self.totalPasses == 0:
-                recentFail = 5000
-                failRatio = 0
-            else:
-                failRatio = self.totalFailures / self.totalPasses
-
-            priority_value = (self.a * failRatio) + (self.b * self.prevPriority) + recentFail
-            print("\nnew value {}".format(priority_value))
-            if priority_value < 0.00001: # prevent priority values from getting infinitely small
-                priority_value = 0
+        # Need to pull most recent fails from database.
+        self.update_recentFailure(test_case)
+        # Using functions from "import math"
+        exponent = pow((self.recentFailure/self.historyLength - self.gauissianMean), 2)/(-2*pow(self.standardDeviation, 2))
+        Gcurve = exp(exponent)/(4*sqrt(2*pi()*pow(self.standardDeviation, 2)))
+        priority_value = (self.a * failRatio) + (self.b * self.prevPriority) + (1-Gcurve)*spike + self.prevPriority*Gcurve*(self.attenuationRamp-self.b)
+        print("\nnew value {}".format(priority_value))
+        if priority_value < 0.00001: # prevent priority values from getting infinitely small
+            priority_value = 0
         self.priority = priority_value
+
+    def update_recentFailure(self, test_case)
+        # Need to pull the test results from position historyLength to historyLength-x where x is test_case.tests - test_case.skipped.
+        # Decrement self.recentFailure for each failure in the pulled records as they will be leaving the 100 test range.
+        # Then do (self.recentFailure + test_case.failures) as these failures will be entering the 100 test range.
+        # Could also implement a variable history length to allow user to define how far back they want to look.
+        return 0
 
     def update_priority(self):
         priorityJSON = {
@@ -105,11 +118,12 @@ class testPriority(object):
             "priority": self.priority,
             "totalExecutions": self.totalExecutions,
             "totalFailures": self.totalFailures,
-            "totalPasses": self.totalPasses
+            "totalPasses": self.totalPasses,
+            "recentFailure": self.recentFailure
         }
 
         print ("tpriority.filename {}".format(self.filename))
-        # update <testcase>.json file
+        # Update <testcase>.json file
         jsonFile = open(self.filename, "w+")
         jsonFile.write(json.dumps(priorityJSON))
         jsonFile.close()
@@ -220,11 +234,10 @@ class testCase(object):
         return (s)
 
 class testResult(object):
-    """This is a class representing all test case results from a test"""
-    # dictionary of testCase object, with testCase.name
+    # This is a class representing all test case results from a test.
+    # Dictionary of testCase object, with testCase.name.
 
     def __init__(self, result_directory):
-        #todo sanitize result directory; make sure if valid, etc
         self.result_directory = result_directory
         self._test_result_hash = dict()
         self.process_test_results()
@@ -233,19 +246,20 @@ class testResult(object):
         return self._test_result_hash
 
     def process_test_results(self):
-        list_XML_files = glob.glob(self.result_directory + "/*.xml")
+        list_XML_files = glob.glob(self.result_directory + "/TEST*.xml")
 
+        # Parse through each xml file.
         for f in list_XML_files:
             tc = self.read_XML_data(f)
             print(tc)
             if tc is not None:
-                # add each testCase into dictionary testResultHash
+                # Add each testCase into dictionary testResultHash.
                 self._test_result_hash[tc.name] = tc
 
     def read_XML_data(self, filename):
         try:
-            # get filename of each XML file
-            # parse XML data into variables
+            # Parse XML data into variables.
+            # ET is an imported function called ElementTree.
             tree = ET.parse(filename)
             root = tree.getroot()
             # name = root.attrib.get("name")
@@ -257,7 +271,7 @@ class testResult(object):
             skipped = int(root.attrib.get("skipped"))
             errors = int(root.attrib.get("errors"))
             failures = int(root.attrib.get("failures"))
-            # store results in a testCase
+            # Store results in a testCase.
 
             tc = testCase(os.path.basename(filename),name,hostname,time,timestamp,tests,skipped,errors,failures)
             return tc
@@ -268,18 +282,8 @@ class testResult(object):
 
 
 if __name__ == "__main__":
-    # test_result_directory = "./temp"
-    # priority_file_directory = "./temp_out/"
-    # data_file_path = "./agg_data_small.json"
-    # test_cases_report = testResult(test_result_directory)
-    # for i in test_cases_report._test_result_hash.values():
-    #     pk = testPriority()
-    #     pk.process_priority(i, priority_file_directory)
-    #     pk.update_agg(data_file_path, i)
-    #     print(pk)
-    #     print("\n")
-    #
-    #run all
+
+    # Still need to add check to make sure directory exists
     build_list = os.listdir("/Users/pg/workspace/de/tcprioritization/test-results/master/")
     build_list.sort()
     for f in build_list:
@@ -288,7 +292,7 @@ if __name__ == "__main__":
         for ff in commit_list:
             print ("/Users/pg/workspace/de/tcprioritization/test-results/master/"+f+"/"+ff+"/build/test-results/test")
             test_result_directory = "/Users/pg/workspace/de/tcprioritization/test-results/master/"+f+"/"+ff+"/build/test-results/test"
-            priority_file_directory = "./temp_all/"
+            priority_file_directory = "./temp_all"
             data_file_path = "./agg_data.json"
 
             test_cases_report = testResult(test_result_directory).get_results()
