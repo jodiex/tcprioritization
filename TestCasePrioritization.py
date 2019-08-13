@@ -15,6 +15,7 @@ def isDirectoryValid(resultdirectory):
     else:
         print ("Directory is invalid.")
         return False
+
 def isPass(test_case):
     if (test_case.failures > 0) or (test_case.skipped > 0) or (test_case.errors > 0):
         return False
@@ -34,17 +35,15 @@ class testPriority(object):
     totalFailures = 0
     totalPasses = 0
     # Number of failures in the last 'historyLength' runs
-    recentFailure = 0
+    recentFailure=0
     failSpike = 5000
-    # Gaussian distribution variables
-    # See "Testing Priority" spreadsheet on google drive in the "Coop Playground" folder for more details.
+    # Guassian distribution variables.
+    # See "Testing Priority" spreadsheet on google drive in the "Coop Playground" folder for more details
     gaussianMean = 0.35
     standardDeviation = 0.1
-    prevPriority = 10000
     attenuationRamp = 1
-    # historyLength is the value that test cases are considered "recent" and will be taken into account for the gaussian curve.
+    # historyLength is the value that test cases are considered "recent" and will be taken into account for the gaussian curve
     historyLength = 100
-    
 
     def __init__(self, priority_dict=None):
         if priority_dict:
@@ -65,7 +64,7 @@ class testPriority(object):
         self.update_priority()
 
     def update_priority_from_file(self, test_case, priority_file_directory):
-        # Find matching JSON file and get JSON data
+        # Find matching JSON file and get JSON data.
         priority_file_name = priority_file_directory + test_case.filename + '.json'
 
         if os.path.exists(priority_file_name): # Check for an existing JSON file.
@@ -79,7 +78,7 @@ class testPriority(object):
         self.filename = priority_file_name
 
     def calculate_priority(self, test_case):
-        # Currently "skipped" and "error" tests are considered failures.
+        # Currently "skipped" and "errors" are considered failures.
         self.totalExecutions = self.totalExecutions + 1
         if (test_case.failures > 0) or (test_case.skipped > 0) or (test_case.errors > 0):
             self.totalFailures = self.totalFailures + 1
@@ -91,31 +90,30 @@ class testPriority(object):
         # prevPrioritytemp = self.prevPriority
         self.prevPriority = self.priority
         #print("\nprev value {}".format(self.prevPriority))
-
         # if test fails on first run, prevent division by zero
         if self.totalPasses == 0:
-            recentFail = 5000
             failRatio = 1
         else:
             failRatio = self.totalFailures / self.totalPasses
         
         # Need to pull most recent fails from database.
         self.update_recentFailure(test_case)
-        # Using functions from math module
+        # Using functions from math
         exponent = pow((self.recentFailure/self.historyLength - self.gaussianMean), 2)/(-2*pow(self.standardDeviation, 2))
         Gcurve = exp(exponent)/(4*sqrt(2*pi*pow(self.standardDeviation, 2)))
-        priority_value = (self.a * failRatio) + (self.b * self.prevPriority) + (1-Gcurve)*spike + self.prevPriority*Gcurve*(self.attenuationRamp-self.b)
+        priority_value = (self.a * failRatio) + (self.b * self.prevPriority) + (1-Gcurve)*spike + self.prevPriority*Gcurve*(self.attenuationRamp-self.b)    
+
         #print("\nnew value {}".format(priority_value))
         if priority_value < 0.00001: # prevent priority values from getting infinitely small
             priority_value = 0
         self.priority = priority_value
-    
+
     def update_recentFailure(self, test_case):
-       # Need to pull the test results from position historyLength to historyLength-x where x is test_case.tests - test_case.skipped.
-       # Decrement self.recentFailure for each failure in the pulled records as they will be leaving the 100 test range.
-       # Then do (self.recentFailure + test_case.failures) as these failures will be entering the 100 test range.
-       # Could also implement a variable history length to allow user to define how far back they want to look.
-       return 0
+        # Need to pull the test results from position historyLength to historyLength-x where x is test_case.tests - test_case.skipped.
+        # Decrement self.recentFailure for each failure in the pulled records as they will be leaving the 100 test range.
+        # Then do (self.recentFailure + test_case.failures) as these failures will be entering the 100 test range.
+        # Could also implement a variable history length to allow user to define how far back they want to look.
+        return 0
 
     def update_priority(self):
         priorityJSON = {
@@ -197,7 +195,7 @@ class testPriority(object):
         return (s)
 
 class testCase(object):
-    # This is a class representing a test case result.
+    """This is a class representing a test case result"""
     def __init__(self, filename, name, hostname, time, timestamp, tests, skipped, errors, failures):
         self.filename=filename
         self.name=name
@@ -235,7 +233,7 @@ class testResult(object):
 
     def process_test_results(self):
         list_XML_files = glob.glob(self.result_directory + "/*.xml")
-        
+
         # Parse through each XML file.
         for f in list_XML_files:
             tc = self.read_XML_data(f)
@@ -250,8 +248,8 @@ class testResult(object):
             # ET is an imported function called ElementTree.
             tree = ET.parse(filename)
             root = tree.getroot()
-            name = root.attrib.get("name")
-            # name = "_".join((root.attrib.get("name")).split())
+            # name = root.attrib.get("name")
+            name = "_".join((root.attrib.get("name")).split())
             time = float(root.attrib.get("time"))
             timestamp = root.attrib.get("timestamp")
             hostname = root.attrib.get("hostname")
@@ -259,7 +257,7 @@ class testResult(object):
             skipped = int(root.attrib.get("skipped"))
             errors = int(root.attrib.get("errors"))
             failures = int(root.attrib.get("failures"))
-            # Store results in a testCase.
+            # store results in a testCase
 
             base = os.path.basename(filename)
             filename = os.path.splitext(base)[0]
@@ -267,7 +265,7 @@ class testResult(object):
             tc = testCase(filename,name,hostname,time,timestamp,tests,skipped,errors,failures)
             return tc
         except Exception as e:
-            print("Cannot process a file {}".format(filename))
+            print("Can not process a file {}".format(filename))
             print(e)
             return None
 
