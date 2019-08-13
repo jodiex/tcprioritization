@@ -3,9 +3,9 @@ import xml.etree.ElementTree as ET
 import glob
 import json
 
-#todo Do we need this?
+
 def isDirectoryValid(resultdirectory):
-    """check if resultdirectory is valid"""
+    # Check if resultdirectory is valid
     if (os.path.isdir(resultdirectory)):
         if not os.listdir(resultdirectory):
             print ("Empty directory.")
@@ -15,11 +15,14 @@ def isDirectoryValid(resultdirectory):
     else:
         print ("Directory is invalid.")
         return False
-
-# todo need to consider how to take care of a modified test case
+def isPass(test_case):
+    if (test_case.failures > 0) or (test_case.skipped > 0) or (test_case.errors > 0):
+        return False
+    else:
+        return True
 
 class testPriority(object):
-    """This is a class representing the priority data of a test case result"""
+    # This is a class representing the priority data of a test case result
     a = 0.7 
     b = 0.3
     c = 0.0
@@ -30,6 +33,7 @@ class testPriority(object):
     totalExecutions = 0
     totalFailures = 0
     totalPasses = 0
+    
 
     def __init__(self, priority_dict=None):
         if priority_dict:
@@ -77,7 +81,7 @@ class testPriority(object):
         # if test fails on first run, prevent division by zero
         if self.totalPasses == 0:
             recentFail = 5000
-            failRatio = 0
+            failRatio = 1
         else:
             failRatio = self.totalFailures / self.totalPasses
 
@@ -106,12 +110,13 @@ class testPriority(object):
         jsonFile.write(json.dumps(priorityJSON))
         jsonFile.close()
 
-    def create_empty_agg_data(self, name):
+    def create_empty_agg_data(self, id):
         aggJSON = {
-            name:
-            {
-                "commit":[], "passfail": [], "priorityval": []
-            }
+            "id": id,
+            "name": [],
+            "failRatio": [],
+            "priority": [],
+            "pass": []
         }
         return aggJSON
 
@@ -125,55 +130,32 @@ class testPriority(object):
             return None
         return dataFile
 
-    def create_new_agg_tc(self, data_file_path, name):
-        agg_json = self.create_empty_agg_data(name)
 
-        try: # if file is not empty
-            #print("creating agg for {}".format(name))
-            data = open(data_file_path, "r")
-            data_file = json.load(data)
-            data.close()
-
-            data_file.update(agg_json)
-
-            data = open(data_file_path, "w+")
-            data.write(json.dumps(data_file))
-            data.close()
-        except Exception as e: # if file is empty
-            # print('create_new_agg_tc: '+str(e))
-            data = open(data_file_path, "w+")
-            data.write(json.dumps(agg_json))
-            data.close()
-
-    def update_agg(self, data_file_path, test_case, commit):
+    def update_agg(self, data_file_path, test_case, commit, pipeline, run, count):
         dataFile = self.load_json_data(data_file_path)
         if dataFile is None:
             # print("\n\n\ndataFile is None\n\n\n")
             dataFile = dict()
+            id = str(commit) + "_" + str(pipeline) + "_" + str(run)
+            dataFile = self.create_empty_agg_data(id)
 
-        if test_case.filename not in dataFile:
+        if test_case.name not in dataFile['name']:
             # print("can not find in file {}".format(tc.filename))
-            new_agg_data = self.create_empty_agg_data(test_case.filename)
-            dataFile.update(new_agg_data)
-            # print("Datafile: {}".format(dataFile))
-
-        try: # if test case exists in aggregate data file
-            # append new values to end of arrays
-            dataFile[test_case.filename]['commit'].append(commit)
-            dataFile[test_case.filename]['priorityval'].append(self.priority)
+            dataFile['name'].append(test_case.name)
             if self.totalPasses is not 0:
                 failRatio = self.totalFailures / self.totalPasses
             else:
-                failRatio = 0
-            dataFile[test_case.filename]['passfail'].append(failRatio)
+                failRatio = 1
+            dataFile['failRatio'].append(failRatio)
+            dataFile['priority'].append(self.priority)
+            passfail = isPass(test_case)
+            dataFile['pass'].append(passfail)
+            # print("Datafile: {}".format(dataFile))
 
-            # write data to JSON compiled data file
+            # write data to JSON aggregate data file
             data = open(data_file_path, "w+")
             data.write(json.dumps(dataFile))
             data.close()
-        except: # if test case does not exist in aggregate data file
-            print("test case does not exist in aggregate data file")
-            self.create_new_agg_tc(data_file_path, test_case.filename)
 
     def __str__(self):
 
@@ -271,17 +253,19 @@ if __name__ == "__main__":
     pipeline_list = os.listdir("/Users/jxiang/Documents/TCP/test_result1/"+str(commit))
     priority_file_directory = "/Users/jxiang/Documents/TCP/JSON2/"
     data_file_path = "/Users/jxiang/Documents/TCP/agg2.json"
+    count = 0
 
     for f in pipeline_list:
-        count_list = os.listdir("/Users/jxiang/Documents/TCP/test_result1/"+str(commit)+"/"+f)
-        for ff in count_list:
+        run_list = os.listdir("/Users/jxiang/Documents/TCP/test_result1/"+str(commit)+"/"+f)
+        for ff in run_list:
             test_result_directory = "/Users/jxiang/Documents/TCP/test_result1/"+str(commit)+"/"+f+"/"+ff+"/acceptanceTestsResults/test"
             if isDirectoryValid(test_result_directory):
                 test_cases_report = testResult(test_result_directory).get_results()
                 for i in test_cases_report.values():
                     pk = testPriority()
                     pk.process_priority(i, priority_file_directory)
-                    pk.update_agg(data_file_path, i, commit)
+                    pk.update_agg(data_file_path, i, commit, f, ff, count)
+                    count = count + 1
 
 
     # get name of build, store it in tc, agg_Data
